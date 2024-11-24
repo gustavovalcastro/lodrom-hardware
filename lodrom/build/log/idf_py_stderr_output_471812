@@ -1,0 +1,76 @@
+In file included from /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:5:
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c: In function 'mqtt_event_handler_cb':
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:42:36: error: 'esp_mqtt_event_t' has no member named 'user_context'
+   42 |              event->event_id, event->user_context);
+      |                                    ^~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log.h:435:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  435 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:41:5: note: in expansion of macro 'ESP_LOGI'
+   41 |     ESP_LOGI(MQTT_TAG, "MQTT Event received - ID: %d, User context: %p",
+      |     ^~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:42:36: error: 'esp_mqtt_event_t' has no member named 'user_context'
+   42 |              event->event_id, event->user_context);
+      |                                    ^~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log.h:436:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:41:5: note: in expansion of macro 'ESP_LOGI'
+   41 |     ESP_LOGI(MQTT_TAG, "MQTT Event received - ID: %d, User context: %p",
+      |     ^~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:42:36: error: 'esp_mqtt_event_t' has no member named 'user_context'
+   42 |              event->event_id, event->user_context);
+      |                                    ^~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log.h:437:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:41:5: note: in expansion of macro 'ESP_LOGI'
+   41 |     ESP_LOGI(MQTT_TAG, "MQTT Event received - ID: %d, User context: %p",
+      |     ^~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:42:36: error: 'esp_mqtt_event_t' has no member named 'user_context'
+   42 |              event->event_id, event->user_context);
+      |                                    ^~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log.h:438:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:41:5: note: in expansion of macro 'ESP_LOGI'
+   41 |     ESP_LOGI(MQTT_TAG, "MQTT Event received - ID: %d, User context: %p",
+      |     ^~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:42:36: error: 'esp_mqtt_event_t' has no member named 'user_context'
+   42 |              event->event_id, event->user_context);
+      |                                    ^~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log.h:439:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:41:5: note: in expansion of macro 'ESP_LOGI'
+   41 |     ESP_LOGI(MQTT_TAG, "MQTT Event received - ID: %d, User context: %p",
+      |     ^~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c: In function 'mqtt_init':
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:174:62: warning: passing argument 3 of 'esp_mqtt_client_register_event' from incompatible pointer type [-Wincompatible-pointer-types]
+  174 |     esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, mqtt_event_handler_cb, client);
+      |                                                              ^~~~~~~~~~~~~~~~~~~~~
+      |                                                              |
+      |                                                              esp_err_t (*)(esp_mqtt_event_t *) {aka int (*)(esp_mqtt_event_t *)}
+In file included from /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.h:4,
+                 from /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:1:
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/mqtt/esp-mqtt/include/mqtt_client.h:629:62: note: expected 'esp_event_handler_t' {aka 'void (*)(void *, const char *, long int,  void *)'} but argument is of type 'esp_err_t (*)(esp_mqtt_event_t *)' {aka 'int (*)(esp_mqtt_event_t *)'}
+  629 |                                          esp_event_handler_t event_handler,
+      |                                          ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:132: esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_mqtt.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:6207: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

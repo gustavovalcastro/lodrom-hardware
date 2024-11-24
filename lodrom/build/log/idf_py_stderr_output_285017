@@ -1,0 +1,17 @@
+In file included from /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/driver/deprecated/driver/i2s.h:23,
+                 from /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_audio.c:4:
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/driver/deprecated/driver/i2s.h:27:2: warning: #warning "This set of I2S APIs has been deprecated, please include 'driver/i2s_std.h', 'driver/i2s_pdm.h' or 'driver/i2s_tdm.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress legacy driver deprecated warning' option under 'I2S Configuration' menu in Kconfig" [-Wcpp]
+   27 | #warning "This set of I2S APIs has been deprecated, \
+      |  ^~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_audio.c: In function 'lodrom_audio_play':
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_audio.c:213:5: error: implicit declaration of function 'vtaskDelay'; did you mean 'vTaskDelay'? [-Werror=implicit-function-declaration]
+  213 |     vtaskDelay(2000);
+      |     ^~~~~~~~~~
+      |     vTaskDelay
+cc1: some warnings being treated as errors
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:118: esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_audio.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:6207: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

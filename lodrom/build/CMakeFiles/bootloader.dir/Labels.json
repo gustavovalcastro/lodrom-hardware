@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}

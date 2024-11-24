@@ -1,0 +1,21 @@
+[  0%] Generating /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/esp-idf/esp_system/ld/memory.ld linker script...
+[  0%] Generating /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/esp-idf/esp_system/ld/sections.ld.in linker script...
+[  0%] Generating ../../partition_table/partition-table.bin
+[  0%] Generating project_elf_src_esp32.c
+[  0%] Built target custom_bundle
+[  0%] Built target _project_elf_src
+[  0%] Built target memory.ld
+[  0%] Built target sections.ld.in
+Partition table binary generated. Contents:
+[  0%] Building C object esp-idf/esp_https_ota/CMakeFiles/__idf_esp_https_ota.dir/src/esp_https_ota.c.obj
+*******************************************************************************
+# ESP-IDF Partition Table
+# Name, Type, SubType, Offset, Size, Flags
+nvs,data,nvs,0x9000,24K,
+phy_init,data,phy,0xf000,4K,
+factory,app,factory,0x10000,2M,
+storage,data,spiffs,0x210000,960K,
+*******************************************************************************
+[  0%] Built target partition_table_bin
+[  0%] Linking C static library libesp_https_ota.a
+[  0%] Built target __idf_esp_https_ota

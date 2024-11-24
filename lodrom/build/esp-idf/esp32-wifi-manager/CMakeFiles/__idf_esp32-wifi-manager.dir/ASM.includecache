@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/code.js.S
+
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/index.html.S
+
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/style.css.S
+

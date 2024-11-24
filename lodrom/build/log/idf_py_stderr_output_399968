@@ -1,0 +1,12 @@
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c: In function 'app_main':
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c:85:30: warning: unused variable 'mqtt_client' [-Wunused-variable]
+   85 |     esp_mqtt_client_handle_t mqtt_client = mqtt_init();
+      |                              ^~~~~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c:69:17: warning: unused variable 'url' [-Wunused-variable]
+   69 |     const char *url = "https://lodrom-polly.s3.us-east-1.amazonaws.com/ALVORADA/recado_4c095bcb-8689-44c5-87c9-75984b839726.wav";
+      |                 ^~~
+In file included from /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c:18:
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.h: At top level:
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.h:22:18: warning: 'mqtt_event_handler_cb' declared 'static' but never defined [-Wunused-function]
+   22 | static esp_err_t mqtt_event_handler_cb(esp_mqtt_event_handle_t event);
+      |                  ^~~~~~~~~~~~~~~~~~~~~

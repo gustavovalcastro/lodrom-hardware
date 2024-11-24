@@ -1,0 +1,61 @@
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c: In function 'mqtt_event_handler_cb':
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:77:9: error: switch jumps into scope of identifier with variably modified type
+   77 |         case MQTT_EVENT_ERROR:
+      |         ^~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:40:5: note: switch starts here
+   40 |     switch (event->event_id) {
+      |     ^~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:66:18: note: 'data' declared here
+   66 |             char data[event->data_len + 1];
+      |                  ^~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:77:9: error: switch jumps into scope of identifier with variably modified type
+   77 |         case MQTT_EVENT_ERROR:
+      |         ^~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:40:5: note: switch starts here
+   40 |     switch (event->event_id) {
+      |     ^~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:65:18: note: 'topic' declared here
+   65 |             char topic[event->topic_len + 1];
+      |                  ^~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:91:9: error: switch jumps into scope of identifier with variably modified type
+   91 |         default:
+      |         ^~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:40:5: note: switch starts here
+   40 |     switch (event->event_id) {
+      |     ^~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:66:18: note: 'data' declared here
+   66 |             char data[event->data_len + 1];
+      |                  ^~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:91:9: error: switch jumps into scope of identifier with variably modified type
+   91 |         default:
+      |         ^~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:40:5: note: switch starts here
+   40 |     switch (event->event_id) {
+      |     ^~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:65:18: note: 'topic' declared here
+   65 |             char topic[event->topic_len + 1];
+      |                  ^~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:40:5: error: enumeration value 'MQTT_EVENT_ANY' not handled in switch [-Werror=switch]
+   40 |     switch (event->event_id) {
+      |     ^~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:40:5: error: enumeration value 'MQTT_EVENT_ERROR' not handled in switch [-Werror=switch]
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:40:5: error: enumeration value 'MQTT_EVENT_UNSUBSCRIBED' not handled in switch [-Werror=switch]
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:40:5: error: enumeration value 'MQTT_EVENT_PUBLISHED' not handled in switch [-Werror=switch]
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:40:5: error: enumeration value 'MQTT_EVENT_BEFORE_CONNECT' not handled in switch [-Werror=switch]
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:40:5: error: enumeration value 'MQTT_EVENT_DELETED' not handled in switch [-Werror=switch]
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:40:5: error: enumeration value 'MQTT_USER_EVENT' not handled in switch [-Werror=switch]
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c: In function 'mqtt_init':
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:177:85: warning: passing argument 3 of 'esp_mqtt_client_register_event' from incompatible pointer type [-Wincompatible-pointer-types]
+  177 |     esp_err_t reg_result = esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, mqtt_event_handler_cb, client);
+      |                                                                                     ^~~~~~~~~~~~~~~~~~~~~
+      |                                                                                     |
+      |                                                                                     esp_err_t (*)(esp_mqtt_event_t *) {aka int (*)(esp_mqtt_event_t *)}
+In file included from /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.h:4,
+                 from /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:1:
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/mqtt/esp-mqtt/include/mqtt_client.h:629:62: note: expected 'esp_event_handler_t' {aka 'void (*)(void *, const char *, long int,  void *)'} but argument is of type 'esp_err_t (*)(esp_mqtt_event_t *)' {aka 'int (*)(esp_mqtt_event_t *)'}
+  629 |                                          esp_event_handler_t event_handler,
+      |                                          ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+cc1: some warnings being treated as errors
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:132: esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_mqtt.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:6207: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

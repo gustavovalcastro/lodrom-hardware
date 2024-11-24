@@ -1,0 +1,18 @@
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c: In function 'mqtt_init':
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:86:62: warning: passing argument 3 of 'esp_mqtt_client_register_event' from incompatible pointer type [-Wincompatible-pointer-types]
+   86 |     esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, mqtt_event_handler_cb, client);
+      |                                                              ^~~~~~~~~~~~~~~~~~~~~
+      |                                                              |
+      |                                                              esp_err_t (*)(esp_mqtt_event_t *) {aka int (*)(esp_mqtt_event_t *)}
+In file included from /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.h:4,
+                 from /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:1:
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/mqtt/esp-mqtt/include/mqtt_client.h:629:62: note: expected 'esp_event_handler_t' {aka 'void (*)(void *, const char *, long int,  void *)'} but argument is of type 'esp_err_t (*)(esp_mqtt_event_t *)' {aka 'int (*)(esp_mqtt_event_t *)'}
+  629 |                                          esp_event_handler_t event_handler,
+      |                                          ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c: In function 'app_main':
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c:87:30: warning: unused variable 'mqtt_client' [-Wunused-variable]
+   87 |     esp_mqtt_client_handle_t mqtt_client = mqtt_init();
+      |                              ^~~~~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c:69:17: warning: unused variable 'url' [-Wunused-variable]
+   69 |     const char *url = "https://lodrom-polly.s3.us-east-1.amazonaws.com/ALVORADA/recado_4c095bcb-8689-44c5-87c9-75984b839726.wav";
+      |                 ^~~

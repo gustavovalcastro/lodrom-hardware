@@ -1,0 +1,104 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 22 2024 00:55:14[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (91) boot:  3 storage          Unknown data     01 82 00210000 000f0000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2bb24h (178980) map[0m
+[0;32mI (173) esp_image: segment 1: paddr=0003bb4c vaddr=3ffb0000 size=04058h ( 16472) load[0m
+[0;32mI (179) esp_image: segment 2: paddr=0003fbac vaddr=40080000 size=0046ch (  1132) load[0m
+[0;32mI (180) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a0ab0h (658096) map[0m
+[0;32mI (412) esp_image: segment 4: paddr=000e0ad8 vaddr=4008046c size=17ce0h ( 97504) load[0m
+[0;32mI (463) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (463) boot: Disabling RNG early entropy source...[0m
+[0;32mI (475) cpu_start: Multicore app[0m
+[0;32mI (483) cpu_start: Pro cpu start user code[0m
+[0;32mI (483) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (483) app_init: Application information:[0m
+[0;32mI (486) app_init: Project name:     lodrom[0m
+[0;32mI (491) app_init: App version:      8fa4d45[0m
+[0;32mI (496) app_init: Compile time:     Nov 22 2024 00:55:41[0m
+[0;32mI (502) app_init: ELF file SHA256:  c8ee46aa1...[0m
+[0;32mI (507) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (512) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (517) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (522) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (527) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (534) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (540) heap_init: At 3FFB8460 len 00027BA0 (158 KiB): DRAM[0m
+[0;32mI (546) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (552) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (559) heap_init: At 4009814C len 00007EB4 (31 KiB): IRAM[0m
+[0;32mI (567) spi_flash: detected chip: generic[0m
+[0;32mI (570) spi_flash: flash io: dio[0m
+[0;33mW (574) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;33mW (582) i2s(legacy): legacy i2s driver is deprecated, please migrate to use driver/i2s_std.h, driver/i2s_pdm.h or driver/i2s_tdm.h[0m
+[0;32mI (595) main_task: Started on CPU0[0m
+[0;32mI (605) main_task: Calling app_main()[0m
+[0;32mI (655) lodrom_spiffs: Partition size: total: 896321, used: 185991[0m
+[0;32mI (655) LODROM_AUDIO: Initializing I2S...[0m
+[0;32mI (655) LODROM_AUDIO: I2S initialized[0m
+[0;32mI (665) Main: Credentials file exists[0m
+[0;32mI (665) lodrom_spiffs: Listing files in /spiffs:[0m
+[0;32mI (665) lodrom_spiffs: Found file: sample_audio.wav[0m
+[0;32mI (675) lodrom_spiffs: Found file: credentials.json[0m
+[0;32mI (705) wifi_manager: Set STA IP String to: 0.0.0.0[0m
+[0;32mI (705) lodrom_wifi_start: Waiting for Wi-Fi connection...[0m
+[0;32mI (715) wifi_init: rx ba win: 6[0m
+[0;32mI (715) wifi_init: accept mbox: 6[0m
+[0;32mI (715) wifi_init: tcpip mbox: 32[0m
+[0;32mI (725) wifi_init: udp mbox: 6[0m
+[0;32mI (725) wifi_init: tcp mbox: 6[0m
+[0;32mI (725) wifi_init: tcp tx win: 5760[0m
+[0;32mI (735) wifi_init: tcp rx win: 5760[0m
+[0;32mI (735) wifi_init: tcp mss: 1440[0m
+[0;32mI (735) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (745) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (915) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;32mI (995) wifi_manager: [0m
+[0;32mI (995) http_server: Registering URI handlers[0m
+[0;32mI (995) wifi_manager: MESSAGE: ORDER_LOAD_AND_RESTORE_STA[0m
+[0;32mI (995) wifi_manager: wifi_manager_fetch_wifi_sta_config: ssid:ApG2.4#1 password:le091064*[0m
+[0;32mI (1005) wifi_manager: Saved wifi found on startup. Will attempt to connect.[0m
+[0;32mI (1015) wifi_manager: MESSAGE: ORDER_CONNECT_STA[0m
+[0;32mI (2245) wifi_manager: WIFI_EVENT_STA_CONNECTED[0m
+[0;32mI (3745) esp_netif_handlers: sta ip: 192.168.70.20, mask: 255.255.255.0, gw: 192.168.70.1[0m
+[0;32mI (3745) wifi_manager: IP_EVENT_STA_GOT_IP[0m
+[0;32mI (3745) wifi_manager: WM_EVENT_STA_GOT_IP[0m
+[0;32mI (3745) wifi_manager: Set STA IP String to: 192.168.70.20[0m
+[0;32mI (3755) lodrom_wifi_start: Connected to WiFi. Got IP: 192.168.70.20[0m
+[0;32mI (3765) lodrom_wifi_start: Wi-Fi connected and IP address obtained.[0m
+[0;31mE (3795) lodrom_json_read: Failed to open file: /spiffs/audio_files.json[0m
+[0;31mE (3795) lodrom_json_read: Failed to read JSON file[0m
+[0;32mI (3825) SPIFFS: File size of /spiffs/sample_audio.wav: 183688 bytes[0m
+[0;32mI (3825) AUDIO: WAV File Details:[0m
+[0;32mI (3825) AUDIO: Sample Rate: 16000 Hz[0m
+[0;32mI (3825) AUDIO: Channels: 1[0m
+[0;32mI (3835) AUDIO: Bit Depth: 16[0m
+[0;32mI (3835) AUDIO: Data Bytes: 183644[0m
+[0;32mI (3835) AUDIO: WAV file is valid. Ready to play![0m
+[0;32mI (3845) Main: Finished Playing![0m
+[0;32mI (6145) LODROM_AUDIO: Playing WAV file: /spiffs/sample_audio.wav[0m
+[0;32mI (6145) LODROM_AUDIO: WAV file valid. Starting playback...[0m
+[0;32mI (11395) LODROM_AUDIO: Playback finished[0m

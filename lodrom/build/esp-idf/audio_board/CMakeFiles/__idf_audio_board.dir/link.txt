@@ -1,0 +1,2 @@
+/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-ar qc libaudio_board.a CMakeFiles/__idf_audio_board.dir/lyrat_v4_3/board.c.obj CMakeFiles/__idf_audio_board.dir/lyrat_v4_3/board_pins_config.c.obj
+/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-ranlib libaudio_board.a

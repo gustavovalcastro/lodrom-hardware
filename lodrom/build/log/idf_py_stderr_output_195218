@@ -1,0 +1,165 @@
+/home/betelgeuse/appdata/esp/esp-adf/components/coredump_upload_service/coredump_upload_service.c: In function 'coredump_read':
+/home/betelgeuse/appdata/esp/esp-adf/components/coredump_upload_service/coredump_upload_service.c:84:24: warning: passing argument 2 of 'esp_rom_spiflash_read' from incompatible pointer type [-Wincompatible-pointer-types]
+   84 |     if (SPI_READ(addr, *des, *len) != ESP_OK) {
+      |                        ^~~~
+      |                        |
+      |                        uint8_t * {aka unsigned char *}
+In file included from /home/betelgeuse/appdata/esp/esp-adf/components/coredump_upload_service/coredump_upload_service.c:44:
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_rom/include/esp_rom_spiflash.h:252:78: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  252 | esp_rom_spiflash_result_t esp_rom_spiflash_read(uint32_t src_addr, uint32_t *dest, int32_t len);
+      |                                                                    ~~~~~~~~~~^~~~
+/home/betelgeuse/appdata/esp/esp-adf/components/esp-adf-libs/esp_codec/audio_forge.c: In function 'audio_forge_sonic_set_speed':
+/home/betelgeuse/appdata/esp/esp-adf/components/esp-adf-libs/esp_codec/audio_forge.c:993:15: warning: using integer absolute value function 'abs' when argument is of floating-point type 'float' [-Wabsolute-value]
+  993 |     if ((int)(abs((sonic_speed - audio_forge->sonic_speed) * 100)) <= 5) {
+      |               ^~~
+/home/betelgeuse/appdata/esp/esp-adf/components/esp-adf-libs/esp_codec/audio_forge.c: In function 'audio_forge_sonic_set_pitch':
+/home/betelgeuse/appdata/esp/esp-adf/components/esp-adf-libs/esp_codec/audio_forge.c:1018:15: warning: using integer absolute value function 'abs' when argument is of floating-point type 'float' [-Wabsolute-value]
+ 1018 |     if ((int)(abs((sonic_pitch - audio_forge->sonic_pitch) * 100)) <= 5) {
+      |               ^~~
+In file included from /home/betelgeuse/appdata/esp/esp-adf/components/esp-adf-libs/media_lib_sal/port/media_lib_os_freertos.c:43:
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/esp_additions/include/freertos/task_snapshot.h:8:2: warning: #warning freertos/task_snapshot.h header is no longer used, and will be removed in future versions. [-Wcpp]
+    8 | #warning freertos/task_snapshot.h header is no longer used, and will be removed in future versions.
+      |  ^~~~~~~
+In file included from /home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/include/periph_adc_button.h:28,
+                 from /home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/periph_adc_button.c:28:
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/periph_console.c: In function '_console_init':
+/home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/periph_console.c:252:5: warning: 'esp_vfs_dev_uart_port_set_rx_line_endings' is deprecated: Please use uart_vfs_dev_port_set_rx_line_endings() instead [-Wdeprecated-declarations]
+  252 |     esp_vfs_dev_uart_port_set_rx_line_endings(CONFIG_ESP_CONSOLE_UART_NUM, ESP_LINE_ENDINGS_CR);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/periph_console.c:29:
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/vfs/include/esp_vfs_dev.h:22:5: note: declared here
+   22 | int esp_vfs_dev_uart_port_set_rx_line_endings(int uart_num, esp_line_endings_t mode) __attribute__((deprecated("Please use uart_vfs_dev_port_set_rx_line_endings() instead")));
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/periph_console.c:258:5: warning: 'esp_vfs_dev_uart_port_set_tx_line_endings' is deprecated: Please use uart_vfs_dev_port_set_tx_line_endings() instead [-Wdeprecated-declarations]
+  258 |     esp_vfs_dev_uart_port_set_tx_line_endings(CONFIG_ESP_CONSOLE_UART_NUM, ESP_LINE_ENDINGS_CRLF);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/vfs/include/esp_vfs_dev.h:24:5: note: declared here
+   24 | int esp_vfs_dev_uart_port_set_tx_line_endings(int uart_num, esp_line_endings_t mode) __attribute__((deprecated("Please use uart_vfs_dev_port_set_tx_line_endings() instead")));
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/periph_console.c:271:5: warning: 'esp_vfs_dev_uart_use_driver' is deprecated: Please use uart_vfs_dev_use_driver() instead [-Wdeprecated-declarations]
+  271 |     esp_vfs_dev_uart_use_driver(CONFIG_ESP_CONSOLE_UART_NUM);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/vfs/include/esp_vfs_dev.h:20:6: note: declared here
+   20 | void esp_vfs_dev_uart_use_driver(int uart_num) __attribute__((deprecated("Please use uart_vfs_dev_use_driver() instead")));
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/periph_wifi.c:26:
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/wpa_supplicant/esp_supplicant/include/esp_wpa2.h:10:9: note: '#pragma message: esp_wpa2.h is deprecated. Use esp_eap_client.h instead.'
+   10 | #pragma message("esp_wpa2.h is deprecated. Use esp_eap_client.h instead.")
+      |         ^~~~~~~
+In file included from /home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/periph_ws2812.c:29:
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/driver/deprecated/driver/rmt.h:18:2: warning: #warning "The legacy RMT driver is deprecated, please use driver/rmt_tx.h and/or driver/rmt_rx.h" [-Wcpp]
+   18 | #warning "The legacy RMT driver is deprecated, please use driver/rmt_tx.h and/or driver/rmt_rx.h"
+      |  ^~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/periph_wifi.c: In function '_wifi_init':
+/home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/periph_wifi.c:436:9: warning: 'esp_wifi_sta_wpa2_ent_set_ca_cert' is deprecated: Use 'esp_eap_client_set_ca_cert' instead [-Wdeprecated-declarations]
+  436 |         ESP_ERROR_CHECK(esp_wifi_sta_wpa2_ent_set_ca_cert((const unsigned char *)periph_wifi->wpa2_e_cfg->ca_pem_start, ca_pem_bytes));
+      |         ^~~~~~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/wpa_supplicant/esp_supplicant/include/esp_wpa2.h:171:11: note: declared here
+  171 | esp_err_t esp_wifi_sta_wpa2_ent_set_ca_cert(const unsigned char *ca_cert, int ca_cert_len);
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/periph_wifi.c:437:9: warning: 'esp_wifi_sta_wpa2_ent_set_cert_key' is deprecated: Use 'esp_eap_client_set_certificate_and_key' instead [-Wdeprecated-declarations]
+  437 |         ESP_ERROR_CHECK(esp_wifi_sta_wpa2_ent_set_cert_key((const unsigned char *)periph_wifi->wpa2_e_cfg->wpa2_e_cert_start, client_crt_bytes, \
+      |         ^~~~~~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/wpa_supplicant/esp_supplicant/include/esp_wpa2.h:203:11: note: declared here
+  203 | esp_err_t esp_wifi_sta_wpa2_ent_set_cert_key(const unsigned char *client_cert, int client_cert_len,
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/periph_wifi.c:439:9: warning: 'esp_wifi_sta_wpa2_ent_set_identity' is deprecated: Use 'esp_eap_client_set_identity' instead [-Wdeprecated-declarations]
+  439 |         ESP_ERROR_CHECK(esp_wifi_sta_wpa2_ent_set_identity((uint8_t *)periph_wifi->wpa2_e_cfg->eap_id, strlen(periph_wifi->wpa2_e_cfg->eap_id)));
+      |         ^~~~~~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/wpa_supplicant/esp_supplicant/include/esp_wpa2.h:62:11: note: declared here
+   62 | esp_err_t esp_wifi_sta_wpa2_ent_set_identity(const unsigned char *identity, int len);
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/periph_wifi.c:441:13: warning: 'esp_wifi_sta_wpa2_ent_set_username' is deprecated: Use 'esp_eap_client_set_username' instead [-Wdeprecated-declarations]
+  441 |             ESP_ERROR_CHECK(esp_wifi_sta_wpa2_ent_set_username((uint8_t *)periph_wifi->wpa2_e_cfg->eap_username, strlen(periph_wifi->wpa2_e_cfg->eap_username)));
+      |             ^~~~~~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/wpa_supplicant/esp_supplicant/include/esp_wpa2.h:89:11: note: declared here
+   89 | esp_err_t esp_wifi_sta_wpa2_ent_set_username(const unsigned char *username, int len);
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/periph_wifi.c:442:13: warning: 'esp_wifi_sta_wpa2_ent_set_password' is deprecated: Use 'esp_eap_client_set_password' instead [-Wdeprecated-declarations]
+  442 |             ESP_ERROR_CHECK(esp_wifi_sta_wpa2_ent_set_password((uint8_t *)periph_wifi->wpa2_e_cfg->eap_password, strlen(periph_wifi->wpa2_e_cfg->eap_password)));
+      |             ^~~~~~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/wpa_supplicant/esp_supplicant/include/esp_wpa2.h:115:11: note: declared here
+  115 | esp_err_t esp_wifi_sta_wpa2_ent_set_password(const unsigned char *password, int len);
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/periph_wifi.c:446:9: warning: 'esp_wifi_sta_wpa2_ent_enable' is deprecated: Use 'esp_wifi_sta_enterprise_enable' instead [-Wdeprecated-declarations]
+  446 |         ESP_ERROR_CHECK(esp_wifi_sta_wpa2_ent_enable());
+      |         ^~~~~~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/wpa_supplicant/esp_supplicant/include/esp_wpa2.h:28:11: note: declared here
+   28 | esp_err_t esp_wifi_sta_wpa2_ent_enable(void);
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:12,
+                 from /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_hw_support/include/esp_cpu.h:20,
+                 from /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_hw_support/include/spinlock.h:11,
+                 from /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:49,
+                 from /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:57,
+                 from /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:69,
+                 from /home/betelgeuse/appdata/esp/esp-adf/components/audio_hal/include/audio_hal.h:27,
+                 from /home/betelgeuse/appdata/esp/esp-adf/components/audio_board/lyrat_v4_3/board.h:28,
+                 from /home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/periph_lcd.c:27:
+/home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/periph_lcd.c: In function '_setup_lcd':
+/home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/periph_lcd.c:102:46: warning: passing argument 1 of 'periph_lcd->new_panel_io' makes pointer from integer without a cast [-Wint-conversion]
+  102 |     ESP_ERROR_CHECK(periph_lcd->new_panel_io((esp_lcd_spi_bus_handle_t)periph_lcd->io_bus,
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                              |
+      |                                              int
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/periph_lcd.c:102:46: note: expected 'void *' but argument is of type 'int'
+  102 |     ESP_ERROR_CHECK(periph_lcd->new_panel_io((esp_lcd_spi_bus_handle_t)periph_lcd->io_bus,
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+In file included from /home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/lib/adc_button/adc_button.c:29:
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from /home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/lib/adc_button/adc_button.c:32:
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/lib/adc_button/adc_button.c: In function 'get_adc_voltage':
+/home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/lib/adc_button/adc_button.c:152:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  152 |     esp_adc_cal_characterize(ADC_UNIT_1, ADC_ATTEN_11db, ADC_WIDTH_12Bit, V_REF, &characteristics);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/driver/deprecated/driver/adc_types_legacy.h:8,
+                 from /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/driver/deprecated/driver/adc.h:15:
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/lib/adc_button/adc_button.c: In function 'button_task':
+/home/betelgeuse/appdata/esp/esp-adf/components/esp_peripherals/lib/adc_button/adc_button.c:292:9: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  292 |         adc1_config_channel_atten(info->adc_ch, ADC_ATTEN_11db);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/components/dueros_service/dueros_esp_flash.c: In function 'duer_flash_string_init':
+/home/betelgeuse/appdata/esp/esp-adf/components/dueros_service/dueros_esp_flash.c:83:22: warning: assignment to 'unsigned int *' from incompatible pointer type 'uint32_t *' {aka 'long unsigned int *'} [-Wincompatible-pointer-types]
+   83 |         rt->ele_list = (uint32_t *)audio_malloc(sizeof(uint32_t) * rt->max_ele_count);
+      |                      ^
+/home/betelgeuse/appdata/esp/esp-adf/components/dueros_service/duer_wifi_cfg.c:129:22: warning: initialization of 'int (*)(uint8_t *, size_t,  uint16_t)' {aka 'int (*)(unsigned char *, unsigned int,  short unsigned int)'} from incompatible pointer type 'int (*)(uint8_t *, uint32_t,  uint16_t)' {aka 'int (*)(unsigned char *, long unsigned int,  short unsigned int)'} [-Wincompatible-pointer-types]
+  129 |     .ble_send_data = duer_ble_send_data,
+      |                      ^~~~~~~~~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/components/dueros_service/duer_wifi_cfg.c:129:22: note: (near initialization for 'dipb_cbs.ble_send_data')
+In file included from /home/betelgeuse/appdata/esp/esp-adf/components/audio_stream/include/pwm_stream.h:29,
+                 from /home/betelgeuse/appdata/esp/esp-adf/components/audio_stream/pwm_stream.c:39:
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/driver/deprecated/driver/timer.h:16:2: warning: #warning "legacy timer group driver is deprecated, please migrate to driver/gptimer.h" [-Wcpp]
+   16 | #warning "legacy timer group driver is deprecated, please migrate to driver/gptimer.h"
+      |  ^~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c: In function 'app_main':
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c:69:17: warning: unused variable 'url' [-Wunused-variable]
+   69 |     const char *url = "https://lodrom-polly.s3.us-east-1.amazonaws.com/ALVORADA/recado_4c095bcb-8689-44c5-87c9-75984b839726.wav";
+      |                 ^~~
+In file included from /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/driver/deprecated/driver/i2s.h:23,
+                 from /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_audio.c:4:
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/driver/deprecated/driver/i2s.h:27:2: warning: #warning "This set of I2S APIs has been deprecated, please include 'driver/i2s_std.h', 'driver/i2s_pdm.h' or 'driver/i2s_tdm.h' instead. if you want to keep using the old APIs and ignore this warning, you can enable 'Suppress legacy driver deprecated warning' option under 'I2S Configuration' menu in Kconfig" [-Wcpp]
+   27 | #warning "This set of I2S APIs has been deprecated, \
+      |  ^~~~~~~

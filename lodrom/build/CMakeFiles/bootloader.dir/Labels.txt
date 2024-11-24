@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles/bootloader
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles/bootloader.rule
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles/bootloader-complete.rule
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

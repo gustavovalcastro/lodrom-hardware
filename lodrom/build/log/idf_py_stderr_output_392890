@@ -1,0 +1,58 @@
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c: In function 'mqtt_init':
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:30:9: error: 'broker_t' undeclared (first use in this function)
+   30 |         broker_t.uri = "mqtts://" BROKER, // Use mqtts for SSL connection
+      |         ^~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:30:9: note: each undeclared identifier is reported only once for each function it appears in
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:31:10: error: 'esp_mqtt_client_config_t' has no member named 'port'
+   31 |         .port = PORT,
+      |          ^~~~
+In file included from /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:1:
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.h:8:14: warning: initialization of 'const char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+    8 | #define PORT 8883
+      |              ^~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:31:17: note: in expansion of macro 'PORT'
+   31 |         .port = PORT,
+      |                 ^~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.h:8:14: note: (near initialization for 'mqtt_cfg.credentials.username')
+    8 | #define PORT 8883
+      |              ^~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:31:17: note: in expansion of macro 'PORT'
+   31 |         .port = PORT,
+      |                 ^~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:32:10: error: 'esp_mqtt_client_config_t' has no member named 'username'
+   32 |         .username = USERNAME,
+      |          ^~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:33:10: error: 'esp_mqtt_client_config_t' has no member named 'password'
+   33 |         .password = PASSWORD,
+      |          ^~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.h:11:18: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   11 | #define PASSWORD "Lodrom123"
+      |                  ^~~~~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:33:21: note: in expansion of macro 'PASSWORD'
+   33 |         .password = PASSWORD,
+      |                     ^~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.h:11:18: note: (near initialization for 'mqtt_cfg.network.reconnect_timeout_ms')
+   11 | #define PASSWORD "Lodrom123"
+      |                  ^~~~~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:33:21: note: in expansion of macro 'PASSWORD'
+   33 |         .password = PASSWORD,
+      |                     ^~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:34:10: error: 'esp_mqtt_client_config_t' has no member named 'cert_pem'
+   34 |         .cert_pem = NULL, // Add your CA certificate if needed
+      |          ^~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:34:21: warning: initialization of 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+   34 |         .cert_pem = NULL, // Add your CA certificate if needed
+      |                     ^~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:34:21: note: (near initialization for 'mqtt_cfg.task.priority')
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:38:62: warning: passing argument 3 of 'esp_mqtt_client_register_event' from incompatible pointer type [-Wincompatible-pointer-types]
+   38 |     esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, mqtt_event_handler_cb, client);
+      |                                                              ^~~~~~~~~~~~~~~~~~~~~
+      |                                                              |
+      |                                                              esp_err_t (*)(esp_mqtt_event_t *) {aka int (*)(esp_mqtt_event_t *)}
+In file included from /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.h:4:
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/mqtt/esp-mqtt/include/mqtt_client.h:629:62: note: expected 'esp_event_handler_t' {aka 'void (*)(void *, const char *, long int,  void *)'} but argument is of type 'esp_err_t (*)(esp_mqtt_event_t *)' {aka 'int (*)(esp_mqtt_event_t *)'}
+  629 |                                          esp_event_handler_t event_handler,
+      |                                          ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:132: esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_mqtt.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:6213: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

@@ -1,0 +1,10 @@
+#ifndef LODROM_AUDIO_H
+#define LODROM_AUDIO_H
+
+static const char AUDIO_INIT_TAG[] = "lodrom_audio_init";
+static const char AUDIO_PLAYING_TAG[] = "lodrom_audio_playing";
+
+void init_audio_player(void);
+void play_audio(const char *file_path);
+
+#endif // LODROM_AUDIO_H

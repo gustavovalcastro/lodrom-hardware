@@ -1,0 +1,79 @@
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c: In function 'mqtt_event_handler_cb':
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:27:40: error: 'esp_mqtt_error_codes_t' {aka 'struct esp_mqtt_error_codes'} has no member named 'error_stack'
+   27 |                 if (event->error_handle->error_stack) {
+      |                                        ^~
+In file included from /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:5:
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:28:78: error: 'esp_mqtt_error_codes_t' {aka 'struct esp_mqtt_error_codes'} has no member named 'error_stack'
+   28 |                     ESP_LOGE(MQTT_TAG, "Error stack: %s", event->error_handle->error_stack);
+      |                                                                              ^~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log.h:435:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  435 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log.h:365:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  365 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:28:21: note: in expansion of macro 'ESP_LOGE'
+   28 |                     ESP_LOGE(MQTT_TAG, "Error stack: %s", event->error_handle->error_stack);
+      |                     ^~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:28:78: error: 'esp_mqtt_error_codes_t' {aka 'struct esp_mqtt_error_codes'} has no member named 'error_stack'
+   28 |                     ESP_LOGE(MQTT_TAG, "Error stack: %s", event->error_handle->error_stack);
+      |                                                                              ^~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log.h:436:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  436 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log.h:365:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  365 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:28:21: note: in expansion of macro 'ESP_LOGE'
+   28 |                     ESP_LOGE(MQTT_TAG, "Error stack: %s", event->error_handle->error_stack);
+      |                     ^~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:28:78: error: 'esp_mqtt_error_codes_t' {aka 'struct esp_mqtt_error_codes'} has no member named 'error_stack'
+   28 |                     ESP_LOGE(MQTT_TAG, "Error stack: %s", event->error_handle->error_stack);
+      |                                                                              ^~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log.h:437:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  437 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log.h:365:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  365 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:28:21: note: in expansion of macro 'ESP_LOGE'
+   28 |                     ESP_LOGE(MQTT_TAG, "Error stack: %s", event->error_handle->error_stack);
+      |                     ^~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:28:78: error: 'esp_mqtt_error_codes_t' {aka 'struct esp_mqtt_error_codes'} has no member named 'error_stack'
+   28 |                     ESP_LOGE(MQTT_TAG, "Error stack: %s", event->error_handle->error_stack);
+      |                                                                              ^~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log.h:438:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  438 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log.h:365:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  365 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:28:21: note: in expansion of macro 'ESP_LOGE'
+   28 |                     ESP_LOGE(MQTT_TAG, "Error stack: %s", event->error_handle->error_stack);
+      |                     ^~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:28:78: error: 'esp_mqtt_error_codes_t' {aka 'struct esp_mqtt_error_codes'} has no member named 'error_stack'
+   28 |                     ESP_LOGE(MQTT_TAG, "Error stack: %s", event->error_handle->error_stack);
+      |                                                                              ^~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log.h:439:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  439 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log.h:365:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  365 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:28:21: note: in expansion of macro 'ESP_LOGE'
+   28 |                     ESP_LOGE(MQTT_TAG, "Error stack: %s", event->error_handle->error_stack);
+      |                     ^~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c: In function 'mqtt_init':
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:97:62: warning: passing argument 3 of 'esp_mqtt_client_register_event' from incompatible pointer type [-Wincompatible-pointer-types]
+   97 |     esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, mqtt_event_handler_cb, client);
+      |                                                              ^~~~~~~~~~~~~~~~~~~~~
+      |                                                              |
+      |                                                              esp_err_t (*)(esp_mqtt_event_t *) {aka int (*)(esp_mqtt_event_t *)}
+In file included from /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.h:4,
+                 from /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:1:
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/mqtt/esp-mqtt/include/mqtt_client.h:629:62: note: expected 'esp_event_handler_t' {aka 'void (*)(void *, const char *, long int,  void *)'} but argument is of type 'esp_err_t (*)(esp_mqtt_event_t *)' {aka 'int (*)(esp_mqtt_event_t *)'}
+  629 |                                          esp_event_handler_t event_handler,
+      |                                          ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:132: esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_mqtt.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:6213: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

@@ -1,0 +1,63 @@
+[  0%] Built target _project_elf_src
+[  0%] Built target memory.ld
+[  0%] Built target sections.ld.in
+[  0%] Built target partition_table_bin
+[  0%] Built target custom_bundle
+[  0%] Performing build step for 'bootloader'
+[  0%] Built target __idf_esp_https_ota
+[  0%] Built target __idf_esp_http_server
+[  0%] Built target spiffs_storage_bin
+[  1%] Built target _project_elf_src
+[  5%] Built target __idf_log
+[  1%] Built target __idf_esp_http_client
+[ 11%] Built target __idf_esp_rom
+[  2%] Built target __idf_tcp_transport
+[ 13%] Built target __idf_esp_common
+[  2%] Built target __idf_esp_gdbstub
+[ 23%] Built target __idf_esp_hw_support
+[  3%] Built target __idf_esp_eth
+[ 25%] Built target __idf_esp_system
+[  3%] Built target __idf_esp_adc
+[ 32%] Built target __idf_efuse
+[  3%] Built target __idf_esp-tls
+[ 54%] Built target __idf_bootloader_support
+[  3%] Built target __idf_http_parser
+[ 56%] Built target __idf_esp_bootloader_format
+[  4%] Built target __idf_esp_wifi
+[ 58%] Built target __idf_spi_flash
+[  4%] Built target __idf_esp_coex
+[ 65%] Built target __idf_hal
+[ 67%] Built target __idf_micro-ecc
+[ 91%] Built target __idf_soc
+[ 10%] Built target __idf_wpa_supplicant
+[ 93%] Built target __idf_xtensa
+[ 95%] Built target __idf_main
+[ 11%] Built target __idf_esp_netif
+[ 98%] Built target bootloader.elf
+[100%] Built target gen_project_binary
+[ 17%] Built target __idf_lwip
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[ 17%] Built target __idf_vfs
+[100%] Built target bootloader_check_size
+[100%] Built target app
+[ 17%] Built target __idf_esp_vfs_console
+[ 17%] No install step for 'bootloader'
+[ 18%] Built target __idf_esp_phy
+[ 18%] Completed 'bootloader'
+[ 20%] Built target __idf_driver
+[ 21%] Built target bootloader
+[ 22%] Built target __idf_esp_driver_ledc
+[ 22%] Built target __idf_esp_driver_i2c
+[ 22%] Built target __idf_esp_driver_sdm
+[ 23%] Built target __idf_esp_driver_rmt
+[ 23%] Built target __idf_esp_driver_dac
+[ 23%] Built target __idf_esp_driver_sdio
+[ 24%] Built target __idf_esp_driver_sdspi
+[ 24%] Built target __idf_esp_driver_sdmmc
+[ 24%] Built target __idf_sdmmc
+[ 24%] Built target __idf_esp_driver_i2s
+[ 24%] Built target __idf_esp_driver_mcpwm
+[ 24%] Built target __idf_esp_driver_spi
+[ 24%] Built target __idf_esp_driver_pcnt
+[ 25%] Built target __idf_nvs_flash
+[ 25%] Built target __idf_esp_event

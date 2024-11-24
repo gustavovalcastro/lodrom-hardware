@@ -1,0 +1,15 @@
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c: In function 'test':
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c:73:33: warning: passing argument 1 of 'esp_mqtt_client_publish' from incompatible pointer type [-Wincompatible-pointer-types]
+   73 |         esp_mqtt_client_publish(client, TOPIC, test_message, strlen(test_message), 1, 0);
+      |                                 ^~~~~~
+      |                                 |
+      |                                 struct esp_mqtt_client **
+In file included from /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.h:4,
+                 from /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c:18:
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/mqtt/esp-mqtt/include/mqtt_client.h:555:54: note: expected 'esp_mqtt_client_handle_t' {aka 'struct esp_mqtt_client *'} but argument is of type 'struct esp_mqtt_client **'
+  555 | int esp_mqtt_client_publish(esp_mqtt_client_handle_t client, const char *topic,
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c: In function 'app_main':
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c:85:17: warning: unused variable 'url' [-Wunused-variable]
+   85 |     const char *url = "https://lodrom-polly.s3.us-east-1.amazonaws.com/ALVORADA/recado_4c095bcb-8689-44c5-87c9-75984b839726.wav";
+      |                 ^~~

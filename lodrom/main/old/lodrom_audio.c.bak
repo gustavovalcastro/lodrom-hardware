@@ -1,0 +1,77 @@
+#include "audio_pipeline.h"
+#include "audio_element.h"
+#include "i2s_stream.h"
+#include "mp3_decoder.h"
+#include "esp_log.h"
+
+#include "lodrom_audio.h"
+
+static audio_pipeline_handle_t pipeline;
+static audio_element_handle_t i2s_stream_writer, mp3_decoder;
+
+#define MP3_STREAM_RINGBUFFER_SIZE 4096  // Block size
+#define MP3_STREAM_RINGBUFFER_BLOCKS 16 // Number of blocks
+
+// Create the ring buffer for the MP3 decoder
+static ringbuf_handle_t mp3_ringbuf = NULL;
+
+void init_audio_player(void)
+{
+    ESP_LOGI(AUDIO_INIT_TAG, "Initializing audio pipeline");
+
+    // Configure the audio pipeline
+    audio_pipeline_cfg_t pipeline_cfg = DEFAULT_AUDIO_PIPELINE_CONFIG();
+    pipeline = audio_pipeline_init(&pipeline_cfg);
+
+    // Configure I2S stream
+    i2s_stream_cfg_t i2s_cfg = I2S_STREAM_CFG_DEFAULT_WITH_PARA(I2S_NUM_0, 44100, 16, AUDIO_STREAM_WRITER);
+    i2s_cfg.type = AUDIO_STREAM_WRITER;
+    i2s_stream_writer = i2s_stream_init(&i2s_cfg);
+
+    // Set custom I2S parameters (e.g., sample rate and bit width)
+    i2s_stream_set_clk(i2s_stream_writer, 44100, 16, 2); // 44100Hz, 16-bit, stereo
+
+    // Create and set ring buffer for MP3 decoder
+    mp3_ringbuf = rb_create(MP3_STREAM_RINGBUFFER_SIZE, MP3_STREAM_RINGBUFFER_BLOCKS); // Corrected
+    mp3_decoder_cfg_t mp3_cfg = DEFAULT_MP3_DECODER_CONFIG();
+    mp3_decoder = mp3_decoder_init(&mp3_cfg);
+    
+    // Set the ring buffer for the MP3 decoder
+    audio_element_set_input_ringbuf(mp3_decoder, mp3_ringbuf); // Corrected
+
+    // Register elements to the pipeline
+    audio_pipeline_register(pipeline, mp3_decoder, "mp3");
+    audio_pipeline_register(pipeline, i2s_stream_writer, "i2s");
+
+    // Link elements together in the pipeline
+    const char *link_tag[2] = {"mp3", "i2s"};
+    audio_pipeline_link(pipeline, link_tag, 2);
+
+    ESP_LOGI(AUDIO_INIT_TAG, "Audio pipeline initialized");
+}
+
+void play_audio(const char *file_path)
+{
+    ESP_LOGI(AUDIO_PLAYING_TAG, "Setting MP3 file URI: %s", file_path);
+
+    // Set the URI for the MP3 decoder
+    audio_element_set_uri(mp3_decoder, file_path);
+
+    // Start the audio pipeline
+    audio_pipeline_run(pipeline);
+
+    // Wait until playback is complete
+    audio_event_iface_msg_t msg;
+    while (1) {
+        if (audio_pipeline_wait_for_stop(pipeline) == ESP_OK) {
+            ESP_LOGI(AUDIO_PLAYING_TAG, "Playback finished");
+            break;
+        }
+    }
+
+    // Cleanup
+    audio_pipeline_stop(pipeline);
+    audio_pipeline_wait_for_stop(pipeline);
+    audio_pipeline_deinit(pipeline);
+    ESP_LOGI(AUDIO_PLAYING_TAG, "Audio pipeline deinitialized");
+}
