@@ -43,6 +43,9 @@ dad66a8614dd63bd82caa42d4d2d9e25 esp-idf/esp_system/ld/sections.ld.in
 6aa980c49c4cac1b9accbea67e9fabfc esp-idf/esptool_py/CMakeFiles/app-flash
 e748452fe2892b030bc0f8b1a426f127 esp-idf/esptool_py/CMakeFiles/app_check_size
 6ec054ce31451fe21edda02ad5e9fc35 esp-idf/esptool_py/CMakeFiles/encrypted-app-flash
+c6f1979fc550ae7a5df0690493800004 esp-idf/main/CMakeFiles/encrypted-storage-flash
+4740388d23f48ab7509782815a2f7e84 esp-idf/main/CMakeFiles/spiffs_storage_bin
+5a630d5fb58de3921cdbc6773e6f9bc0 esp-idf/main/CMakeFiles/storage-flash
 cc1db84054baa33614e71a881bc74c25 esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc
 d69cb0da4083fb7b44e7fe3473833a41 esp-idf/mbedtls/mbedtls/library/CMakeFiles/lib
 5dcdfd0774903dd6f1bf3131615f9dba esp-idf/mbedtls/x509_crt_bundle

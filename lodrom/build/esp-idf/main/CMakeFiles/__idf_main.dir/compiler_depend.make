@@ -408,7 +408,8 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_audio.c.obj: /home/betelgeuse/proj
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/include/xtensa_config.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/include/xtensa_context.h \
   config/sdkconfig.h \
-  /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_audio.h
+  /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_audio.h \
+  /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_pins.h
 
 esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_mqtt.c.obj: /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c \
   /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include/limits.h \

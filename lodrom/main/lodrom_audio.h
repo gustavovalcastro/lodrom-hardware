@@ -37,4 +37,8 @@ bool lodrom_audio_play(const char *file_path);
 
 bool read_and_validate_wav_header(const char *file_path, wav_header_t *wav_header);
 
+void play_samples(const char* samples[]);
+
+void play_samples_task(void *pvParameters);
+
 #endif // LODROM_AUDIO_H

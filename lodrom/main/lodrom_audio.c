@@ -3,6 +3,7 @@
 #include "esp_err.h"
 #include "driver/i2s.h"
 #include "esp_spiffs.h"
+#include "lodrom_pins.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -46,6 +47,25 @@ void lodrom_audio_init(void)
     ESP_ERROR_CHECK(i2s_set_pin(I2S_NUM, &pin_config));
 
     ESP_LOGI(AUDIO_TAG, "I2S initialized");
+}
+
+void play_samples_task(void *pvParameters) {
+    const char **samples = (const char **)pvParameters;
+    play_samples(samples);
+    vTaskDelete(NULL); // Delete the task when done
+}
+
+void play_samples(const char* samples[])
+{
+    hook_led_control = false;
+    gpio_set_level(PIN_HOOK_OUTPUT, 1);
+    lodrom_audio_play(samples[0]);
+    vTaskDelay(pdMS_TO_TICKS(1000));
+    lodrom_audio_play(samples[1]);
+    vTaskDelay(pdMS_TO_TICKS(1000));
+    lodrom_audio_play(samples[2]);
+    vTaskDelay(pdMS_TO_TICKS(1000));
+    hook_led_control = true;
 }
 
 // Function to read and validate WAV header

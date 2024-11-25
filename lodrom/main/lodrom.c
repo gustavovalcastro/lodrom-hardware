@@ -80,6 +80,22 @@ void handle_door_input()
     }
 }
 
+void handle_hook_input()
+{
+    static uint64_t last_interrupt_time = 0;
+
+    uint64_t current_time = esp_timer_get_time();
+    uint64_t time_since_last = current_time - last_interrupt_time;
+
+    if (time_since_last > DEBOUNCE_TIME_MS * 1000) { // Debounce
+        last_interrupt_time = current_time;
+        ESP_LOGI(TAG, "Hook is attached");
+
+        gpio_set_level(PIN_HOOK_OUTPUT, 1);
+        vTaskDelay(pdMS_TO_TICKS(1000));
+    }
+}
+
 void test(esp_mqtt_client_handle_t client)
 {
     static uint64_t last_interrupt_time = 0;
@@ -109,6 +125,15 @@ void timer_callback(TimerHandle_t xTimer) {
     ESP_LOGI(TAG, "There are notes for you!");
     is_timer_active = false; // Timer finished
 
+ // Define the audio samples
+    static const char *samples[] = {
+        "/spiffs/recado01.wav",
+        "/spiffs/recado02.wav",
+        "/spiffs/recado03.wav"
+    };
+
+    // Create a task to play the samples
+    xTaskCreate(play_samples_task, "Play Samples Task", 8192, samples, 5, NULL);
     xTaskCreate(api_event_5_task, "API Event 5 Task", 8192, NULL, 5, NULL);
 }
 
@@ -168,7 +193,10 @@ void app_main(void)
     spiffs_init();
     lodrom_audio_init();
 
-    const char *audio_path = "/spiffs/sample_audio.wav";
+    const char *audio01_path = "/spiffs/recado01.wav";
+    const char *audio02_path = "/spiffs/recado02.wav";
+    const char *audio03_path = "/spiffs/recado03.wav";
+    const char *audio_samples[] = {audio01_path, audio02_path, audio03_path};
     const char *url = "https://lodrom-polly.s3.us-east-1.amazonaws.com/ALVORADA/recado_4c095bcb-8689-44c5-87c9-75984b839726.wav";
     const char *json_path = "/spiffs/audio_files.json";
     const char *credentials_path = "/spiffs/credentials.json";
@@ -213,16 +241,18 @@ void app_main(void)
         ESP_LOGE(JSON_READ_TAG, "Failed to read JSON file");
     }
 
-    print_spiffs_file_size(audio_path);
+    print_spiffs_file_size(audio01_path);
+    print_spiffs_file_size(audio02_path);
+    print_spiffs_file_size(audio03_path);
 
     /*lodrom_audio_play(audio_path);*/
 
-    wav_header_t wav_header;
-    if (read_and_validate_wav_header(audio_path, &wav_header)) {
-        ESP_LOGI("AUDIO", "WAV file is valid. Ready to play!");
-    } else {
-        ESP_LOGE("AUDIO", "Failed to validate WAV file. Playback aborted.");
-    }
+    /*wav_header_t wav_header;*/
+    /*if (read_and_validate_wav_header(audio01_path, &wav_header)) {*/
+        /*ESP_LOGI("AUDIO", "WAV file is valid. Ready to play!");*/
+    /*} else {*/
+        /*ESP_LOGE("AUDIO", "Failed to validate WAV file. Playback aborted.");*/
+    /*}*/
 
     /*read_and_validate_wav_header(audio_path, &wav_header);*/
 
@@ -230,18 +260,18 @@ void app_main(void)
 
     while (true) {
         if (door_led_control) {
-            /*gpio_set_level(PIN_DOOR_OUTPUT, gpio_get_level(PIN_DOOR_INPUT));*/
             if (gpio_get_level(PIN_DOOR_INPUT) == 0) {
-                /*gpio_set_level(PIN_DOOR_OUTPUT, 0);*/
                 handle_door_input();
             }
-            /*else{*/
-                /*gpio_set_level(PIN_DOOR_OUTPUT, 1);*/
-            /*}*/
         }
 
         if (hook_led_control) {
-            gpio_set_level(PIN_HOOK_OUTPUT, gpio_get_level(PIN_HOOK_INPUT));
+            if (gpio_get_level(PIN_HOOK_INPUT) == 0) {
+                handle_hook_input();
+            }
+            else {
+                gpio_set_level(PIN_HOOK_OUTPUT, 1);
+            }
         }
 
         if (gpio_get_level(PIN_RING_INPUT)) {
@@ -253,8 +283,11 @@ void app_main(void)
         }
 
         if (!gpio_get_level(PIN_DEBUG_INPUT)) {
-            /*lodrom_audio_play(audio_path);*/
-            test(mqtt_client);
+            play_samples(audio_samples);
+            /*lodrom_audio_play(audio01_path);*/
+            /*lodrom_audio_play(audio02_path);*/
+            /*lodrom_audio_play(audio03_path);*/
+            /*test(mqtt_client);*/
         }
 
         vTaskDelay(10 / portTICK_PERIOD_MS);

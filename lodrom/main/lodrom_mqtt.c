@@ -8,33 +8,30 @@
 
 
 void blink_led(gpio_num_t gpio_num) {
-    if (gpio_num == PIN_DOOR_OUTPUT) {
+    /*if (gpio_num == PIN_DOOR_OUTPUT) {*/
         door_led_control = false;
-    } else if (gpio_num == PIN_HOOK_OUTPUT) {
-        hook_led_control = false;
-    }
+    /*} else if (gpio_num == PIN_HOOK_OUTPUT) {*/
+        /*hook_led_control = false;*/
+    /*}*/
 
-    for (int i = 0; i < 3; i++) { // Blink 3 times
-        gpio_set_level(gpio_num, 0); // LED ON
-        vTaskDelay(pdMS_TO_TICKS(500));
-        gpio_set_level(gpio_num, 1); // LED OFF
-        vTaskDelay(pdMS_TO_TICKS(500));
-    }
+    gpio_set_level(PIN_DOOR_OUTPUT, 0);
+    vTaskDelay(pdMS_TO_TICKS(1000));
+    gpio_set_level(PIN_DOOR_OUTPUT, 1);
 
-    if (gpio_num == PIN_DOOR_OUTPUT) {
+    /*if (gpio_num == PIN_DOOR_OUTPUT) {*/
         door_led_control = true;
-    } else if (gpio_num == PIN_HOOK_OUTPUT) {
-        hook_led_control = true;
-    }
+    /*} else if (gpio_num == PIN_HOOK_OUTPUT) {*/
+        /*hook_led_control = true;*/
+    /*}*/
 }
 
 void handle_mqtt_message(const char *topic, const char *data) {
     if (strcmp(topic, "ALVORADA/controle_portao") == 0) {
         ESP_LOGI("MQTT", "Blinking LED on PIN_DOOR_OUTPUT");
         blink_led(PIN_DOOR_OUTPUT);
-    } else if (strcmp(topic, "ALVORADA/recados") == 0) {
-        ESP_LOGI("MQTT", "Blinking LED on PIN_HOOK_OUTPUT");
-        blink_led(PIN_HOOK_OUTPUT);
+    /*} else if (strcmp(topic, "ALVORADA/recados") == 0) {*/
+        /*ESP_LOGI("MQTT", "Blinking LED on PIN_HOOK_OUTPUT");*/
+        /*blink_led(PIN_HOOK_OUTPUT);*/
     } else {
         ESP_LOGW("MQTT", "Unknown topic received: %s", topic);
     }

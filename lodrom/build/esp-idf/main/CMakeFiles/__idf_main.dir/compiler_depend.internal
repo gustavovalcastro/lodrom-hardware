@@ -412,6 +412,7 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_audio.c.obj
  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/include/xtensa_context.h
  /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/config/sdkconfig.h
  /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_audio.h
+ /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_pins.h
 
 esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_mqtt.c.obj
  /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c

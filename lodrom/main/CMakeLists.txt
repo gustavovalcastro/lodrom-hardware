@@ -7,3 +7,4 @@ idf_component_register(
                             "lodrom_api.c"
                     INCLUDE_DIRS "."
                     )
+spiffs_create_partition_image(storage spiffs_data FLASH_IN_PROJECT)

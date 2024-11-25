@@ -121,6 +121,7 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_audio.c.obj: \
  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/driver/deprecated/driver/adc_types_legacy.h \
  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/hal/include/hal/adc_types.h \
  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/spiffs/include/esp_spiffs.h \
+ /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_pins.h \
  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/string.h \
  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/strings.h \
  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h

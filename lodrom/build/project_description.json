@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "lodrom",
-    "project_version":    "82868db-dirty",
+    "project_version":    "c15a748-dirty",
     "project_path":       "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom",
     "idf_path":           "/home/betelgeuse/appdata/esp/esp-adf/esp-idf",
     "build_dir":          "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build",

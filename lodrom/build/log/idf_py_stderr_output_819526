@@ -1,0 +1,7 @@
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c: In function 'app_main':
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c:193:30: warning: unused variable 'mqtt_client' [-Wunused-variable]
+  193 |     esp_mqtt_client_handle_t mqtt_client = mqtt_init();
+      |                              ^~~~~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c:175:17: warning: unused variable 'url' [-Wunused-variable]
+  175 |     const char *url = "https://lodrom-polly.s3.us-east-1.amazonaws.com/ALVORADA/recado_4c095bcb-8689-44c5-87c9-75984b839726.wav";
+      |                 ^~~

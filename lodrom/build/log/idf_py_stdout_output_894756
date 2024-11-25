@@ -1,0 +1,526 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x1f (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Nov 24 2024 16:34:25[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (91) boot:  3 storage          Unknown data     01 82 00210000 000f0000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (102) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3d75ch (251740) map[0m
+[0;32mI (197) esp_image: segment 1: paddr=0004d784 vaddr=3ffb0000 size=02894h ( 10388) load[0m
+[0;32mI (201) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=c05ech (787948) map[0m
+[0;32mI (473) esp_image: segment 3: paddr=00110614 vaddr=3ffb2894 size=01848h (  6216) load[0m
+[0;32mI (476) esp_image: segment 4: paddr=00111e64 vaddr=40080000 size=1836ch ( 99180) load[0m
+[0;32mI (530) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (530) boot: Disabling RNG early entropy source...[0m
+[0;32mI (542) cpu_start: Multicore app[0m
+D (542) cpu_start: Pro cpu up[0m
+D (542) cpu_start: Starting app cpu, entry point is 0x40081318[0m
+D (0) cpu_start: App cpu up[0m
+D (553) clk: RTC_SLOW_CLK calibration value: 3567475[0m
+D (565) cpu_start: calling init function: 0x400d3274 on core: 0[0m
+D (565) cpu_start: calling init function: 0x400d3790 on core: 0[0m
+[0;32mI (567) cpu_start: Pro cpu start user code[0m
+[0;32mI (572) cpu_start: cpu freq: 240000000 Hz[0m
+D (577) cpu_start: calling init function: 0x400d31b4 on core: 0[0m
+[0;32mI (583) app_init: Application information:[0m
+[0;32mI (588) app_init: Project name:     lodrom[0m
+[0;32mI (592) app_init: App version:      c15a748-dirty[0m
+[0;32mI (598) app_init: Compile time:     Nov 25 2024 02:38:20[0m
+[0;32mI (604) app_init: ELF file SHA256:  e57f5e8c1...[0m
+[0;32mI (609) app_init: ESP-IDF:          v5.3.1[0m
+D (614) cpu_start: calling init function: 0x400d3288 on core: 0[0m
+[0;32mI (620) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (625) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (629) efuse_init: Chip rev:         v1.0[0m
+D (634) cpu_start: calling init function: 0x400d5090 on core: 0[0m
+D (640) memory_layout: Checking 9 reserved memory ranges:[0m
+D (646) memory_layout: Reserved memory range 0x3ff82000 - 0x3ff82000[0m
+D (652) memory_layout: Reserved memory range 0x3ffae000 - 0x3ffae6e0[0m
+D (659) memory_layout: Reserved memory range 0x3ffb0000 - 0x3ffb8b90[0m
+D (665) memory_layout: Reserved memory range 0x3ffe0000 - 0x3ffe0440[0m
+D (671) memory_layout: Reserved memory range 0x3ffe3f20 - 0x3ffe4350[0m
+D (678) memory_layout: Reserved memory range 0x40070000 - 0x40078000[0m
+D (684) memory_layout: Reserved memory range 0x40078000 - 0x40080000[0m
+D (691) memory_layout: Reserved memory range 0x40080000 - 0x4009836c[0m
+D (697) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (704) memory_layout: Building list of available memory regions:[0m
+D (710) memory_layout: Available memory region 0x3ffae6e0 - 0x3ffb0000[0m
+D (716) memory_layout: Available memory region 0x3ffb8b90 - 0x3ffc0000[0m
+D (723) memory_layout: Available memory region 0x3ffc0000 - 0x3ffc2000[0m
+D (729) memory_layout: Available memory region 0x3ffc2000 - 0x3ffc4000[0m
+D (736) memory_layout: Available memory region 0x3ffc4000 - 0x3ffc6000[0m
+D (743) memory_layout: Available memory region 0x3ffc6000 - 0x3ffc8000[0m
+D (749) memory_layout: Available memory region 0x3ffc8000 - 0x3ffca000[0m
+D (756) memory_layout: Available memory region 0x3ffca000 - 0x3ffcc000[0m
+D (762) memory_layout: Available memory region 0x3ffcc000 - 0x3ffce000[0m
+D (769) memory_layout: Available memory region 0x3ffce000 - 0x3ffd0000[0m
+D (776) memory_layout: Available memory region 0x3ffd0000 - 0x3ffd2000[0m
+D (782) memory_layout: Available memory region 0x3ffd2000 - 0x3ffd4000[0m
+D (789) memory_layout: Available memory region 0x3ffd4000 - 0x3ffd6000[0m
+D (795) memory_layout: Available memory region 0x3ffd6000 - 0x3ffd8000[0m
+D (802) memory_layout: Available memory region 0x3ffd8000 - 0x3ffda000[0m
+D (809) memory_layout: Available memory region 0x3ffda000 - 0x3ffdc000[0m
+D (815) memory_layout: Available memory region 0x3ffdc000 - 0x3ffde000[0m
+D (822) memory_layout: Available memory region 0x3ffde000 - 0x3ffe0000[0m
+D (828) memory_layout: Available memory region 0x3ffe0440 - 0x3ffe3f20[0m
+D (835) memory_layout: Available memory region 0x3ffe4350 - 0x3ffe8000[0m
+D (842) memory_layout: Available memory region 0x3ffe8000 - 0x3fff0000[0m
+D (848) memory_layout: Available memory region 0x3fff0000 - 0x3fff8000[0m
+D (855) memory_layout: Available memory region 0x3fff8000 - 0x3fffc000[0m
+D (861) memory_layout: Available memory region 0x3fffc000 - 0x40000000[0m
+D (868) memory_layout: Available memory region 0x4009836c - 0x4009a000[0m
+D (875) memory_layout: Available memory region 0x4009a000 - 0x4009c000[0m
+D (881) memory_layout: Available memory region 0x4009c000 - 0x4009e000[0m
+D (888) memory_layout: Available memory region 0x4009e000 - 0x400a0000[0m
+[0;32mI (894) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (902) heap_init: New heap initialised at 0x3ffae6e0[0m
+[0;32mI (907) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+D (913) heap_init: New heap initialised at 0x3ffb8b90[0m
+[0;32mI (918) heap_init: At 3FFB8B90 len 00027470 (157 KiB): DRAM[0m
+[0;32mI (924) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (931) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+D (937) heap_init: New heap initialised at 0x4009836c[0m
+[0;32mI (942) heap_init: At 4009836C len 00007C94 (31 KiB): IRAM[0m
+D (948) cpu_start: calling init function: 0x400d6624 on core: 0[0m
+D (954) cpu_start: calling init function: 0x400d5f80 on core: 0[0m
+D (960) cpu_start: calling init function: 0x400d37d4 on core: 0[0m
+D (967) intr_alloc: Connected src 46 to int 1 (cpu 0)[0m
+D (971) cpu_start: calling init function: 0x400d37e0 on core: 0[0m
+D (977) cpu_start: calling init function: 0x400d7864 on core: 0[0m
+D (983) cpu_start: calling init function: 0x400d8260 on core: 0[0m
+D (989) cpu_start: calling init function: 0x400d5ffc on core: 0[0m
+D (996) cpu_start: calling init function: 0x400d6440 on core: 0[0m
+D (1001) cpu_start: calling init function: 0x400d37ec on core: 0[0m
+D (1007) spi_flash: trying chip: issi[0m
+D (1011) spi_flash: trying chip: gd[0m
+D (1015) spi_flash: trying chip: mxic[0m
+D (1018) spi_flash: trying chip: winbond[0m
+D (1022) spi_flash: trying chip: generic[0m
+[0;32mI (1026) spi_flash: detected chip: generic[0m
+[0;32mI (1031) spi_flash: flash io: dio[0m
+D (1035) cpu_start: calling init function: 0x400d3314 on core: 0[0m
+D (1041) cpu_start: calling init function: 0x4016aa78[0m
+D (1046) cpu_start: calling init function: 0x4015bcfc[0m
+D (1052) cpu_start: calling init function: 0x4010afac[0m
+D (1057) cpu_start: calling init function: 0x400f13e4[0m
+[0;33mW (1062) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+D (1070) cpu_start: calling init function: 0x400f1340[0m
+[0;33mW (1075) i2s(legacy): legacy i2s driver is deprecated, please migrate to use driver/i2s_std.h, driver/i2s_pdm.h or driver/i2s_tdm.h[0m
+D (1088) cpu_start: calling init function: 0x400896d8[0m
+D (1093) cpu_start: calling init function: 0x400d4874[0m
+D (1098) cpu_start: calling init function: 0x400d3d90[0m
+D (1103) cpu_start: calling init function: 0x4015c140 on core: 0[0m
+D (1109) intr_alloc: Connected src 17 to int 2 (cpu 0)[0m
+D (1114) cpu_start: calling init function: 0x400d3810 on core: 0[0m
+D (1121) intr_alloc: Connected src 24 to int 3 (cpu 0)[0m
+D (1126) app_start: Starting scheduler on CPU0[0m
+[0;32D (1130) intr_alloc: Connected src 25 to int 1 (cpu 1)[0m
+D (1130) app_start: Starting scheduler on CPU1[0m
+mI (1130) main_task: Started on CPU0[0m
+D (1150) heap_init: New heap initialised at 0x3ffe0440[0m
+D (1150) heap_init: New heap initialised at 0x3ffe4350[0m
+D (1150) intr_alloc: Connected src 16 to int 5 (cpu 0)[0m
+[0;32mI (1150) main_task: Calling app_main()[0m
+[0;32mI (1210) lodrom_spiffs: Partition size: total: 896321, used: 429210[0m
+[0;32mI (1210) LODROM_AUDIO: Initializing I2S...[0m
+D (1210) i2s(legacy): [sclk] 160000000 [mclk] 2048000 [mclk_div] 78 [bclk] 256000 [bclk_div] 8[0m
+D (1220) intr_alloc: Connected src 32 to int 8 (cpu 0)[0m
+D (1230) i2s(legacy): DMA Malloc info, datalen=blocksize=4092, dma_desc_num=4[0m
+D (1230) i2s(legacy): I2S0, MCLK output by GPIO0[0m
+[0;32mI (1240) LODROM_AUDIO: I2S initialized[0m
+[0;32mI (1250) RING: Credentials file exists[0m
+[0;32mI (1250) lodrom_spiffs: Listing files in /spiffs:[0m
+[0;32mI (1250) lodrom_spiffs: Found file: recado02.wav[0m
+[0;32mI (1260) lodrom_spiffs: Found file: recado03.wav[0m
+[0;32mI (1270) lodrom_spiffs: Found file: recado01.wav[0m
+[0;32mI (1270) lodrom_spiffs: Found file: credentials.json[0m
+[0;32mI (1310) wifi_manager: Set STA IP String to: 0.0.0.0[0m
+D (1310) esp_netif_lwip: LwIP stack has been initialized[0m
+D (1310) esp_netif_lwip: esp-netif has been successfully initialized[0m
+D (1320) event: running task for loop 0x3ffc6e84[0m
+D (1320) event: created task for loop 0x3ffc6e84[0m
+D (1330) event: created event loop 0x3ffc6e84[0m
+D (1330) esp_netif_lwip: check: remote, if=0x3ffc57e0 fn=0x4010881c[0m
+D (1340) esp_netif_objects: esp_netif_add_to_list_unsafe netif added successfully (total netifs: 1)[0m
+D (1350) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+[0;32mI (1350) lodrom_wifi_start: Waiting for Wi-Fi connection...[0m
+D (1350) esp_netif_lwip: check: remote, if=0x3ffc57e0 fn=0x4010881c[0m
+D (1360) esp_netif_objects: esp_netif_add_to_list_unsafe netif added successfully (total netifs: 2)[0m
+D (1370) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (1380) nvs: nvs_open_from_partition misc 1[0m
+D (1390) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 8 bit[0m
+D (1390) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 0 bit[0m
+D (1400) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 24 bit[0m
+D (1410) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 16 bit[0m
+D (1410) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (1420) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (1430) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 16 bit[0m
+D (1430) nvs: nvs_open_from_partition nvs.net80211 1[0m
+D (1440) nvs: nvs_get opmode 1[0m
+D (1440) nvs: nvs_get_str_or_blob sta.ssid[0m
+D (1450) nvs: nvs_get sta.authmode 1[0m
+D (1450) nvs: nvs_get_str_or_blob sta.pswd[0m
+D (1450) nvs: nvs_get_str_or_blob sta.pmk[0m
+D (1460) nvs: nvs_get sta.chan 1[0m
+D (1460) nvs: nvs_get auto.conn 1[0m
+D (1460) nvs: nvs_get bssid.set 1[0m
+D (1470) nvs: nvs_get_str_or_blob sta.bssid[0m
+D (1470) nvs: nvs_get sta.lis_intval 2[0m
+D (1480) nvs: nvs_get sta.phym 1[0m
+D (1480) nvs: nvs_get sta.phybw 1[0m
+D (1480) nvs: nvs_get_str_or_blob sta.apsw[0m
+D (1490) nvs: nvs_get_str_or_blob sta.apinfo[0m
+D (1490) nvs: nvs_get sta.scan_method 1[0m
+D (1500) nvs: nvs_get sta.sort_method 1[0m
+D (1500) nvs: nvs_get sta.minrssi 1[0m
+D (1500) nvs: nvs_get sta.minauth 1[0m
+D (1510) nvs: nvs_get sta.pmf_e 1[0m
+D (1510) nvs: nvs_get sta.pmf_r 1[0m
+D (1510) nvs: nvs_get sta.btm_e 1[0m
+D (1520) nvs: nvs_get sta.rrm_e 1[0m
+D (1520) nvs: nvs_get sta.mbo_e 1[0m
+D (1520) nvs: nvs_get_str_or_blob ap.ssid[0m
+D (1530) nvs: nvs_get_str_or_blob ap.passwd[0m
+D (1530) nvs: nvs_get_str_or_blob ap.pmk[0m
+D (1540) nvs: nvs_get ap.chan 1[0m
+D (1540) nvs: nvs_get ap.authmode 1[0m
+D (1540) nvs: nvs_get ap.hidden 1[0m
+D (1550) nvs: nvs_get ap.max.conn 1[0m
+D (1550) nvs: nvs_get bcn.interval 2[0m
+D (1550) nvs: nvs_get ap.phym 1[0m
+D (1560) nvs: nvs_get ap.phybw 1[0m
+D (1560) nvs: nvs_get ap.sndchan 1[0m
+D (1560) nvs: nvs_get ap.pmf_e 1[0m
+D (1570) nvs: nvs_get ap.pmf_r 1[0m
+D (1570) nvs: nvs_get ap.p_cipher 1[0m
+D (1570) nvs: nvs_get lorate 1[0m
+D (1580) nvs: nvs_get_str_or_blob country[0m
+D (1580) nvs: nvs_get ap.ftm_r 1[0m
+D (1580) nvs: nvs_get sta.ft 1[0m
+D (1590) nvs: nvs_get sta.owe 1[0m
+D (1590) nvs: nvs_get sta.trans_d 1[0m
+D (1590) nvs: nvs_get sta.sae_h2e 1[0m
+D (1600) nvs: nvs_get sta.sae_pk_mode 1[0m
+D (1600) nvs: nvs_get sta.bss_retry 1[0m
+D (1600) nvs: nvs_get_str_or_blob sta.owe_data[0m
+D (1610) nvs: nvs_get sta.he_dcm 1[0m
+D (1610) nvs: nvs_get sta.he_dcm_c_tx 1[0m
+D (1620) nvs: nvs_get sta.he_dcm_c_rx 1[0m
+D (1620) nvs: nvs_get sta.he_mcs9_d 1[0m
+D (1620) nvs: nvs_get sta.he_su_b_d 1[0m
+D (1630) nvs: nvs_get sta.he_su_b_f_d 1[0m
+D (1630) nvs: nvs_get sta.he_mu_b_f_d 1[0m
+D (1640) nvs: nvs_get sta.he_cqi_f_d 1[0m
+D (1640) nvs: nvs_get_str_or_blob sta.sae_h2e_id[0m
+D (1640) nvs: nvs_get ap.sae_h2e 1[0m
+D (1650) nvs: nvs_get_str_or_blob ap.pmk_info[0m
+D (1650) nvs: nvs_get nan.phym 1[0m
+D (1660) nvs: nvs_get sta.pwr_reset 1[0m
+D (1660) nvs: nvs_get band 1[0m
+D (1660) nvs: nvs_set ap.sndchan 1 1[0m
+[0;32mI (1670) wifi_init: rx ba win: 6[0m
+[0;32mI (1670) wifi_init: accept mbox: 6[0m
+[0;32mI (1670) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1680) wifi_init: udp mbox: 6[0m
+[0;32mI (1680) wifi_init: tcp mbox: 6[0m
+[0;32mI (1690) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1690) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1690) wifi_init: tcp mss: 1440[0m
+[0;32mI (1700) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1700) wifi_init: WiFi RX IRAM OP enabled[0m
+D (1710) esp_netif_lwip: check: remote, if=0x3ffc8100 fn=0x40108db0[0m
+D (1710) esp_netif_lwip: esp_netif_dhcps_stop_api esp_netif:0x3ffc8100[0m
+D (1720) esp_netif_lwip: dhcp server stop successfully[0m
+D (1730) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (1730) esp_netif_lwip: check: remote, if=0x3ffc8100 fn=0x40109094[0m
+D (1740) esp_netif_lwip: esp_netif_set_ip_info_api esp_netif:0x3ffc8100[0m
+D (1740) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (1750) esp_netif_lwip: check: remote, if=0x3ffc8100 fn=0x40108a5c[0m
+D (1760) esp_netif_lwip: esp_netif_dhcps_start_api esp_netif:0x3ffc8100[0m
+D (1760) esp_netif_lwip: dhcp server re init[0m
+D (1770) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (1940) adc_share_hw_ctrl: Wi-Fi takes adc2 lock.[0m
+[0;32mI (1940) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+D (1940) phy_init: loading PHY init data from application binary[0m
+D (1950) nvs: nvs_open_from_partition phy 0[0m
+D (1950) nvs: nvs_get cal_version 4[0m
+D (1960) nvs: nvs_get_str_or_blob cal_mac[0m
+D (1960) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 8 bit[0m
+D (1970) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 0 bit[0m
+D (1970) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 24 bit[0m
+D (1980) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 16 bit[0m
+D (1990) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (2000) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (2000) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 16 bit[0m
+D (2010) nvs: nvs_get_str_or_blob cal_data[0m
+D (2020) nvs: nvs_close 3[0m
+D (2020) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 8 bit[0m
+D (2020) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 0 bit[0m
+D (2030) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 24 bit[0m
+D (2040) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 16 bit[0m
+D (2050) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (2050) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (2060) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 16 bit[0m
+D (2130) event: running post WIFI_EVENT:43 with handler 0x400dbbac and context 0x3ffd6d64 on loop 0x3ffc6e84[0m
+D (2130) event: running post WIFI_EVENT:2 with handler 0x4010b230 and context 0x3ffc7fac on loop 0x3ffc6e84[0m
+[0;32mI (2130) http_server: Registering URI handlers[0m
+D (2140) wifi_init_default: wifi_start esp-netif:0x3ffc7dac event-id2[0m
+D (2130) httpd: httpd_thread: web server started[0m
+D (2150) wifi_init_default: WIFI mac address: 78 21 84 7d f4 f8[0m
+D (2150) httpd_uri: httpd_register_uri_handler: [0] installed *[0m
+D (2160) esp_netif_lwip: check: remote, if=0x3ffc7dac fn=0x401081ec[0m
+D (2160) httpd: httpd_server: doing select maxfd+1 = 56[0m
+D (2170) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (2190) esp_netif_handlers: esp_netif action has started with netif0x3ffc7dac from event_id=2[0m
+D (2170) httpd_uri: httpd_find_uri_handler: [0] = *[0m
+D (2190) esp_netif_lwip: check: remote, if=0x3ffc7dac fn=0x40108bdc[0m
+D (2200) httpd_uri: httpd_register_uri_handler: [0] exists *[0m
+D (2210) esp_netif_lwip: esp_netif_start_api 0x3ffc7dac[0m
+D (2220) httpd_uri: httpd_register_uri_handler: [1] installed *[0m
+D (2220) esp_netif_lwip: esp_netif_get_hostname esp_netif:0x3ffc7dac[0m
+D (2230) httpd_uri: httpd_find_uri_handler: [0] = *[0m
+D (2230) esp_netif_lwip: check: local, if=0x3ffc7dac fn=0x4010955c[0m
+D (2240) httpd_uri: httpd_find_uri_handler: [1] = *[0m
+D (2240) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3ffc7dac[0m
+D (2250) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (2260) httpd_uri: httpd_register_uri_handler: [0] exists *[0m
+D (2260) event: running post WIFI_EVENT:2 with handler 0x400dbbac and context 0x3ffd6d64 on loop 0x3ffc6e84[0m
+D (2260) httpd_uri: httpd_register_uri_handler: [1] exists *[0m
+[0;32mI (2270) wifi_manager: [0m
+D (2280) httpd_uri: httpd_register_uri_handler: [2] installed *[0m
+D (2280) event: no handlers have been registered for event ESP_HTTP_SERVER_EVENT:1 posted to loop 0x3ffc6e84[0m
+[0;32mI (2290) wifi_manager: MESSAGE: ORDER_LOAD_AND_RESTORE_STA[0m
+D (2300) nvs: nvs_open_from_partition espwifimgr 0[0m
+D (2310) nvs: nvs_get_str_or_blob ssid[0m
+D (2310) nvs: nvs_get_str_or_blob password[0m
+D (2320) nvs: nvs_get_str_or_blob settings[0m
+D (2320) nvs: nvs_close 4[0m
+[0;32mI (2320) wifi_manager: wifi_manager_fetch_wifi_sta_config: ssid:ApG2.4#1 password:le091064*[0m
+D (2330) wifi_manager: wifi_manager_fetch_wifi_settings: SoftAP_ssid:lodrom[0m
+D (2340) wifi_manager: wifi_manager_fetch_wifi_settings: SoftAP_pwd:lodrom123[0m
+D (2350) wifi_manager: wifi_manager_fetch_wifi_settings: SoftAP_channel:1[0m
+D (2350) wifi_manager: wifi_manager_fetch_wifi_settings: SoftAP_hidden (1 = yes):0[0m
+D (2360) wifi_manager: wifi_manager_fetch_wifi_settings: SoftAP_bandwidth (1 = 20MHz, 2 = 40MHz)1[0m
+D (2370) wifi_manager: wifi_manager_fetch_wifi_settings: sta_only (0 = APSTA, 1 = STA when connected):1[0m
+D (2380) wifi_manager: wifi_manager_fetch_wifi_settings: sta_power_save (1 = yes):0[0m
+D (2390) wifi_manager: wifi_manager_fetch_wifi_settings: sta_static_ip (0 = dhcp client, 1 = static ip):0[0m
+[0;32mI (2400) wifi_manager: Saved wifi found on startup. Will attempt to connect.[0m
+[0;32mI (2410) wifi_manager: MESSAGE: ORDER_CONNECT_STA[0m
+D (3440) event: running post WIFI_EVENT:43 with handler 0x400dbbac and context 0x3ffd6d64 on loop 0x3ffc6e84[0m
+D (3520) event: running post WIFI_EVENT:4 with handler 0x4010b260 and context 0x3ffc800c on loop 0x3ffc6e84[0m
+D (3520) esp_netif_handlers: esp_netif action connected with netif0x3ffc7dac from event_id=4[0m
+D (3520) esp_netif_lwip: check: remote, if=0x3ffc7dac fn=0x40109044[0m
+D (3530) esp_netif_lwip: esp_netif_up_api esp_netif:0x3ffc7dac[0m
+D (3540) esp_netif_lwip: check: local, if=0x3ffc7dac fn=0x4010955c[0m
+D (3540) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3ffc7dac[0m
+D (3550) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (3550) esp_netif_lwip: check: remote, if=0x3ffc7dac fn=0x40108f00[0m
+D (3560) esp_netif_lwip: esp_netif_dhcpc_start_api esp_netif:0x3ffc7dac[0m
+D (3570) esp_netif_lwip: esp_netif_start_ip_lost_timer esp_netif:0x3ffc7dac[0m
+D (3570) esp_netif_lwip: if0x3ffc7dac start ip lost tmr: interval=120[0m
+D (3580) esp_netif_lwip: starting dhcp client[0m
+D (3590) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (3590) event: running post WIFI_EVENT:4 with handler 0x400dbbac and context 0x3ffd6d64 on loop 0x3ffc6e84[0m
+[0;32mI (3600) wifi_manager: WIFI_EVENT_STA_CONNECTED[0m
+D (4590) esp_netif_lwip: esp_netif_internal_dhcpc_cb lwip-netif:0x3ffc7e34[0m
+D (4590) esp_netif_lwip: if0x3ffc7dac ip changed=1[0m
+D (4590) event: running post IP_EVENT:0 with handler 0x4010b080 and context 0x3ffc80e0 on loop 0x3ffc6e84[0m
+D (4600) wifi_init_default: Got IP wifi default handler entered[0m
+D (4600) esp_netif_handlers: esp_netif action got_ip with netif0x3ffc7dac from event_id=0[0m
+[0;32mI (4610) esp_netif_handlers: sta ip: 192.168.70.23, mask: 255.255.255.0, gw: 192.168.70.1[0m
+D (4620) event: running post IP_EVENT:0 with handler 0x400dbbac and context 0x3ffd6d98 on loop 0x3ffc6e84[0m
+[0;32mI (4630) wifi_manager: IP_EVENT_STA_GOT_IP[0m
+[0;32mI (4630) wifi_manager: WM_EVENT_STA_GOT_IP[0m
+[0;32mI (4640) wifi_manager: Set STA IP String to: 192.168.70.23[0m
+D (4650) esp_netif_lwip: esp_netif_get_ip_info esp_netif:0x3ffc7dac[0m
+[0;32mI (4650) lodrom_wifi_start: Connected to WiFi. Got IP: 192.168.70.23[0m
+[0;32mI (4660) lodrom_wifi_start: Wi-Fi connected and IP address obtained.[0m
+[0;32mI (4670) lodrom_mqtt: ==== MQTT Configuration ====[0m
+[0;32mI (4670) lodrom_mqtt: Broker URI: mqtts://7c1135d9a0c74d6da4c07a96475b8a31.s1.eu.hivemq.cloud[0m
+[0;32mI (4680) lodrom_mqtt: Port: 8883[0m
+[0;32mI (4680) lodrom_mqtt: Username length: 6[0m
+[0;32mI (4690) lodrom_mqtt: Password length: 9[0m
+[0;32mI (4690) lodrom_mqtt: Certificate length: 1938[0m
+[0;32mI (4700) lodrom_mqtt: Initializing MQTT client...[0m
+D (4700) mqtt_client: MQTT client_id=ESP32_7dF4F8[0m
+D (4710) event: created event loop 0x3ffd9e14[0m
+[0;32mI (4710) lodrom_mqtt: Client initialization successful[0m
+[0;32mI (4720) lodrom_mqtt: Event handler registered successfully[0m
+[0;32mI (4730) lodrom_mqtt: Starting MQTT client...[0m
+D (4730) mqtt_client: Core selection disabled[0m
+D (4730) event: running post MQTT_EVENTS:7 with handler 0x400da150 and context 0x3ffd9f14 on loop 0x3ffd9e14[0m
+[0;32mI (4740) lodrom_mqtt: Event ID: 7[0m
+D (4750) lodrom_mqtt: Other event id: 7[0m
+D (4750) esp-tls: host:7c1135d9a0c74d6da4c07a96475b8a31.s1.eu.hivemq.cloud: strlen 51[0m
+[0;32mI (4760) lodrom_mqtt: MQTT client started successfully[0m
+D (4770) esp-tls: [sock=57] Resolved IPv4 address: 54.73.92.158[0m
+D (4770) esp-tls: [sock=57] Connecting to server. HOST: 7c1135d9a0c74d6da4c07a96475b8a31.s1.eu.hivemq.cloud, Port: 8883[0m
+[0;31mE (4810) lodrom_json_read: Failed to open file: /spiffs/audio_files.json[0m
+[0;31mE (4810) lodrom_json_read: Failed to read JSON file[0m
+[0;32mI (4840) SPIFFS: File size of /spiffs/recado01.wav: 131756 bytes[0m
+[0;32mI (4850) SPIFFS: File size of /spiffs/recado02.wav: 173698 bytes[0m
+[0;32mI (4860) SPIFFS: File size of /spiffs/recado03.wav: 119168 bytes[0m
+D (5020) esp-tls: handshake in progress...[0m
+D (6240) mqtt_client: Transport connected to mqtts://7c1135d9a0c74d6da4c07a96475b8a31.s1.eu.hivemq.cloud:8883[0m
+D (6240) mqtt_client: Sending MQTT CONNECT message, type: 1, id: 0000[0m
+D (6510) mqtt_client: mqtt_message_receive: first byte: 0x20[0m
+D (6510) transport_base: remain data in cache, need to read again[0m
+D (6510) mqtt_client: mqtt_message_receive: read "remaining length" byte: 0x2[0m
+D (6520) mqtt_client: mqtt_message_receive: total message length: 4 (already read: 2)[0m
+D (6520) transport_base: remain data in cache, need to read again[0m
+D (6530) mqtt_client: mqtt_message_receive: read_len=2[0m
+D (6540) mqtt_client: Connected[0m
+D (6540) event: running post MQTT_EVENTS:1 with handler 0x400da150 and context 0x3ffd9f14 on loop 0x3ffd9e14[0m
+[0;32mI (6550) lodrom_mqtt: Event ID: 1[0m
+[0;32mI (6550) lodrom_mqtt: Connected to MQTT broker, attempting to subscribe...[0m
+D (6560) mqtt_client: mqtt_enqueue id: 21220, type=8 successful[0m
+D (6570) outbox: ENQUEUE msgid=21220, msg_type=8, len=31, size=31[0m
+D (6580) mqtt_client: Sent subscribe, first topic=ALVORADA/controle_portao, id: 21220[0m
+[0;31mE (6580) lodrom_mqtt: Failed to subscribe to topic ALVORADA/controle_portao: 21220[0m
+D (6590) mqtt_client: mqtt_enqueue id: 54313, type=8 successful[0m
+D (6590) outbox: ENQUEUE msgid=54313, msg_type=8, len=23, size=54[0m
+D (6600) mqtt_client: Sent subscribe, first topic=ALVORADA/recados, id: 54313[0m
+[0;31mE (6610) lodrom_mqtt: Failed to subscribe to topic ALVORADA/recados: 54313[0m
+D (6800) mqtt_client: mqtt_message_receive: first byte: 0x90[0m
+D (6810) transport_base: remain data in cache, need to read again[0m
+D (6810) mqtt_client: mqtt_message_receive: read "remaining length" byte: 0x3[0m
+D (6810) mqtt_client: mqtt_message_receive: total message length: 5 (already read: 2)[0m
+D (6820) transport_base: remain data in cache, need to read again[0m
+D (6830) mqtt_client: mqtt_message_receive: read_len=3[0m
+D (6830) mqtt_client: msg_type=9, msg_id=21220[0m
+D (6840) outbox: DELETED msgid=21220, msg_type=8, remain size=23[0m
+D (6840) mqtt_client: Removed pending_id=54313[0m
+D (6850) mqtt_client: deliver_suback, message_length_read=5, message_length=5[0m
+D (6850) event: running post MQTT_EVENTS:3 with handler 0x400da150 and context 0x3ffd9f14 on loop 0x3ffd9e14[0m
+[0;32mI (6860) lodrom_mqtt: Event ID: 3[0m
+[0;32mI (6870) lodrom_mqtt: Successfully subscribed to topic with msg_id=21220[0m
+D (7030) mqtt_client: mqtt_message_receive: first byte: 0x90[0m
+D (7030) transport_base: remain data in cache, need to read again[0m
+D (7030) mqtt_client: mqtt_message_receive: read "remaining length" byte: 0x3[0m
+D (7040) mqtt_client: mqtt_message_receive: total message length: 5 (already read: 2)[0m
+D (7050) transport_base: remain data in cache, need to read again[0m
+D (7060) mqtt_client: mqtt_message_receive: read_len=3[0m
+D (7060) mqtt_client: msg_type=9, msg_id=54313[0m
+D (7070) outbox: DELETED msgid=54313, msg_type=8, remain size=0[0m
+D (7070) mqtt_client: Removed pending_id=54313[0m
+D (7080) mqtt_client: deliver_suback, message_length_read=5, message_length=5[0m
+D (7080) event: running post MQTT_EVENTS:3 with handler 0x400da150 and context 0x3ffd9f14 on loop 0x3ffd9e14[0m
+[0;32mI (7090) lodrom_mqtt: Event ID: 3[0m
+[0;32mI (7100) lodrom_mqtt: Successfully subscribed to topic with msg_id=54313[0m
+[0;32mI (10010) Main: Door input activated, calling api_event_1[0m
+[0;32mI (12020) Main: Door input activated, calling api_event_1[0m
+[0;32mI (14030) Main: Door input activated, calling api_event_1[0m
+[0;32mI (16040) Main: Door input activated, calling api_event_1[0m
+[0;32mI (18050) Main: Door input activated, calling api_event_1[0m
+[0;32mI (20060) Main: Door input activated, calling api_event_1[0m
+[0;32mI (22070) Main: Door input activated, calling api_event_1[0m
+[0;32mI (28480) Main: Door input activated, calling api_event_1[0m
+[0;32mI (30490) Main: Door input activated, calling api_event_1[0m
+[0;32mI (32500) Main: Door input activated, calling api_event_1[0m
+[0;32mI (36850) Main: Door input activated, calling api_event_1[0m
+D (37850) HTTP_CLIENT: set post file length = 46[0m
+D (37850) HTTP_CLIENT: Begin connect to: https://lodrom.cubcl.com:443[0m
+D (37850) esp-tls: host:lodrom.cubcl.com: strlen 16[0m
+D (37860) esp-tls: [sock=58] Resolved IPv4 address: 34.238.234.230[0m
+D (37860) esp-tls: [sock=58] Connecting to server. HOST: lodrom.cubcl.com, Port: 443[0m
+D (38020) esp-tls: handshake in progress...[0m
+D (39490) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3ffc6e84[0m
+D (39490) HTTP_CLIENT: Write header[4]: POST /esp/events/ HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: lodrom.cubcl.com
+Content-Type: application/json
+Content-Length: 46
+
+[0m
+D (39510) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3ffc6e84[0m
+D (43820) HTTP_CLIENT: on_message_begin[0m
+D (43820) HTTP_CLIENT: HEADER=Server:nginx/1.24.0 (Ubuntu)[0m
+D (43820) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e84[0m
+D (43830) HTTP_CLIENT: HEADER=Date:Mon, 25 Nov 2024 11:34:06 GMT[0m
+D (43840) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e84[0m
+D (43850) HTTP_CLIENT: HEADER=Content-Type:text/html[0m
+D (43850) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e84[0m
+D (43860) HTTP_CLIENT: HEADER=Content-Length:141[0m
+D (43870) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e84[0m
+D (43880) HTTP_CLIENT: HEADER=Connection:keep-alive[0m
+D (43880) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e84[0m
+D (43890) HTTP_CLIENT: http_on_headers_complete, status=500, offset=176, nread=176[0m
+D (43900) HTTP_CLIENT: http_on_body 141[0m
+D (43900) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:4 posted to loop 0x3ffc6e84[0m
+D (43910) HTTP_CLIENT: http_on_message_complete, parser=0x3ffdf928[0m
+D (43920) HTTP_CLIENT: content_length = 141[0m
+D (43920) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:5 posted to loop 0x3ffc6e84[0m
+[0;32mI (43930) HTTP_CLIENT: HTTPS POST Status = 500, Response Length = 141[0m
+D (43940) HTTP_CLIENT: is_data_remain=0, is_chunked=0, content_length=141[0m
+D (43950) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:6 posted to loop 0x3ffc6e84[0m
+D (66700) mqtt_client: Sent PING successful[0m
+D (66930) mqtt_client: mqtt_message_receive: first byte: 0xd0[0m
+D (66930) transport_base: remain data in cache, need to read again[0m
+D (66930) mqtt_client: mqtt_message_receive: read "remaining length" byte: 0x0[0m
+D (66940) mqtt_client: mqtt_message_receive: total message length: 2 (already read: 2)[0m
+D (66950) mqtt_client: msg_type=13, msg_id=0[0m
+D (66950) mqtt_client: MQTT_MSG_TYPE_PINGRESP[0m
+D (123570) esp_netif_lwip: esp_netif_ip_lost_timer esp_netif:0x3ffc7dac[0m
+D (123570) esp_netif_lwip: if0x3ffc7dac ip lost tmr: no need raise ip lost event[0m
+D (127560) mqtt_client: Sent PING successful[0m
+D (127790) mqtt_client: mqtt_message_receive: first byte: 0xd0[0m
+D (127790) transport_base: remain data in cache, need to read again[0m
+D (127790) mqtt_client: mqtt_message_receive: read "remaining length" byte: 0x0[0m
+D (127800) mqtt_client: mqtt_message_receive: total message length: 2 (already read: 2)[0m
+D (127810) mqtt_client: msg_type=13, msg_id=0[0m
+D (127810) mqtt_client: MQTT_MSG_TYPE_PINGRESP[0m
+D (188420) mqtt_client: Sent PING successful[0m
+D (188650) mqtt_client: mqtt_message_receive: first byte: 0xd0[0m
+D (188650) transport_base: remain data in cache, need to read again[0m
+D (188650) mqtt_client: mqtt_message_receive: read "remaining length" byte: 0x0[0m
+D (188660) mqtt_client: mqtt_message_receive: total message length: 2 (already read: 2)[0m
+D (188670) mqtt_client: msg_type=13, msg_id=0[0m
+D (188670) mqtt_client: MQTT_MSG_TYPE_PINGRESP[0m
+D (249280) mqtt_client: Sent PING successful[0m
+D (249510) mqtt_client: mqtt_message_receive: first byte: 0xd0[0m
+D (249510) transport_base: remain data in cache, need to read again[0m
+D (249510) mqtt_client: mqtt_message_receive: read "remaining length" byte: 0x0[0m
+D (249520) mqtt_client: mqtt_message_receive: total message length: 2 (already read: 2)[0m
+D (249530) mqtt_client: msg_type=13, msg_id=0[0m
+D (249530) mqtt_client: MQTT_MSG_TYPE_PINGRESP[0m
+D (310140) mqtt_client: Sent PING successful[0m
+D (310370) mqtt_client: mqtt_message_receive: first byte: 0xd0[0m
+D (310370) transport_base: remain data in cache, need to read again[0m
+D (310370) mqtt_client: mqtt_message_receive: read "remaining length" byte: 0x0[0m
+D (310380) mqtt_client: mqtt_message_receive: total message length: 2 (already read: 2)[0m
+D (310390) mqtt_client: msg_type=13, msg_id=0[0m
+D (310390) mqtt_client: MQTT_MSG_TYPE_PINGRESP[0m
+D (371000) mqtt_client: Sent PING successful[0m
+D (371230) mqtt_client: mqtt_message_receive: first byte: 0xd0[0m
+D (371230) transport_base: remain data in cache, need to read again[0m
+D (371230) mqtt_client: mqtt_message_receive: read "remaining length" byte: 0x0[0m
+D (371240) mqtt_client: mqtt_message_receive: total message length: 2 (already read: 2)[0m
+D (371250) mqtt_client: msg_type=13, msg_id=0[0m
+D (371250) mqtt_client: MQTT_MSG_TYPE_PINGRESP[0m
+D (431860) mqtt_client: Sent PING successful[0m
+D (432090) mqtt_client: mqtt_message_receive: first byte: 0xd0[0m
+D (432090) transport_base: remain data in cache, need to read again[0m
+D (432090) mqtt_client: mqtt_message_receive: read "remaining length" byte: 0x0[0m
+D (432100) mqtt_client: mqtt_message_receive: total message length: 2 (already read: 2)[0m
+D (432100) mqtt_client: msg_type=13, msg_id=0[0m
+D (432110) mqtt_client: MQTT_MSG_TYPE_PINGRESP[0m

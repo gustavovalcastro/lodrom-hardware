@@ -1,0 +1,15 @@
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c: In function 'app_main':
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c:218:28: error: 'audio_path' undeclared (first use in this function); did you mean 'audio03_path'?
+  218 |     print_spiffs_file_size(audio_path);
+      |                            ^~~~~~~~~~
+      |                            audio03_path
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c:218:28: note: each undeclared identifier is reported only once for each function it appears in
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c:192:30: warning: unused variable 'mqtt_client' [-Wunused-variable]
+  192 |     esp_mqtt_client_handle_t mqtt_client = mqtt_init();
+      |                              ^~~~~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c:174:17: warning: unused variable 'url' [-Wunused-variable]
+  174 |     const char *url = "https://lodrom-polly.s3.us-east-1.amazonaws.com/ALVORADA/recado_4c095bcb-8689-44c5-87c9-75984b839726.wav";
+      |                 ^~~
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/lodrom.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:6213: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

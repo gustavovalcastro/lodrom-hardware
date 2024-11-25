@@ -1,0 +1,1120 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x1f (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 24 2024 16:34:25[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (91) boot:  3 storage          Unknown data     01 82 00210000 000f0000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3d79ch (251804) map[0m
+[0;32mI (197) esp_image: segment 1: paddr=0004d7c4 vaddr=3ffb0000 size=02854h ( 10324) load[0m
+[0;32mI (202) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=c062ch (788012) map[0m
+[0;32mI (473) esp_image: segment 3: paddr=00110654 vaddr=3ffb2854 size=01898h (  6296) load[0m
+[0;32mI (476) esp_image: segment 4: paddr=00111ef4 vaddr=40080000 size=1836ch ( 99180) load[0m
+[0;32mI (530) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (530) boot: Disabling RNG early entropy source...[0m
+[0;32mI (542) cpu_start: Multicore app[0m
+D (542) cpu_start: Pro cpu up[0m
+D (542) cpu_start: Starting app cpu, entry point is 0x40081318[0m
+D (0) cpu_start: App cpu up[0m
+D (553) clk: RTC_SLOW_CLK calibration value: 3550528[0m
+D (565) cpu_start: calling init function: 0x400d3284 on core: 0[0m
+D (565) cpu_start: calling init function: 0x400d37a0 on core: 0[0m
+[0;32mI (567) cpu_start: Pro cpu start user code[0m
+[0;32mI (572) cpu_start: cpu freq: 240000000 Hz[0m
+D (577) cpu_start: calling init function: 0x400d31c4 on core: 0[0m
+[0;32mI (583) app_init: Application information:[0m
+[0;32mI (588) app_init: Project name:     lodrom[0m
+[0;32mI (592) app_init: App version:      c15a748-dirty[0m
+[0;32mI (598) app_init: Compile time:     Nov 25 2024 02:38:20[0m
+[0;32mI (604) app_init: ELF file SHA256:  265a42a8d...[0m
+[0;32mI (609) app_init: ESP-IDF:          v5.3.1[0m
+D (614) cpu_start: calling init function: 0x400d3298 on core: 0[0m
+[0;32mI (620) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (625) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (630) efuse_init: Chip rev:         v1.0[0m
+D (634) cpu_start: calling init function: 0x400d50a0 on core: 0[0m
+D (641) memory_layout: Checking 9 reserved memory ranges:[0m
+D (646) memory_layout: Reserved memory range 0x3ff82000 - 0x3ff82000[0m
+D (652) memory_layout: Reserved memory range 0x3ffae000 - 0x3ffae6e0[0m
+D (659) memory_layout: Reserved memory range 0x3ffb0000 - 0x3ffb8ba0[0m
+D (665) memory_layout: Reserved memory range 0x3ffe0000 - 0x3ffe0440[0m
+D (672) memory_layout: Reserved memory range 0x3ffe3f20 - 0x3ffe4350[0m
+D (678) memory_layout: Reserved memory range 0x40070000 - 0x40078000[0m
+D (684) memory_layout: Reserved memory range 0x40078000 - 0x40080000[0m
+D (691) memory_layout: Reserved memory range 0x40080000 - 0x4009836c[0m
+D (697) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (704) memory_layout: Building list of available memory regions:[0m
+D (710) memory_layout: Available memory region 0x3ffae6e0 - 0x3ffb0000[0m
+D (716) memory_layout: Available memory region 0x3ffb8ba0 - 0x3ffc0000[0m
+D (723) memory_layout: Available memory region 0x3ffc0000 - 0x3ffc2000[0m
+D (730) memory_layout: Available memory region 0x3ffc2000 - 0x3ffc4000[0m
+D (736) memory_layout: Available memory region 0x3ffc4000 - 0x3ffc6000[0m
+D (743) memory_layout: Available memory region 0x3ffc6000 - 0x3ffc8000[0m
+D (749) memory_layout: Available memory region 0x3ffc8000 - 0x3ffca000[0m
+D (756) memory_layout: Available memory region 0x3ffca000 - 0x3ffcc000[0m
+D (763) memory_layout: Available memory region 0x3ffcc000 - 0x3ffce000[0m
+D (769) memory_layout: Available memory region 0x3ffce000 - 0x3ffd0000[0m
+D (776) memory_layout: Available memory region 0x3ffd0000 - 0x3ffd2000[0m
+D (782) memory_layout: Available memory region 0x3ffd2000 - 0x3ffd4000[0m
+D (789) memory_layout: Available memory region 0x3ffd4000 - 0x3ffd6000[0m
+D (796) memory_layout: Available memory region 0x3ffd6000 - 0x3ffd8000[0m
+D (802) memory_layout: Available memory region 0x3ffd8000 - 0x3ffda000[0m
+D (809) memory_layout: Available memory region 0x3ffda000 - 0x3ffdc000[0m
+D (815) memory_layout: Available memory region 0x3ffdc000 - 0x3ffde000[0m
+D (822) memory_layout: Available memory region 0x3ffde000 - 0x3ffe0000[0m
+D (829) memory_layout: Available memory region 0x3ffe0440 - 0x3ffe3f20[0m
+D (835) memory_layout: Available memory region 0x3ffe4350 - 0x3ffe8000[0m
+D (842) memory_layout: Available memory region 0x3ffe8000 - 0x3fff0000[0m
+D (848) memory_layout: Available memory region 0x3fff0000 - 0x3fff8000[0m
+D (855) memory_layout: Available memory region 0x3fff8000 - 0x3fffc000[0m
+D (862) memory_layout: Available memory region 0x3fffc000 - 0x40000000[0m
+D (868) memory_layout: Available memory region 0x4009836c - 0x4009a000[0m
+D (875) memory_layout: Available memory region 0x4009a000 - 0x4009c000[0m
+D (881) memory_layout: Available memory region 0x4009c000 - 0x4009e000[0m
+D (888) memory_layout: Available memory region 0x4009e000 - 0x400a0000[0m
+[0;32mI (895) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (902) heap_init: New heap initialised at 0x3ffae6e0[0m
+[0;32mI (907) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+D (913) heap_init: New heap initialised at 0x3ffb8ba0[0m
+[0;32mI (918) heap_init: At 3FFB8BA0 len 00027460 (157 KiB): DRAM[0m
+[0;32mI (924) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (931) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+D (937) heap_init: New heap initialised at 0x4009836c[0m
+[0;32mI (942) heap_init: At 4009836C len 00007C94 (31 KiB): IRAM[0m
+D (948) cpu_start: calling init function: 0x400d6634 on core: 0[0m
+D (954) cpu_start: calling init function: 0x400d5f90 on core: 0[0m
+D (960) cpu_start: calling init function: 0x400d37e4 on core: 0[0m
+D (967) intr_alloc: Connected src 46 to int 1 (cpu 0)[0m
+D (971) cpu_start: calling init function: 0x400d37f0 on core: 0[0m
+D (977) cpu_start: calling init function: 0x400d7874 on core: 0[0m
+D (984) cpu_start: calling init function: 0x400d8270 on core: 0[0m
+D (989) cpu_start: calling init function: 0x400d600c on core: 0[0m
+D (996) cpu_start: calling init function: 0x400d6450 on core: 0[0m
+D (1001) cpu_start: calling init function: 0x400d37fc on core: 0[0m
+D (1008) spi_flash: trying chip: issi[0m
+D (1011) spi_flash: trying chip: gd[0m
+D (1015) spi_flash: trying chip: mxic[0m
+D (1019) spi_flash: trying chip: winbond[0m
+D (1023) spi_flash: trying chip: generic[0m
+[0;32mI (1026) spi_flash: detected chip: generic[0m
+[0;32mI (1031) spi_flash: flash io: dio[0m
+D (1035) cpu_start: calling init function: 0x400d3324 on core: 0[0m
+D (1041) cpu_start: calling init function: 0x4016aab8[0m
+D (1047) cpu_start: calling init function: 0x4015bd3c[0m
+D (1052) cpu_start: calling init function: 0x4010afec[0m
+D (1057) cpu_start: calling init function: 0x400f1424[0m
+[0;33mW (1062) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+D (1070) cpu_start: calling init function: 0x400f1380[0m
+[0;33mW (1075) i2s(legacy): legacy i2s driver is deprecated, please migrate to use driver/i2s_std.h, driver/i2s_pdm.h or driver/i2s_tdm.h[0m
+D (1088) cpu_start: calling init function: 0x400896d8[0m
+D (1093) cpu_start: calling init function: 0x400d4884[0m
+D (1098) cpu_start: calling init function: 0x400d3da0[0m
+D (1103) cpu_start: calling init function: 0x4015c180 on core: 0[0m
+D (1109) intr_alloc: Connected src 17 to int 2 (cpu 0)[0m
+D (1115) cpu_start: calling init function: 0x400d3820 on core: 0[0m
+D (1121) intr_alloc: Connected src 24 to int 3 (cpu 0)[0m
+D (1126) app_start: Starting scheduler on CPU0[0m
+[0;32D (1130) intr_alloc: Connected src 25 to int 1 (cpu 1)[0m
+D (1130) app_start: Starting scheduler on CPU1[0m
+mI (1130) main_task: Started on CPU0[0m
+D (1150) heap_init: New heap initialised at 0x3ffe0440[0m
+D (1150) heap_init: New heap initialised at 0x3ffe4350[0m
+D (1150) intr_alloc: Connected src 16 to int 5 (cpu 0)[0m
+[0;32mI (1150) main_task: Calling app_main()[0m
+[0;32mI (1210) lodrom_spiffs: Partition size: total: 896321, used: 429210[0m
+[0;32mI (1210) LODROM_AUDIO: Initializing I2S...[0m
+D (1210) i2s(legacy): [sclk] 160000000 [mclk] 2048000 [mclk_div] 78 [bclk] 256000 [bclk_div] 8[0m
+D (1220) intr_alloc: Connected src 32 to int 8 (cpu 0)[0m
+D (1230) i2s(legacy): DMA Malloc info, datalen=blocksize=4092, dma_desc_num=4[0m
+D (1230) i2s(legacy): I2S0, MCLK output by GPIO0[0m
+[0;32mI (1240) LODROM_AUDIO: I2S initialized[0m
+[0;32mI (1250) RING: Credentials file exists[0m
+[0;32mI (1250) lodrom_spiffs: Listing files in /spiffs:[0m
+[0;32mI (1250) lodrom_spiffs: Found file: recado02.wav[0m
+[0;32mI (1260) lodrom_spiffs: Found file: recado03.wav[0m
+[0;32mI (1270) lodrom_spiffs: Found file: recado01.wav[0m
+[0;32mI (1270) lodrom_spiffs: Found file: credentials.json[0m
+[0;32mI (1310) wifi_manager: Set STA IP String to: 0.0.0.0[0m
+D (1310) esp_netif_lwip: LwIP stack has been initialized[0m
+D (1310) esp_netif_lwip: esp-netif has been successfully initialized[0m
+D (1320) event: running task for loop 0x3ffc6e94[0m
+D (1320) event: created task for loop 0x3ffc6e94[0m
+D (1330) event: created event loop 0x3ffc6e94[0m
+D (1330) esp_netif_lwip: check: remote, if=0x3ffc57f0 fn=0x4010885c[0m
+D (1340) esp_netif_objects: esp_netif_add_to_list_unsafe netif added successfully (total netifs: 1)[0m
+D (1350) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+[0;32mI (1350) lodrom_wifi_start: Waiting for Wi-Fi connection...[0m
+D (1350) esp_netif_lwip: check: remote, if=0x3ffc57f0 fn=0x4010885c[0m
+D (1370) esp_netif_objects: esp_netif_add_to_list_unsafe netif added successfully (total netifs: 2)[0m
+D (1370) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (1380) nvs: nvs_open_from_partition misc 1[0m
+D (1390) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 8 bit[0m
+D (1390) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 0 bit[0m
+D (1400) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 24 bit[0m
+D (1410) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 16 bit[0m
+D (1410) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (1420) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (1430) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 16 bit[0m
+D (1430) nvs: nvs_open_from_partition nvs.net80211 1[0m
+D (1440) nvs: nvs_get opmode 1[0m
+D (1440) nvs: nvs_get_str_or_blob sta.ssid[0m
+D (1450) nvs: nvs_get sta.authmode 1[0m
+D (1450) nvs: nvs_get_str_or_blob sta.pswd[0m
+D (1450) nvs: nvs_get_str_or_blob sta.pmk[0m
+D (1460) nvs: nvs_get sta.chan 1[0m
+D (1460) nvs: nvs_get auto.conn 1[0m
+D (1460) nvs: nvs_get bssid.set 1[0m
+D (1470) nvs: nvs_get_str_or_blob sta.bssid[0m
+D (1470) nvs: nvs_get sta.lis_intval 2[0m
+D (1480) nvs: nvs_get sta.phym 1[0m
+D (1480) nvs: nvs_get sta.phybw 1[0m
+D (1480) nvs: nvs_get_str_or_blob sta.apsw[0m
+D (1490) nvs: nvs_get_str_or_blob sta.apinfo[0m
+D (1490) nvs: nvs_get sta.scan_method 1[0m
+D (1500) nvs: nvs_get sta.sort_method 1[0m
+D (1500) nvs: nvs_get sta.minrssi 1[0m
+D (1500) nvs: nvs_get sta.minauth 1[0m
+D (1510) nvs: nvs_get sta.pmf_e 1[0m
+D (1510) nvs: nvs_get sta.pmf_r 1[0m
+D (1510) nvs: nvs_get sta.btm_e 1[0m
+D (1520) nvs: nvs_get sta.rrm_e 1[0m
+D (1520) nvs: nvs_get sta.mbo_e 1[0m
+D (1520) nvs: nvs_get_str_or_blob ap.ssid[0m
+D (1530) nvs: nvs_get_str_or_blob ap.passwd[0m
+D (1530) nvs: nvs_get_str_or_blob ap.pmk[0m
+D (1540) nvs: nvs_get ap.chan 1[0m
+D (1540) nvs: nvs_get ap.authmode 1[0m
+D (1540) nvs: nvs_get ap.hidden 1[0m
+D (1550) nvs: nvs_get ap.max.conn 1[0m
+D (1550) nvs: nvs_get bcn.interval 2[0m
+D (1550) nvs: nvs_get ap.phym 1[0m
+D (1560) nvs: nvs_get ap.phybw 1[0m
+D (1560) nvs: nvs_get ap.sndchan 1[0m
+D (1560) nvs: nvs_get ap.pmf_e 1[0m
+D (1570) nvs: nvs_get ap.pmf_r 1[0m
+D (1570) nvs: nvs_get ap.p_cipher 1[0m
+D (1570) nvs: nvs_get lorate 1[0m
+D (1580) nvs: nvs_get_str_or_blob country[0m
+D (1580) nvs: nvs_get ap.ftm_r 1[0m
+D (1580) nvs: nvs_get sta.ft 1[0m
+D (1590) nvs: nvs_get sta.owe 1[0m
+D (1590) nvs: nvs_get sta.trans_d 1[0m
+D (1590) nvs: nvs_get sta.sae_h2e 1[0m
+D (1600) nvs: nvs_get sta.sae_pk_mode 1[0m
+D (1600) nvs: nvs_get sta.bss_retry 1[0m
+D (1600) nvs: nvs_get_str_or_blob sta.owe_data[0m
+D (1610) nvs: nvs_get sta.he_dcm 1[0m
+D (1610) nvs: nvs_get sta.he_dcm_c_tx 1[0m
+D (1620) nvs: nvs_get sta.he_dcm_c_rx 1[0m
+D (1620) nvs: nvs_get sta.he_mcs9_d 1[0m
+D (1620) nvs: nvs_get sta.he_su_b_d 1[0m
+D (1630) nvs: nvs_get sta.he_su_b_f_d 1[0m
+D (1630) nvs: nvs_get sta.he_mu_b_f_d 1[0m
+D (1640) nvs: nvs_get sta.he_cqi_f_d 1[0m
+D (1640) nvs: nvs_get_str_or_blob sta.sae_h2e_id[0m
+D (1640) nvs: nvs_get ap.sae_h2e 1[0m
+D (1650) nvs: nvs_get_str_or_blob ap.pmk_info[0m
+D (1650) nvs: nvs_get nan.phym 1[0m
+D (1660) nvs: nvs_get sta.pwr_reset 1[0m
+D (1660) nvs: nvs_get band 1[0m
+D (1660) nvs: nvs_set ap.sndchan 1 1[0m
+[0;32mI (1670) wifi_init: rx ba win: 6[0m
+[0;32mI (1670) wifi_init: accept mbox: 6[0m
+[0;32mI (1670) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1680) wifi_init: udp mbox: 6[0m
+[0;32mI (1680) wifi_init: tcp mbox: 6[0m
+[0;32mI (1690) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1690) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1690) wifi_init: tcp mss: 1440[0m
+[0;32mI (1700) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1700) wifi_init: WiFi RX IRAM OP enabled[0m
+D (1710) esp_netif_lwip: check: remote, if=0x3ffc8110 fn=0x40108df0[0m
+D (1710) esp_netif_lwip: esp_netif_dhcps_stop_api esp_netif:0x3ffc8110[0m
+D (1720) esp_netif_lwip: dhcp server stop successfully[0m
+D (1730) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (1730) esp_netif_lwip: check: remote, if=0x3ffc8110 fn=0x401090d4[0m
+D (1740) esp_netif_lwip: esp_netif_set_ip_info_api esp_netif:0x3ffc8110[0m
+D (1740) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (1750) esp_netif_lwip: check: remote, if=0x3ffc8110 fn=0x40108a9c[0m
+D (1760) esp_netif_lwip: esp_netif_dhcps_start_api esp_netif:0x3ffc8110[0m
+D (1760) esp_netif_lwip: dhcp server re init[0m
+D (1770) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (1940) adc_share_hw_ctrl: Wi-Fi takes adc2 lock.[0m
+[0;32mI (1940) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+D (1940) phy_init: loading PHY init data from application binary[0m
+D (1950) nvs: nvs_open_from_partition phy 0[0m
+D (1950) nvs: nvs_get cal_version 4[0m
+D (1960) nvs: nvs_get_str_or_blob cal_mac[0m
+D (1960) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 8 bit[0m
+D (1970) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 0 bit[0m
+D (1970) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 24 bit[0m
+D (1980) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 16 bit[0m
+D (1990) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (2000) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (2000) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 16 bit[0m
+D (2010) nvs: nvs_get_str_or_blob cal_data[0m
+D (2020) nvs: nvs_close 3[0m
+D (2020) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 8 bit[0m
+D (2020) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 0 bit[0m
+D (2030) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 24 bit[0m
+D (2040) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 16 bit[0m
+D (2050) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (2050) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (2060) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 16 bit[0m
+D (2130) event: running post WIFI_EVENT:43 with handler 0x400dbbec and context 0x3ffd6d74 on loop 0x3ffc6e94[0m
+D (2130) event: running post WIFI_EVENT:2 with handler 0x4010b270 and context 0x3ffc7fbc on loop 0x3ffc6e94[0m
+[0;32mI (2130) http_server: Registering URI handlers[0m
+D (2140) wifi_init_default: wifi_start esp-netif:0x3ffc7dbc event-id2[0m
+D (2130) httpd: httpd_thread: web server started[0m
+D (2150) wifi_init_default: WIFI mac address: 78 21 84 7d f4 f8[0m
+D (2140) httpd_uri: httpd_register_uri_handler: [0] installed *[0m
+D (2160) esp_netif_lwip: check: remote, if=0x3ffc7dbc fn=0x4010822c[0m
+D (2160) httpd: httpd_server: doing select maxfd+1 = 56[0m
+D (2170) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (2180) esp_netif_handlers: esp_netif action has started with netif0x3ffc7dbc from event_id=2[0m
+D (2170) httpd_uri: httpd_find_uri_handler: [0] = *[0m
+D (2190) esp_netif_lwip: check: remote, if=0x3ffc7dbc fn=0x40108c1c[0m
+D (2200) httpd_uri: httpd_register_uri_handler: [0] exists *[0m
+D (2200) esp_netif_lwip: esp_netif_start_api 0x3ffc7dbc[0m
+D (2220) httpd_uri: httpd_register_uri_handler: [1] installed *[0m
+D (2220) esp_netif_lwip: esp_netif_get_hostname esp_netif:0x3ffc7dbc[0m
+D (2230) httpd_uri: httpd_find_uri_handler: [0] = *[0m
+D (2230) esp_netif_lwip: check: local, if=0x3ffc7dbc fn=0x4010959c[0m
+D (2240) httpd_uri: httpd_find_uri_handler: [1] = *[0m
+D (2240) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3ffc7dbc[0m
+D (2250) httpd_uri: httpd_register_uri_handler: [0] exists *[0m
+D (2250) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (2260) event: running post WIFI_EVENT:2 with handler 0x400dbbec and context 0x3ffd6d74 on loop 0x3ffc6e94[0m
+D (2270) httpd_uri: httpd_register_uri_handler: [1] exists *[0m
+[0;32mI (2270) wifi_manager: [0m
+D (2280) httpd_uri: httpd_register_uri_handler: [2] installed *[0m
+D (2280) event: no handlers have been registered for event ESP_HTTP_SERVER_EVENT:1 posted to loop 0x3ffc6e94[0m
+[0;32mI (2290) wifi_manager: MESSAGE: ORDER_LOAD_AND_RESTORE_STA[0m
+D (2300) nvs: nvs_open_from_partition espwifimgr 0[0m
+D (2310) nvs: nvs_get_str_or_blob ssid[0m
+D (2310) nvs: nvs_get_str_or_blob password[0m
+D (2320) nvs: nvs_get_str_or_blob settings[0m
+D (2320) nvs: nvs_close 4[0m
+[0;32mI (2320) wifi_manager: wifi_manager_fetch_wifi_sta_config: ssid:ApG2.4#1 password:le091064*[0m
+D (2330) wifi_manager: wifi_manager_fetch_wifi_settings: SoftAP_ssid:lodrom[0m
+D (2340) wifi_manager: wifi_manager_fetch_wifi_settings: SoftAP_pwd:lodrom123[0m
+D (2350) wifi_manager: wifi_manager_fetch_wifi_settings: SoftAP_channel:1[0m
+D (2350) wifi_manager: wifi_manager_fetch_wifi_settings: SoftAP_hidden (1 = yes):0[0m
+D (2360) wifi_manager: wifi_manager_fetch_wifi_settings: SoftAP_bandwidth (1 = 20MHz, 2 = 40MHz)1[0m
+D (2370) wifi_manager: wifi_manager_fetch_wifi_settings: sta_only (0 = APSTA, 1 = STA when connected):1[0m
+D (2380) wifi_manager: wifi_manager_fetch_wifi_settings: sta_power_save (1 = yes):0[0m
+D (2390) wifi_manager: wifi_manager_fetch_wifi_settings: sta_static_ip (0 = dhcp client, 1 = static ip):0[0m
+[0;32mI (2400) wifi_manager: Saved wifi found on startup. Will attempt to connect.[0m
+[0;32mI (2400) wifi_manager: MESSAGE: ORDER_CONNECT_STA[0m
+D (3440) event: running post WIFI_EVENT:43 with handler 0x400dbbec and context 0x3ffd6d74 on loop 0x3ffc6e94[0m
+D (3510) event: running post WIFI_EVENT:4 with handler 0x4010b2a0 and context 0x3ffc801c on loop 0x3ffc6e94[0m
+D (3520) esp_netif_handlers: esp_netif action connected with netif0x3ffc7dbc from event_id=4[0m
+D (3520) esp_netif_lwip: check: remote, if=0x3ffc7dbc fn=0x40109084[0m
+D (3530) esp_netif_lwip: esp_netif_up_api esp_netif:0x3ffc7dbc[0m
+D (3540) esp_netif_lwip: check: local, if=0x3ffc7dbc fn=0x4010959c[0m
+D (3540) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3ffc7dbc[0m
+D (3550) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (3550) esp_netif_lwip: check: remote, if=0x3ffc7dbc fn=0x40108f40[0m
+D (3560) esp_netif_lwip: esp_netif_dhcpc_start_api esp_netif:0x3ffc7dbc[0m
+D (3570) esp_netif_lwip: esp_netif_start_ip_lost_timer esp_netif:0x3ffc7dbc[0m
+D (3570) esp_netif_lwip: if0x3ffc7dbc start ip lost tmr: interval=120[0m
+D (3580) esp_netif_lwip: starting dhcp client[0m
+D (3590) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (3590) event: running post WIFI_EVENT:4 with handler 0x400dbbec and context 0x3ffd6d74 on loop 0x3ffc6e94[0m
+[0;32mI (3600) wifi_manager: WIFI_EVENT_STA_CONNECTED[0m
+D (4590) esp_netif_lwip: esp_netif_internal_dhcpc_cb lwip-netif:0x3ffc7e44[0m
+D (4590) esp_netif_lwip: if0x3ffc7dbc ip changed=1[0m
+D (4590) event: running post IP_EVENT:0 with handler 0x4010b0c0 and context 0x3ffc80f0 on loop 0x3ffc6e94[0m
+D (4600) wifi_init_default: Got IP wifi default handler entered[0m
+D (4600) esp_netif_handlers: esp_netif action got_ip with netif0x3ffc7dbc from event_id=0[0m
+[0;32mI (4610) esp_netif_handlers: sta ip: 192.168.70.23, mask: 255.255.255.0, gw: 192.168.70.1[0m
+D (4620) event: running post IP_EVENT:0 with handler 0x400dbbec and context 0x3ffd6da8 on loop 0x3ffc6e94[0m
+[0;32mI (4630) wifi_manager: IP_EVENT_STA_GOT_IP[0m
+[0;32mI (4630) wifi_manager: WM_EVENT_STA_GOT_IP[0m
+[0;32mI (4640) wifi_manager: Set STA IP String to: 192.168.70.23[0m
+D (4650) esp_netif_lwip: esp_netif_get_ip_info esp_netif:0x3ffc7dbc[0m
+[0;32mI (4650) lodrom_wifi_start: Connected to WiFi. Got IP: 192.168.70.23[0m
+[0;32mI (4660) lodrom_wifi_start: Wi-Fi connected and IP address obtained.[0m
+[0;32mI (4670) lodrom_mqtt: ==== MQTT Configuration ====[0m
+[0;32mI (4670) lodrom_mqtt: Broker URI: mqtts://7c1135d9a0c74d6da4c07a96475b8a31.s1.eu.hivemq.cloud[0m
+[0;32mI (4680) lodrom_mqtt: Port: 8883[0m
+[0;32mI (4680) lodrom_mqtt: Username length: 6[0m
+[0;32mI (4690) lodrom_mqtt: Password length: 9[0m
+[0;32mI (4690) lodrom_mqtt: Certificate length: 1938[0m
+[0;32mI (4700) lodrom_mqtt: Initializing MQTT client...[0m
+D (4700) mqtt_client: MQTT client_id=ESP32_7dF4F8[0m
+D (4710) event: created event loop 0x3ffd9e24[0m
+[0;32mI (4710) lodrom_mqtt: Client initialization successful[0m
+[0;32mI (4720) lodrom_mqtt: Event handler registered successfully[0m
+[0;32mI (4730) lodrom_mqtt: Starting MQTT client...[0m
+D (4730) mqtt_client: Core selection disabled[0m
+D (4730) event: running post MQTT_EVENTS:7 with handler 0x400da190 and context 0x3ffd9f24 on loop 0x3ffd9e24[0m
+[0;32mI (4740) lodrom_mqtt: Event ID: 7[0m
+D (4750) lodrom_mqtt: Other event id: 7[0m
+D (4750) esp-tls: host:7c1135d9a0c74d6da4c07a96475b8a31.s1.eu.hivemq.cloud: strlen 51[0m
+[0;32mI (4760) lodrom_mqtt: MQTT client started successfully[0m
+D (4770) esp-tls: [sock=57] Resolved IPv4 address: 52.31.149.80[0m
+D (4780) esp-tls: [sock=57] Connecting to server. HOST: 7c1135d9a0c74d6da4c07a96475b8a31.s1.eu.hivemq.cloud, Port: 8883[0m
+[0;31mE (4790) lodrom_json_read: Failed to open file: /spiffs/audio_files.json[0m
+[0;31mE (4790) lodrom_json_read: Failed to read JSON file[0m
+[0;32mI (4820) SPIFFS: File size of /spiffs/recado01.wav: 131756 bytes[0m
+[0;32mI (4840) SPIFFS: File size of /spiffs/recado02.wav: 173698 bytes[0m
+[0;32mI (4840) SPIFFS: File size of /spiffs/recado03.wav: 119168 bytes[0m
+D (5030) esp-tls: handshake in progress...[0m
+D (6230) mqtt_client: Transport connected to mqtts://7c1135d9a0c74d6da4c07a96475b8a31.s1.eu.hivemq.cloud:8883[0m
+D (6230) mqtt_client: Sending MQTT CONNECT message, type: 1, id: 0000[0m
+D (6560) mqtt_client: mqtt_message_receive: first byte: 0x20[0m
+D (6560) transport_base: remain data in cache, need to read again[0m
+D (6560) mqtt_client: mqtt_message_receive: read "remaining length" byte: 0x2[0m
+D (6570) mqtt_client: mqtt_message_receive: total message length: 4 (already read: 2)[0m
+D (6570) transport_base: remain data in cache, need to read again[0m
+D (6580) mqtt_client: mqtt_message_receive: read_len=2[0m
+D (6590) mqtt_client: Connected[0m
+D (6590) event: running post MQTT_EVENTS:1 with handler 0x400da190 and context 0x3ffd9f24 on loop 0x3ffd9e24[0m
+[0;32mI (6600) lodrom_mqtt: Event ID: 1[0m
+[0;32mI (6600) lodrom_mqtt: Connected to MQTT broker, attempting to subscribe...[0m
+D (6610) mqtt_client: mqtt_enqueue id: 64052, type=8 successful[0m
+D (6620) outbox: ENQUEUE msgid=64052, msg_type=8, len=31, size=31[0m
+D (6630) mqtt_client: Sent subscribe, first topic=ALVORADA/controle_portao, id: 64052[0m
+[0;31mE (6630) lodrom_mqtt: Failed to subscribe to topic ALVORADA/controle_portao: 64052[0m
+D (6640) mqtt_client: mqtt_enqueue id: 14067, type=8 successful[0m
+D (6640) outbox: ENQUEUE msgid=14067, msg_type=8, len=23, size=54[0m
+D (6650) mqtt_client: Sent subscribe, first topic=ALVORADA/recados, id: 14067[0m
+[0;31mE (6660) lodrom_mqtt: Failed to subscribe to topic ALVORADA/recados: 14067[0m
+D (8270) mqtt_client: mqtt_message_receive: first byte: 0x90[0m
+D (8270) transport_base: remain data in cache, need to read again[0m
+D (8270) mqtt_client: mqtt_message_receive: read "remaining length" byte: 0x3[0m
+D (8280) mqtt_client: mqtt_message_receive: total message length: 5 (already read: 2)[0m
+D (8280) transport_base: remain data in cache, need to read again[0m
+D (8290) mqtt_client: mqtt_message_receive: read_len=3[0m
+D (8300) mqtt_client: msg_type=9, msg_id=64052[0m
+D (8300) outbox: DELETED msgid=64052, msg_type=8, remain size=23[0m
+D (8310) mqtt_client: Removed pending_id=14067[0m
+D (8310) mqtt_client: deliver_suback, message_length_read=5, message_length=5[0m
+D (8320) event: running post MQTT_EVENTS:3 with handler 0x400da190 and context 0x3ffd9f24 on loop 0x3ffd9e24[0m
+[0;32mI (8330) lodrom_mqtt: Event ID: 3[0m
+[0;32mI (8330) lodrom_mqtt: Successfully subscribed to topic with msg_id=64052[0m
+D (8490) mqtt_client: mqtt_message_receive: first byte: 0x90[0m
+D (8490) transport_base: remain data in cache, need to read again[0m
+D (8490) mqtt_client: mqtt_message_receive: read "remaining length" byte: 0x3[0m
+D (8500) mqtt_client: mqtt_message_receive: total message length: 5 (already read: 2)[0m
+D (8500) transport_base: remain data in cache, need to read again[0m
+D (8510) mqtt_client: mqtt_message_receive: read_len=3[0m
+D (8520) mqtt_client: msg_type=9, msg_id=14067[0m
+D (8520) outbox: DELETED msgid=14067, msg_type=8, remain size=0[0m
+D (8530) mqtt_client: Removed pending_id=14067[0m
+D (8530) mqtt_client: deliver_suback, message_length_read=5, message_length=5[0m
+D (8540) event: running post MQTT_EVENTS:3 with handler 0x400da190 and context 0x3ffd9f24 on loop 0x3ffd9e24[0m
+[0;32mI (8550) lodrom_mqtt: Event ID: 3[0m
+[0;32mI (8550) lodrom_mqtt: Successfully subscribed to topic with msg_id=14067[0m
+[0;32mI (51380) RING: Intercom is ringing![0m
+D (51380) HTTP_CLIENT: set post file length = 46[0m
+D (51380) HTTP_CLIENT: Begin connect to: https://lodrom.cubcl.com:443[0m
+D (51380) esp-tls: host:lodrom.cubcl.com: strlen 16[0m
+D (51390) esp-tls: [sock=58] Resolved IPv4 address: 34.238.234.230[0m
+D (51390) esp-tls: [sock=58] Connecting to server. HOST: lodrom.cubcl.com, Port: 443[0m
+D (51560) esp-tls: handshake in progress...[0m
+D (53060) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3ffc6e94[0m
+D (53060) HTTP_CLIENT: Write header[4]: POST /esp/events/ HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: lodrom.cubcl.com
+Content-Type: application/json
+Content-Length: 46
+
+[0m
+D (53080) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3ffc6e94[0m
+D (57280) HTTP_CLIENT: on_message_begin[0m
+D (57280) HTTP_CLIENT: HEADER=Server:nginx/1.24.0 (Ubuntu)[0m
+D (57280) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e94[0m
+D (57290) HTTP_CLIENT: HEADER=Date:Mon, 25 Nov 2024 11:46:12 GMT[0m
+D (57300) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e94[0m
+D (57310) HTTP_CLIENT: HEADER=Content-Type:text/html[0m
+D (57310) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e94[0m
+D (57320) HTTP_CLIENT: HEADER=Content-Length:141[0m
+D (57330) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e94[0m
+D (57340) HTTP_CLIENT: HEADER=Connection:keep-alive[0m
+D (57340) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e94[0m
+D (57350) HTTP_CLIENT: http_on_headers_complete, status=500, offset=176, nread=176[0m
+D (57360) HTTP_CLIENT: http_on_body 141[0m
+D (57360) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:4 posted to loop 0x3ffc6e94[0m
+D (57370) HTTP_CLIENT: http_on_message_complete, parser=0x3ffdfab4[0m
+D (57380) HTTP_CLIENT: content_length = 141[0m
+D (57380) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:5 posted to loop 0x3ffc6e94[0m
+[0;32mI (57390) HTTP_CLIENT: HTTPS POST Status = 500, Response Length = 141[0m
+D (57400) HTTP_CLIENT: is_data_remain=0, is_chunked=0, content_length=141[0m
+D (57410) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:6 posted to loop 0x3ffc6e94[0m
+[0;32mI (57460) RING: Answered![0m
+D (57460) HTTP_CLIENT: set post file length = 46[0m
+D (57460) HTTP_CLIENT: Begin connect to: https://lodrom.cubcl.com:443[0m
+D (57460) esp-tls: host:lodrom.cubcl.com: strlen 16[0m
+D (57460) esp-tls: [sock=58] Resolved IPv4 address: 34.238.234.230[0m
+D (57470) esp-tls: [sock=58] Connecting to server. HOST: lodrom.cubcl.com, Port: 443[0m
+D (57630) esp-tls: handshake in progress...[0m
+D (59080) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3ffc6e94[0m
+D (59080) HTTP_CLIENT: Write header[4]: POST /esp/events/ HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: lodrom.cubcl.com
+Content-Type: application/json
+Content-Length: 46
+
+[0m
+D (59100) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3ffc6e94[0m
+D (63320) HTTP_CLIENT: on_message_begin[0m
+D (63320) HTTP_CLIENT: HEADER=Server:nginx/1.24.0 (Ubuntu)[0m
+D (63320) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e94[0m
+D (63320) HTTP_CLIENT: HEADER=Date:Mon, 25 Nov 2024 11:46:18 GMT[0m
+D (63330) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e94[0m
+D (63340) HTTP_CLIENT: HEADER=Content-Type:text/html[0m
+D (63350) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e94[0m
+D (63350) HTTP_CLIENT: HEADER=Content-Length:141[0m
+D (63360) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e94[0m
+D (63360) HTTP_CLIENT: HEADER=Connection:keep-alive[0m
+D (63380) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e94[0m
+D (63380) HTTP_CLIENT: http_on_headers_complete, status=500, offset=176, nread=176[0m
+D (63390) HTTP_CLIENT: http_on_body 141[0m
+D (63400) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:4 posted to loop 0x3ffc6e94[0m
+D (63410) HTTP_CLIENT: http_on_message_complete, parser=0x3ffdd2dc[0m
+D (63410) HTTP_CLIENT: content_length = 141[0m
+D (63420) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:5 posted to loop 0x3ffc6e94[0m
+[0;32mI (63420) HTTP_CLIENT: HTTPS POST Status = 500, Response Length = 141[0m
+D (63430) HTTP_CLIENT: is_data_remain=0, is_chunked=0, content_length=141[0m
+D (63440) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:6 posted to loop 0x3ffc6e94[0m
+D (67140) mqtt_client: Sent PING successful[0m
+D (67370) mqtt_client: mqtt_message_receive: first byte: 0xd0[0m
+D (67370) transport_base: remain data in cache, need to read again[0m
+D (67370) mqtt_client: mqtt_message_receive: read "remaining length" byte: 0x0[0m
+D (67370) mqtt_client: mqtt_message_receive: total message length: 2 (already read: 2)[0m
+D (67380) mqtt_client: msg_type=13, msg_id=0[0m
+D (67390) mqtt_client: MQTT_MSG_TYPE_PINGRESP[0m
+[0;32mI (78110) Main: Hook is attached[0m
+[0;32mI (81400) Main: Hook is attached[0m
+[0;32mI (83040) RING: Intercom is ringing![0m
+D (83040) HTTP_CLIENT: set post file length = 46[0m
+D (83040) HTTP_CLIENT: Begin connect to: https://lodrom.cubcl.com:443[0m
+D (83040) esp-tls: host:lodrom.cubcl.com: strlen 16[0m
+D (83050) esp-tls: [sock=58] Resolved IPv4 address: 34.238.234.230[0m
+D (83050) esp-tls: [sock=58] Connecting to server. HOST: lodrom.cubcl.com, Port: 443[0m
+D (83210) esp-tls: handshake in progress...[0m
+D (84680) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3ffc6e94[0m
+D (84680) HTTP_CLIENT: Write header[4]: POST /esp/events/ HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: lodrom.cubcl.com
+Content-Type: application/json
+Content-Length: 46
+
+[0m
+D (84700) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3ffc6e94[0m
+D (88980) HTTP_CLIENT: on_message_begin[0m
+D (88980) HTTP_CLIENT: HEADER=Server:nginx/1.24.0 (Ubuntu)[0m
+D (88980) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e94[0m
+D (88990) HTTP_CLIENT: HEADER=Date:Mon, 25 Nov 2024 11:46:44 GMT[0m
+D (88990) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e94[0m
+D (89000) HTTP_CLIENT: HEADER=Content-Type:text/html[0m
+D (89010) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e94[0m
+D (89020) HTTP_CLIENT: HEADER=Content-Length:141[0m
+D (89020) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e94[0m
+D (89030) HTTP_CLIENT: HEADER=Connection:keep-alive[0m
+D (89040) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e94[0m
+D (89050) HTTP_CLIENT: http_on_headers_complete, status=500, offset=176, nread=176[0m
+D (89060) HTTP_CLIENT: http_on_body 141[0m
+D (89060) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:4 posted to loop 0x3ffc6e94[0m
+D (89070) HTTP_CLIENT: http_on_message_complete, parser=0x3ffdf964[0m
+D (89080) HTTP_CLIENT: content_length = 141[0m
+D (89080) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:5 posted to loop 0x3ffc6e94[0m
+[0;32mI (89090) HTTP_CLIENT: HTTPS POST Status = 500, Response Length = 141[0m
+D (89100) HTTP_CLIENT: is_data_remain=0, is_chunked=0, content_length=141[0m
+D (89100) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:6 posted to loop 0x3ffc6e94[0m
+[0;32mI (89130) Main: Hook is attached[0m
+[0;32mI (91140) Main: Hook is attached[0m
+[0;32mI (93150) Main: Hook is attached[0m
+[0;32mI (95160) Main: Hook is attached[0m
+[0;32mI (97120) RING: There are notes for you![0m
+[0;32mI (97120) LODROM_AUDIO: Playing WAV file: /spiffs/recado01.wav[0m
+[0;32mI (97120) HTTP_CLIENT: Executing api_event_5 in a dedicated task[0m
+[0;32mI (97120) LODROM_AUDIO: WAV file valid. Starting playback...[0m
+D (97120) HTTP_CLIENT: set post file length = 46[0m
+D (97130) i2s(legacy): size: 1024, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (97130) HTTP_CLIENT: Begin connect to: https://lodrom.cubcl.com:443[0m
+D (97140) i2s(legacy): size: 1024, rw_pos: 1024, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (97150) esp-tls: host:lodrom.cubcl.com: strlen 16[0m
+D (97160) i2s(legacy): size: 1024, rw_pos: 2048, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (97160) esp-tls: [sock=58] Resolved IPv4 address: 34.238.234.230[0m
+D (97170) i2s(legacy): size: 1024, rw_pos: 3072, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (97170) esp-tls: [sock=58] Connecting to server. HOST: lodrom.cubcl.com, Port: 443[0m
+D (97180) i2s(legacy): size: 4, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (97200) i2s(legacy): size: 1024, rw_pos: 4, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (97210) i2s(legacy): size: 1024, rw_pos: 1028, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (97210) i2s(legacy): size: 1024, rw_pos: 2052, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (97220) i2s(legacy): size: 1024, rw_pos: 3076, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (97230) i2s(legacy): size: 8, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (97240) i2s(legacy): size: 1024, rw_pos: 8, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (97240) i2s(legacy): size: 1024, rw_pos: 1032, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (97250) i2s(legacy): size: 1024, rw_pos: 2056, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (97260) i2s(legacy): size: 1024, rw_pos: 3080, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (97270) i2s(legacy): size: 12, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (97280) i2s(legacy): size: 1024, rw_pos: 12, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (97280) i2s(legacy): size: 1024, rw_pos: 1036, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (97290) i2s(legacy): size: 1024, rw_pos: 2060, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (97300) i2s(legacy): size: 1024, rw_pos: 3084, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (97310) i2s(legacy): size: 16, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (97310) i2s(legacy): size: 1024, rw_pos: 16, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (97320) i2s(legacy): size: 1024, rw_pos: 1040, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (97330) i2s(legacy): size: 1024, rw_pos: 2064, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (97340) i2s(legacy): size: 1024, rw_pos: 3088, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (97340) esp-tls: handshake in progress...[0m
+D (97390) i2s(legacy): size: 20, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (97390) i2s(legacy): size: 1024, rw_pos: 20, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (97400) i2s(legacy): size: 1024, rw_pos: 1044, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (97400) i2s(legacy): size: 1024, rw_pos: 2068, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (97410) i2s(legacy): size: 1024, rw_pos: 3092, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (97520) i2s(legacy): size: 24, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (97520) i2s(legacy): size: 1024, rw_pos: 24, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (97520) i2s(legacy): size: 1024, rw_pos: 1048, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (97530) i2s(legacy): size: 1024, rw_pos: 2072, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (97540) i2s(legacy): size: 1024, rw_pos: 3096, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (97650) i2s(legacy): size: 28, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (97650) i2s(legacy): size: 1024, rw_pos: 28, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (97650) i2s(legacy): size: 1024, rw_pos: 1052, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (97660) i2s(legacy): size: 1024, rw_pos: 2076, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (97670) i2s(legacy): size: 1024, rw_pos: 3100, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (97770) i2s(legacy): size: 32, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (97770) i2s(legacy): size: 1024, rw_pos: 32, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (97780) i2s(legacy): size: 1024, rw_pos: 1056, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (97790) i2s(legacy): size: 1024, rw_pos: 2080, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (97790) i2s(legacy): size: 1024, rw_pos: 3104, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (97900) i2s(legacy): size: 36, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (97900) i2s(legacy): size: 1024, rw_pos: 36, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (97910) i2s(legacy): size: 1024, rw_pos: 1060, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (97910) i2s(legacy): size: 1024, rw_pos: 2084, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (97920) i2s(legacy): size: 1024, rw_pos: 3108, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (98030) i2s(legacy): size: 40, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (98030) i2s(legacy): size: 1024, rw_pos: 40, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (98030) i2s(legacy): size: 1024, rw_pos: 1064, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (98040) i2s(legacy): size: 1024, rw_pos: 2088, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (98050) i2s(legacy): size: 1024, rw_pos: 3112, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (98160) i2s(legacy): size: 44, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (98160) i2s(legacy): size: 1024, rw_pos: 44, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (98160) i2s(legacy): size: 1024, rw_pos: 1068, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (98170) i2s(legacy): size: 1024, rw_pos: 2092, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (98180) i2s(legacy): size: 1024, rw_pos: 3116, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (98290) i2s(legacy): size: 48, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (98290) i2s(legacy): size: 1024, rw_pos: 48, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (98290) i2s(legacy): size: 1024, rw_pos: 1072, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (98300) i2s(legacy): size: 1024, rw_pos: 2096, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (98310) i2s(legacy): size: 1024, rw_pos: 3120, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (98410) i2s(legacy): size: 52, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (98410) i2s(legacy): size: 1024, rw_pos: 52, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (98420) i2s(legacy): size: 1024, rw_pos: 1076, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (98430) i2s(legacy): size: 1024, rw_pos: 2100, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (98440) i2s(legacy): size: 1024, rw_pos: 3124, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (98540) i2s(legacy): size: 56, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (98540) i2s(legacy): size: 1024, rw_pos: 56, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (98550) i2s(legacy): size: 1024, rw_pos: 1080, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (98550) i2s(legacy): size: 1024, rw_pos: 2104, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (98560) i2s(legacy): size: 1024, rw_pos: 3128, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (98670) i2s(legacy): size: 60, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (98670) i2s(legacy): size: 1024, rw_pos: 60, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (98670) i2s(legacy): size: 1024, rw_pos: 1084, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (98680) i2s(legacy): size: 1024, rw_pos: 2108, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (98690) i2s(legacy): size: 1024, rw_pos: 3132, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (98800) i2s(legacy): size: 64, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (98800) i2s(legacy): size: 1024, rw_pos: 64, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (98800) i2s(legacy): size: 1024, rw_pos: 1088, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (98810) i2s(legacy): size: 1024, rw_pos: 2112, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (98820) i2s(legacy): size: 1024, rw_pos: 3136, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (98830) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:1 posted to loop 0x3ffc6e94[0m
+D (98830) HTTP_CLIENT: Write header[4]: POST /esp/events/ HTTP/1.1
+User-Agent: ESP32 HTTP Client/1.0
+Host: lodrom.cubcl.com
+Content-Type: application/json
+Content-Length: 46
+
+[0m
+D (98860) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:2 posted to loop 0x3ffc6e94[0m
+D (98920) i2s(legacy): size: 68, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (98930) i2s(legacy): size: 1024, rw_pos: 68, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (98930) i2s(legacy): size: 1024, rw_pos: 1092, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (98940) i2s(legacy): size: 1024, rw_pos: 2116, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (98950) i2s(legacy): size: 1024, rw_pos: 3140, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (99050) i2s(legacy): size: 72, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (99050) i2s(legacy): size: 1024, rw_pos: 72, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (99060) i2s(legacy): size: 1024, rw_pos: 1096, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (99070) i2s(legacy): size: 1024, rw_pos: 2120, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (99070) i2s(legacy): size: 1024, rw_pos: 3144, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (99180) i2s(legacy): size: 76, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (99180) i2s(legacy): size: 1024, rw_pos: 76, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (99190) i2s(legacy): size: 1024, rw_pos: 1100, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (99190) i2s(legacy): size: 1024, rw_pos: 2124, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (99200) i2s(legacy): size: 1024, rw_pos: 3148, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (99310) i2s(legacy): size: 80, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (99310) i2s(legacy): size: 1024, rw_pos: 80, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (99310) i2s(legacy): size: 1024, rw_pos: 1104, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (99320) i2s(legacy): size: 1024, rw_pos: 2128, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (99330) i2s(legacy): size: 1024, rw_pos: 3152, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (99440) i2s(legacy): size: 84, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (99440) i2s(legacy): size: 1024, rw_pos: 84, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (99440) i2s(legacy): size: 1024, rw_pos: 1108, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (99450) i2s(legacy): size: 1024, rw_pos: 2132, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (99460) i2s(legacy): size: 1024, rw_pos: 3156, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (99560) i2s(legacy): size: 88, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (99570) i2s(legacy): size: 1024, rw_pos: 88, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (99570) i2s(legacy): size: 1024, rw_pos: 1112, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (99580) i2s(legacy): size: 1024, rw_pos: 2136, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (99580) i2s(legacy): size: 1024, rw_pos: 3160, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (99690) i2s(legacy): size: 92, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (99690) i2s(legacy): size: 1024, rw_pos: 92, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (99700) i2s(legacy): size: 1024, rw_pos: 1116, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (99700) i2s(legacy): size: 1024, rw_pos: 2140, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (99710) i2s(legacy): size: 1024, rw_pos: 3164, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (99820) i2s(legacy): size: 96, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (99820) i2s(legacy): size: 1024, rw_pos: 96, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (99820) i2s(legacy): size: 1024, rw_pos: 1120, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (99830) i2s(legacy): size: 1024, rw_pos: 2144, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (99840) i2s(legacy): size: 1024, rw_pos: 3168, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (99950) i2s(legacy): size: 100, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (99950) i2s(legacy): size: 1024, rw_pos: 100, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (99950) i2s(legacy): size: 1024, rw_pos: 1124, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (99960) i2s(legacy): size: 1024, rw_pos: 2148, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (99970) i2s(legacy): size: 1024, rw_pos: 3172, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (100080) i2s(legacy): size: 104, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (100080) i2s(legacy): size: 1024, rw_pos: 104, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (100080) i2s(legacy): size: 1024, rw_pos: 1128, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (100090) i2s(legacy): size: 1024, rw_pos: 2152, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (100100) i2s(legacy): size: 1024, rw_pos: 3176, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (100200) i2s(legacy): size: 108, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (100200) i2s(legacy): size: 1024, rw_pos: 108, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (100210) i2s(legacy): size: 1024, rw_pos: 1132, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (100220) i2s(legacy): size: 1024, rw_pos: 2156, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (100220) i2s(legacy): size: 1024, rw_pos: 3180, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (100330) i2s(legacy): size: 112, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (100330) i2s(legacy): size: 1024, rw_pos: 112, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (100340) i2s(legacy): size: 1024, rw_pos: 1136, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (100340) i2s(legacy): size: 1024, rw_pos: 2160, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (100350) i2s(legacy): size: 1024, rw_pos: 3184, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (100460) i2s(legacy): size: 116, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (100460) i2s(legacy): size: 1024, rw_pos: 116, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (100460) i2s(legacy): size: 1024, rw_pos: 1140, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (100470) i2s(legacy): size: 1024, rw_pos: 2164, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (100480) i2s(legacy): size: 1024, rw_pos: 3188, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (100590) i2s(legacy): size: 120, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (100590) i2s(legacy): size: 1024, rw_pos: 120, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (100590) i2s(legacy): size: 1024, rw_pos: 1144, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (100600) i2s(legacy): size: 1024, rw_pos: 2168, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (100610) i2s(legacy): size: 1024, rw_pos: 3192, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (100710) i2s(legacy): size: 124, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (100720) i2s(legacy): size: 1024, rw_pos: 124, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (100720) i2s(legacy): size: 1024, rw_pos: 1148, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (100730) i2s(legacy): size: 1024, rw_pos: 2172, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (100740) i2s(legacy): size: 1024, rw_pos: 3196, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (100840) i2s(legacy): size: 128, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (100840) i2s(legacy): size: 640, rw_pos: 128, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+[0;32mI (100850) LODROM_AUDIO: Playback finished[0m
+[0;32mI (102250) LODROM_AUDIO: Playing WAV file: /spiffs/recado02.wav[0m
+[0;32mI (102250) LODROM_AUDIO: WAV file valid. Starting playback...[0m
+D (102250) i2s(legacy): size: 1024, rw_pos: 768, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (102260) i2s(legacy): size: 1024, rw_pos: 1792, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (102260) i2s(legacy): size: 1024, rw_pos: 2816, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (102270) i2s(legacy): size: 1024, rw_pos: 3840, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (102280) i2s(legacy): size: 772, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (102290) i2s(legacy): size: 1024, rw_pos: 772, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (102300) i2s(legacy): size: 1024, rw_pos: 1796, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (102300) i2s(legacy): size: 1024, rw_pos: 2820, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (102310) i2s(legacy): size: 1024, rw_pos: 3844, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (102320) i2s(legacy): size: 776, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (102330) i2s(legacy): size: 1024, rw_pos: 776, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (102330) i2s(legacy): size: 1024, rw_pos: 1800, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (102340) i2s(legacy): size: 1024, rw_pos: 2824, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (102350) i2s(legacy): size: 1024, rw_pos: 3848, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (102360) i2s(legacy): size: 780, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (102370) i2s(legacy): size: 1024, rw_pos: 780, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (102370) i2s(legacy): size: 1024, rw_pos: 1804, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (102380) i2s(legacy): size: 1024, rw_pos: 2828, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (102390) i2s(legacy): size: 1024, rw_pos: 3852, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (102400) i2s(legacy): size: 784, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (102410) i2s(legacy): size: 1024, rw_pos: 784, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (102410) i2s(legacy): size: 1024, rw_pos: 1808, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (102420) i2s(legacy): size: 1024, rw_pos: 2832, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (102430) i2s(legacy): size: 1024, rw_pos: 3856, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (102510) i2s(legacy): size: 788, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (102510) i2s(legacy): size: 1024, rw_pos: 788, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (102510) i2s(legacy): size: 1024, rw_pos: 1812, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (102520) i2s(legacy): size: 1024, rw_pos: 2836, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (102530) i2s(legacy): size: 1024, rw_pos: 3860, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (102630) i2s(legacy): size: 792, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (102630) i2s(legacy): size: 1024, rw_pos: 792, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (102640) i2s(legacy): size: 1024, rw_pos: 1816, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (102650) i2s(legacy): size: 1024, rw_pos: 2840, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (102650) i2s(legacy): size: 1024, rw_pos: 3864, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (102760) i2s(legacy): size: 796, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (102760) i2s(legacy): size: 1024, rw_pos: 796, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (102770) i2s(legacy): size: 1024, rw_pos: 1820, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (102770) i2s(legacy): size: 1024, rw_pos: 2844, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (102780) i2s(legacy): size: 1024, rw_pos: 3868, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (102890) i2s(legacy): size: 800, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (102890) i2s(legacy): size: 1024, rw_pos: 800, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (102890) i2s(legacy): size: 1024, rw_pos: 1824, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (102900) i2s(legacy): size: 1024, rw_pos: 2848, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (102910) i2s(legacy): size: 1024, rw_pos: 3872, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (103020) i2s(legacy): size: 804, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (103020) i2s(legacy): size: 1024, rw_pos: 804, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (103020) i2s(legacy): size: 1024, rw_pos: 1828, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (103030) i2s(legacy): size: 1024, rw_pos: 2852, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (103040) i2s(legacy): size: 1024, rw_pos: 3876, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (103130) HTTP_CLIENT: on_message_begin[0m
+D (103130) HTTP_CLIENT: HEADER=Server:nginx/1.24.0 (Ubuntu)[0m
+D (103130) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e94[0m
+D (103140) HTTP_CLIENT: HEADER=Date:Mon, 25 Nov 2024 11:46:58 GMT[0m
+D (103140) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e94[0m
+D (103140) HTTP_CLIENT: HEADER=Content-Type:text/html[0m
+D (103160) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e94[0m
+D (103160) HTTP_CLIENT: HEADER=Content-Length:141[0m
+D (103140) i2s(legacy): size: 808, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (103170) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e94[0m
+D (103170) HTTP_CLIENT: HEADER=Connection:keep-alive[0m
+D (103190) i2s(legacy): size: 1024, rw_pos: 808, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (103200) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:3 posted to loop 0x3ffc6e94[0m
+D (103200) HTTP_CLIENT: http_on_headers_complete, status=500, offset=176, nread=176[0m
+D (103210) i2s(legacy): size: 1024, rw_pos: 1832, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (103220) HTTP_CLIENT: http_on_body 141[0m
+D (103230) i2s(legacy): size: 1024, rw_pos: 2856, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (103230) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:4 posted to loop 0x3ffc6e94[0m
+D (103230) HTTP_CLIENT: http_on_message_complete, parser=0x3ffdf964[0m
+D (103250) i2s(legacy): size: 1024, rw_pos: 3880, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (103260) HTTP_CLIENT: content_length = 141[0m
+D (103270) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:5 posted to loop 0x3ffc6e94[0m
+[0;32mI (103270) HTTP_CLIENT: HTTPS POST Status = 500, Response Length = 141[0m
+D (103270) i2s(legacy): size: 812, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (103290) HTTP_CLIENT: is_data_remain=0, is_chunked=0, content_length=141[0m
+D (103300) i2s(legacy): size: 1024, rw_pos: 812, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (103300) event: no handlers have been registered for event ESP_HTTP_CLIENT_EVENT:6 posted to loop 0x3ffc6e94[0m
+[0;32mI (103310) HTTP_CLIENT: api_event_5 completed[0m
+D (103310) i2s(legacy): size: 1024, rw_pos: 1836, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (103330) i2s(legacy): size: 1024, rw_pos: 2860, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (103340) i2s(legacy): size: 1024, rw_pos: 3884, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (103400) i2s(legacy): size: 816, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (103400) i2s(legacy): size: 1024, rw_pos: 816, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (103410) i2s(legacy): size: 1024, rw_pos: 1840, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (103410) i2s(legacy): size: 1024, rw_pos: 2864, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (103420) i2s(legacy): size: 1024, rw_pos: 3888, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (103530) i2s(legacy): size: 820, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (103530) i2s(legacy): size: 1024, rw_pos: 820, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (103530) i2s(legacy): size: 1024, rw_pos: 1844, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (103540) i2s(legacy): size: 1024, rw_pos: 2868, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (103550) i2s(legacy): size: 1024, rw_pos: 3892, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (103660) i2s(legacy): size: 824, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (103660) i2s(legacy): size: 1024, rw_pos: 824, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (103660) i2s(legacy): size: 1024, rw_pos: 1848, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (103670) i2s(legacy): size: 1024, rw_pos: 2872, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (103680) i2s(legacy): size: 1024, rw_pos: 3896, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (103780) i2s(legacy): size: 828, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (103790) i2s(legacy): size: 1024, rw_pos: 828, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (103790) i2s(legacy): size: 1024, rw_pos: 1852, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (103800) i2s(legacy): size: 1024, rw_pos: 2876, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (103810) i2s(legacy): size: 1024, rw_pos: 3900, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (103910) i2s(legacy): size: 832, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (103910) i2s(legacy): size: 1024, rw_pos: 832, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (103920) i2s(legacy): size: 1024, rw_pos: 1856, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (103920) i2s(legacy): size: 1024, rw_pos: 2880, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (103930) i2s(legacy): size: 1024, rw_pos: 3904, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (104040) i2s(legacy): size: 836, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (104040) i2s(legacy): size: 1024, rw_pos: 836, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (104040) i2s(legacy): size: 1024, rw_pos: 1860, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (104050) i2s(legacy): size: 1024, rw_pos: 2884, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (104060) i2s(legacy): size: 1024, rw_pos: 3908, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (104170) i2s(legacy): size: 840, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (104170) i2s(legacy): size: 1024, rw_pos: 840, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (104170) i2s(legacy): size: 1024, rw_pos: 1864, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (104180) i2s(legacy): size: 1024, rw_pos: 2888, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (104190) i2s(legacy): size: 1024, rw_pos: 3912, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (104300) i2s(legacy): size: 844, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (104300) i2s(legacy): size: 1024, rw_pos: 844, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (104300) i2s(legacy): size: 1024, rw_pos: 1868, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (104310) i2s(legacy): size: 1024, rw_pos: 2892, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (104320) i2s(legacy): size: 1024, rw_pos: 3916, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (104420) i2s(legacy): size: 848, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (104420) i2s(legacy): size: 1024, rw_pos: 848, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (104430) i2s(legacy): size: 1024, rw_pos: 1872, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (104440) i2s(legacy): size: 1024, rw_pos: 2896, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (104440) i2s(legacy): size: 1024, rw_pos: 3920, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (104550) i2s(legacy): size: 852, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (104550) i2s(legacy): size: 1024, rw_pos: 852, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (104560) i2s(legacy): size: 1024, rw_pos: 1876, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (104560) i2s(legacy): size: 1024, rw_pos: 2900, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (104570) i2s(legacy): size: 1024, rw_pos: 3924, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (104680) i2s(legacy): size: 856, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (104680) i2s(legacy): size: 1024, rw_pos: 856, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (104680) i2s(legacy): size: 1024, rw_pos: 1880, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (104690) i2s(legacy): size: 1024, rw_pos: 2904, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (104700) i2s(legacy): size: 1024, rw_pos: 3928, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (104810) i2s(legacy): size: 860, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (104810) i2s(legacy): size: 1024, rw_pos: 860, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (104810) i2s(legacy): size: 1024, rw_pos: 1884, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (104820) i2s(legacy): size: 1024, rw_pos: 2908, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (104830) i2s(legacy): size: 1024, rw_pos: 3932, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (104930) i2s(legacy): size: 864, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (104940) i2s(legacy): size: 1024, rw_pos: 864, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (104940) i2s(legacy): size: 1024, rw_pos: 1888, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (104950) i2s(legacy): size: 1024, rw_pos: 2912, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (104960) i2s(legacy): size: 1024, rw_pos: 3936, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (105060) i2s(legacy): size: 868, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (105060) i2s(legacy): size: 1024, rw_pos: 868, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (105070) i2s(legacy): size: 1024, rw_pos: 1892, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (105080) i2s(legacy): size: 1024, rw_pos: 2916, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (105080) i2s(legacy): size: 1024, rw_pos: 3940, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (105190) i2s(legacy): size: 872, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (105190) i2s(legacy): size: 1024, rw_pos: 872, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (105200) i2s(legacy): size: 1024, rw_pos: 1896, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (105200) i2s(legacy): size: 1024, rw_pos: 2920, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (105210) i2s(legacy): size: 1024, rw_pos: 3944, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (105320) i2s(legacy): size: 876, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (105320) i2s(legacy): size: 1024, rw_pos: 876, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (105320) i2s(legacy): size: 1024, rw_pos: 1900, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (105330) i2s(legacy): size: 1024, rw_pos: 2924, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (105340) i2s(legacy): size: 1024, rw_pos: 3948, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (105450) i2s(legacy): size: 880, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (105450) i2s(legacy): size: 1024, rw_pos: 880, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (105450) i2s(legacy): size: 1024, rw_pos: 1904, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (105460) i2s(legacy): size: 1024, rw_pos: 2928, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (105470) i2s(legacy): size: 1024, rw_pos: 3952, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (105570) i2s(legacy): size: 884, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (105580) i2s(legacy): size: 1024, rw_pos: 884, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (105580) i2s(legacy): size: 1024, rw_pos: 1908, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (105590) i2s(legacy): size: 1024, rw_pos: 2932, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (105600) i2s(legacy): size: 1024, rw_pos: 3956, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (105700) i2s(legacy): size: 888, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (105700) i2s(legacy): size: 1024, rw_pos: 888, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (105710) i2s(legacy): size: 1024, rw_pos: 1912, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (105720) i2s(legacy): size: 1024, rw_pos: 2936, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (105720) i2s(legacy): size: 1024, rw_pos: 3960, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (105830) i2s(legacy): size: 892, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (105830) i2s(legacy): size: 1024, rw_pos: 892, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (105840) i2s(legacy): size: 1024, rw_pos: 1916, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (105840) i2s(legacy): size: 1024, rw_pos: 2940, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (105850) i2s(legacy): size: 1024, rw_pos: 3964, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (105960) i2s(legacy): size: 896, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (105960) i2s(legacy): size: 1024, rw_pos: 896, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (105960) i2s(legacy): size: 1024, rw_pos: 1920, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (105970) i2s(legacy): size: 1024, rw_pos: 2944, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (105980) i2s(legacy): size: 1024, rw_pos: 3968, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (106090) i2s(legacy): size: 900, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (106090) i2s(legacy): size: 1024, rw_pos: 900, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (106090) i2s(legacy): size: 1024, rw_pos: 1924, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (106100) i2s(legacy): size: 1024, rw_pos: 2948, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (106110) i2s(legacy): size: 1024, rw_pos: 3972, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (106210) i2s(legacy): size: 904, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (106210) i2s(legacy): size: 1024, rw_pos: 904, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (106220) i2s(legacy): size: 1024, rw_pos: 1928, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (106230) i2s(legacy): size: 1024, rw_pos: 2952, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (106230) i2s(legacy): size: 1024, rw_pos: 3976, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (106340) i2s(legacy): size: 908, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (106340) i2s(legacy): size: 1024, rw_pos: 908, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (106350) i2s(legacy): size: 1024, rw_pos: 1932, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (106350) i2s(legacy): size: 1024, rw_pos: 2956, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (106360) i2s(legacy): size: 1024, rw_pos: 3980, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (106470) i2s(legacy): size: 912, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (106470) i2s(legacy): size: 1024, rw_pos: 912, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (106470) i2s(legacy): size: 1024, rw_pos: 1936, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (106480) i2s(legacy): size: 1024, rw_pos: 2960, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (106490) i2s(legacy): size: 1024, rw_pos: 3984, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (106600) i2s(legacy): size: 916, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (106600) i2s(legacy): size: 1024, rw_pos: 916, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (106600) i2s(legacy): size: 1024, rw_pos: 1940, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (106610) i2s(legacy): size: 1024, rw_pos: 2964, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (106620) i2s(legacy): size: 1024, rw_pos: 3988, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (106720) i2s(legacy): size: 920, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (106730) i2s(legacy): size: 1024, rw_pos: 920, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (106730) i2s(legacy): size: 1024, rw_pos: 1944, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (106740) i2s(legacy): size: 1024, rw_pos: 2968, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (106750) i2s(legacy): size: 1024, rw_pos: 3992, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (106850) i2s(legacy): size: 924, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (106850) i2s(legacy): size: 1024, rw_pos: 924, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (106860) i2s(legacy): size: 1024, rw_pos: 1948, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (106870) i2s(legacy): size: 1024, rw_pos: 2972, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (106870) i2s(legacy): size: 1024, rw_pos: 3996, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (106980) i2s(legacy): size: 928, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (106980) i2s(legacy): size: 1024, rw_pos: 928, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (106990) i2s(legacy): size: 1024, rw_pos: 1952, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (106990) i2s(legacy): size: 1024, rw_pos: 2976, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (107000) i2s(legacy): size: 1024, rw_pos: 4000, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (107110) i2s(legacy): size: 932, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (107110) i2s(legacy): size: 1024, rw_pos: 932, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (107110) i2s(legacy): size: 1024, rw_pos: 1956, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (107120) i2s(legacy): size: 1024, rw_pos: 2980, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (107130) i2s(legacy): size: 1024, rw_pos: 4004, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (107240) i2s(legacy): size: 936, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (107240) i2s(legacy): size: 1024, rw_pos: 936, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (107240) i2s(legacy): size: 598, rw_pos: 1960, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+[0;32mI (107250) LODROM_AUDIO: Playback finished[0m
+D (107650) i2s(legacy): size: 2, rw_pos: 2558, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+[0;32mI (108650) LODROM_AUDIO: Playing WAV file: /spiffs/recado03.wav[0m
+[0;32mI (108650) LODROM_AUDIO: WAV file valid. Starting playback...[0m
+D (108650) i2s(legacy): size: 1024, rw_pos: 2560, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (108660) i2s(legacy): size: 1024, rw_pos: 3584, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (108660) i2s(legacy): size: 516, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (108670) i2s(legacy): size: 1024, rw_pos: 516, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (108680) i2s(legacy): size: 1024, rw_pos: 1540, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (108690) i2s(legacy): size: 1024, rw_pos: 2564, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (108700) i2s(legacy): size: 1024, rw_pos: 3588, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (108700) i2s(legacy): size: 520, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (108710) i2s(legacy): size: 1024, rw_pos: 520, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (108720) i2s(legacy): size: 1024, rw_pos: 1544, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (108730) i2s(legacy): size: 1024, rw_pos: 2568, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (108730) i2s(legacy): size: 1024, rw_pos: 3592, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (108740) i2s(legacy): size: 524, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (108750) i2s(legacy): size: 1024, rw_pos: 524, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (108760) i2s(legacy): size: 1024, rw_pos: 1548, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (108770) i2s(legacy): size: 1024, rw_pos: 2572, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (108770) i2s(legacy): size: 1024, rw_pos: 3596, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (108780) i2s(legacy): size: 528, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (108790) i2s(legacy): size: 1024, rw_pos: 528, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (108800) i2s(legacy): size: 1024, rw_pos: 1552, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (108810) i2s(legacy): size: 1024, rw_pos: 2576, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (108810) i2s(legacy): size: 1024, rw_pos: 3600, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (108900) i2s(legacy): size: 532, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (108900) i2s(legacy): size: 1024, rw_pos: 532, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (108900) i2s(legacy): size: 1024, rw_pos: 1556, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (108910) i2s(legacy): size: 1024, rw_pos: 2580, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (108920) i2s(legacy): size: 1024, rw_pos: 3604, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (109030) i2s(legacy): size: 536, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (109030) i2s(legacy): size: 1024, rw_pos: 536, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (109030) i2s(legacy): size: 1024, rw_pos: 1560, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (109040) i2s(legacy): size: 1024, rw_pos: 2584, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (109050) i2s(legacy): size: 1024, rw_pos: 3608, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (109150) i2s(legacy): size: 540, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (109160) i2s(legacy): size: 1024, rw_pos: 540, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (109160) i2s(legacy): size: 1024, rw_pos: 1564, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (109170) i2s(legacy): size: 1024, rw_pos: 2588, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (109180) i2s(legacy): size: 1024, rw_pos: 3612, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (109280) i2s(legacy): size: 544, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (109280) i2s(legacy): size: 1024, rw_pos: 544, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (109290) i2s(legacy): size: 1024, rw_pos: 1568, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (109300) i2s(legacy): size: 1024, rw_pos: 2592, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (109300) i2s(legacy): size: 1024, rw_pos: 3616, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (109410) i2s(legacy): size: 548, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (109410) i2s(legacy): size: 1024, rw_pos: 548, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (109420) i2s(legacy): size: 1024, rw_pos: 1572, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (109420) i2s(legacy): size: 1024, rw_pos: 2596, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (109430) i2s(legacy): size: 1024, rw_pos: 3620, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (109540) i2s(legacy): size: 552, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (109540) i2s(legacy): size: 1024, rw_pos: 552, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (109540) i2s(legacy): size: 1024, rw_pos: 1576, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (109550) i2s(legacy): size: 1024, rw_pos: 2600, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (109560) i2s(legacy): size: 1024, rw_pos: 3624, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (109670) i2s(legacy): size: 556, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (109670) i2s(legacy): size: 1024, rw_pos: 556, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (109670) i2s(legacy): size: 1024, rw_pos: 1580, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (109680) i2s(legacy): size: 1024, rw_pos: 2604, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (109690) i2s(legacy): size: 1024, rw_pos: 3628, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (109790) i2s(legacy): size: 560, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (109790) i2s(legacy): size: 1024, rw_pos: 560, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (109800) i2s(legacy): size: 1024, rw_pos: 1584, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (109810) i2s(legacy): size: 1024, rw_pos: 2608, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (109820) i2s(legacy): size: 1024, rw_pos: 3632, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (109920) i2s(legacy): size: 564, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (109920) i2s(legacy): size: 1024, rw_pos: 564, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (109930) i2s(legacy): size: 1024, rw_pos: 1588, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (109940) i2s(legacy): size: 1024, rw_pos: 2612, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (109940) i2s(legacy): size: 1024, rw_pos: 3636, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (110050) i2s(legacy): size: 568, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (110050) i2s(legacy): size: 1024, rw_pos: 568, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (110060) i2s(legacy): size: 1024, rw_pos: 1592, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (110060) i2s(legacy): size: 1024, rw_pos: 2616, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (110070) i2s(legacy): size: 1024, rw_pos: 3640, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (110180) i2s(legacy): size: 572, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (110180) i2s(legacy): size: 1024, rw_pos: 572, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (110180) i2s(legacy): size: 1024, rw_pos: 1596, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (110190) i2s(legacy): size: 1024, rw_pos: 2620, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (110200) i2s(legacy): size: 1024, rw_pos: 3644, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (110310) i2s(legacy): size: 576, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (110310) i2s(legacy): size: 1024, rw_pos: 576, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (110310) i2s(legacy): size: 1024, rw_pos: 1600, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (110320) i2s(legacy): size: 1024, rw_pos: 2624, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (110330) i2s(legacy): size: 1024, rw_pos: 3648, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (110430) i2s(legacy): size: 580, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (110430) i2s(legacy): size: 1024, rw_pos: 580, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (110440) i2s(legacy): size: 1024, rw_pos: 1604, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (110450) i2s(legacy): size: 1024, rw_pos: 2628, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (110450) i2s(legacy): size: 1024, rw_pos: 3652, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (110560) i2s(legacy): size: 584, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (110560) i2s(legacy): size: 1024, rw_pos: 584, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (110570) i2s(legacy): size: 1024, rw_pos: 1608, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (110570) i2s(legacy): size: 1024, rw_pos: 2632, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (110580) i2s(legacy): size: 1024, rw_pos: 3656, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (110690) i2s(legacy): size: 588, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (110690) i2s(legacy): size: 1024, rw_pos: 588, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (110690) i2s(legacy): size: 1024, rw_pos: 1612, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (110700) i2s(legacy): size: 1024, rw_pos: 2636, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (110710) i2s(legacy): size: 1024, rw_pos: 3660, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (110820) i2s(legacy): size: 592, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (110820) i2s(legacy): size: 1024, rw_pos: 592, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (110820) i2s(legacy): size: 1024, rw_pos: 1616, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (110830) i2s(legacy): size: 1024, rw_pos: 2640, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (110840) i2s(legacy): size: 1024, rw_pos: 3664, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (110940) i2s(legacy): size: 596, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (110950) i2s(legacy): size: 1024, rw_pos: 596, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (110950) i2s(legacy): size: 1024, rw_pos: 1620, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (110960) i2s(legacy): size: 1024, rw_pos: 2644, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (110970) i2s(legacy): size: 1024, rw_pos: 3668, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (111070) i2s(legacy): size: 600, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (111070) i2s(legacy): size: 1024, rw_pos: 600, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (111080) i2s(legacy): size: 1024, rw_pos: 1624, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (111090) i2s(legacy): size: 1024, rw_pos: 2648, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (111090) i2s(legacy): size: 1024, rw_pos: 3672, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (111200) i2s(legacy): size: 604, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (111200) i2s(legacy): size: 1024, rw_pos: 604, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (111210) i2s(legacy): size: 1024, rw_pos: 1628, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (111210) i2s(legacy): size: 1024, rw_pos: 2652, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (111220) i2s(legacy): size: 1024, rw_pos: 3676, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (111330) i2s(legacy): size: 608, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (111330) i2s(legacy): size: 1024, rw_pos: 608, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (111330) i2s(legacy): size: 1024, rw_pos: 1632, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (111340) i2s(legacy): size: 1024, rw_pos: 2656, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (111350) i2s(legacy): size: 1024, rw_pos: 3680, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (111460) i2s(legacy): size: 612, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (111460) i2s(legacy): size: 1024, rw_pos: 612, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (111460) i2s(legacy): size: 1024, rw_pos: 1636, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (111470) i2s(legacy): size: 1024, rw_pos: 2660, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (111480) i2s(legacy): size: 1024, rw_pos: 3684, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (111580) i2s(legacy): size: 616, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (111590) i2s(legacy): size: 1024, rw_pos: 616, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (111590) i2s(legacy): size: 1024, rw_pos: 1640, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (111600) i2s(legacy): size: 1024, rw_pos: 2664, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (111610) i2s(legacy): size: 1024, rw_pos: 3688, buf_size: 4092, curr_ptr: 0x3ffc14b8[0m
+D (111710) i2s(legacy): size: 620, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (111710) i2s(legacy): size: 1024, rw_pos: 620, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (111720) i2s(legacy): size: 1024, rw_pos: 1644, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (111730) i2s(legacy): size: 1024, rw_pos: 2668, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (111730) i2s(legacy): size: 1024, rw_pos: 3692, buf_size: 4092, curr_ptr: 0x3ffc24c8[0m
+D (111840) i2s(legacy): size: 624, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (111840) i2s(legacy): size: 1024, rw_pos: 624, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (111850) i2s(legacy): size: 1024, rw_pos: 1648, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (111850) i2s(legacy): size: 1024, rw_pos: 2672, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (111860) i2s(legacy): size: 1024, rw_pos: 3696, buf_size: 4092, curr_ptr: 0x3ffbf4a8[0m
+D (111970) i2s(legacy): size: 628, rw_pos: 0, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (111970) i2s(legacy): size: 1024, rw_pos: 628, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (111970) i2s(legacy): size: 1024, rw_pos: 1652, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+D (111980) i2s(legacy): size: 340, rw_pos: 2676, buf_size: 4092, curr_ptr: 0x3ffc04a8[0m
+[0;32mI (111990) LODROM_AUDIO: Playback finished[0m
+D (123570) esp_netif_lwip: esp_netif_ip_lost_timer esp_netif:0x3ffc7dbc[0m
+D (123570) esp_netif_lwip: if0x3ffc7dbc ip lost tmr: no need raise ip lost event[0m
+D (127990) mqtt_client: Sent PING successful[0m
