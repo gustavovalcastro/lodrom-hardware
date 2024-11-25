@@ -111,5 +111,14 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_mqtt.c.obj: \
  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/tcp_transport/include/esp_transport.h \
  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/mqtt/esp-mqtt/include/mqtt5_client.h \
  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/mqtt/esp-mqtt/include/mqtt_client.h \
+ /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_pins.h \
+ /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_driver_gpio/include/driver/gpio.h \
+ /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/hal/include/hal/gpio_types.h \
+ /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/soc/esp32/include/soc/gpio_num.h \
+ /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_rom/include/esp_rom_gpio.h \
+ /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
+ /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_driver_gpio/include/driver/gpio_etm.h \
+ /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_hw_support/include/esp_etm.h \
  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log.h \
- /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log_internal.h
+ /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log_internal.h \
+ /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/json/cJSON/cJSON.h

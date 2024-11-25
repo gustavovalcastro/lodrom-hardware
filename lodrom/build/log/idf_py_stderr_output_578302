@@ -1,0 +1,11 @@
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c: In function 'mqtt_init':
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:204:85: warning: passing argument 3 of 'esp_mqtt_client_register_event' from incompatible pointer type [-Wincompatible-pointer-types]
+  204 |     esp_err_t reg_result = esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, mqtt_event_handler_cb, client);
+      |                                                                                     ^~~~~~~~~~~~~~~~~~~~~
+      |                                                                                     |
+      |                                                                                     void (*)(void *, const char *, int,  void *)
+In file included from /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.h:4,
+                 from /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:1:
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/mqtt/esp-mqtt/include/mqtt_client.h:629:62: note: expected 'esp_event_handler_t' {aka 'void (*)(void *, const char *, long int,  void *)'} but argument is of type 'void (*)(void *, const char *, int,  void *)'
+  629 |                                          esp_event_handler_t event_handler,
+      |                                          ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~

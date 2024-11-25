@@ -16,33 +16,33 @@
 #include "lodrom_spiffs.h"
 #include "lodrom_audio.h"
 #include "lodrom_mqtt.h"
+#include "lodrom_pins.h"
+#include "lodrom_api.h"
 
 /* @brief tag used for ESP serial console messages */
 static const char TAG[] = "Main";
 
 #include "esp_timer.h"
 
-#define DEBOUNCE_TIME_MS 2000
-#define PIN_WIFI_RESET GPIO_NUM_21
-
-#define PIN_DOOR_INPUT GPIO_NUM_22
-#define PIN_HOOK_INPUT GPIO_NUM_23
-#define PIN_DOOR_OUTPUT GPIO_NUM_2
-#define PIN_HOOK_OUTPUT GPIO_NUM_4
-
 void init_io()
 {
+    // Outputs
     gpio_set_direction(PIN_DOOR_OUTPUT, GPIO_MODE_OUTPUT);
     gpio_set_direction(PIN_HOOK_OUTPUT, GPIO_MODE_OUTPUT);
     gpio_set_level(PIN_DOOR_OUTPUT, 1);
     gpio_set_level(PIN_HOOK_OUTPUT, 1);
 
+    // Inputs
     gpio_set_direction(PIN_WIFI_RESET, GPIO_MODE_INPUT);
     gpio_set_pull_mode(PIN_WIFI_RESET, GPIO_PULLUP_ONLY);
     gpio_set_direction(PIN_DOOR_INPUT, GPIO_MODE_INPUT);
     gpio_set_pull_mode(PIN_DOOR_INPUT, GPIO_PULLUP_ONLY);
     gpio_set_direction(PIN_HOOK_INPUT, GPIO_MODE_INPUT);
     gpio_set_pull_mode(PIN_HOOK_INPUT, GPIO_PULLUP_ONLY);
+    gpio_set_direction(PIN_RING_INPUT, GPIO_MODE_INPUT);
+    gpio_set_pull_mode(PIN_RING_INPUT, GPIO_PULLDOWN_ONLY);
+    gpio_set_direction(PIN_DEBUG_INPUT, GPIO_MODE_INPUT);
+    gpio_set_pull_mode(PIN_DEBUG_INPUT, GPIO_PULLUP_ONLY);
 }
 
 void reset_wifi()
@@ -59,6 +59,27 @@ void reset_wifi()
     }
 }
 
+void handle_door_input()
+{
+    static uint64_t last_interrupt_time = 0;
+
+    uint64_t current_time = esp_timer_get_time();
+    uint64_t time_since_last = current_time - last_interrupt_time;
+
+    if (time_since_last > DEBOUNCE_TIME_MS * 1000) { // Debounce
+        last_interrupt_time = current_time;
+        ESP_LOGI(TAG, "Door input activated, calling api_event_1");
+
+        door_led_control = false;
+        gpio_set_level(PIN_DOOR_OUTPUT, 0);
+        vTaskDelay(pdMS_TO_TICKS(1000));
+        gpio_set_level(PIN_DOOR_OUTPUT, 1);
+        door_led_control = true;
+
+        api_event_1();
+    }
+}
+
 void test(esp_mqtt_client_handle_t client)
 {
     static uint64_t last_interrupt_time = 0;
@@ -69,15 +90,81 @@ void test(esp_mqtt_client_handle_t client)
     if (time_since_last > DEBOUNCE_TIME_MS * 1000) { // Convert milliseconds to microseconds
         last_interrupt_time = current_time;
         ESP_LOGI(TAG, "MQTT MESSAGE");
-        char test_message[] = "Hello MQTT";
-        esp_mqtt_client_publish(client, TOPIC, test_message, strlen(test_message), 1, 0);
+        char test_message_portao[] = "Portao";
+        char test_message_recado[] = "Recado";
+        esp_mqtt_client_publish(client, TOPIC_PORTAO, test_message_portao, strlen(test_message_portao), 1, 0);
+        vTaskDelay(pdMS_TO_TICKS(1000));
+        esp_mqtt_client_publish(client, TOPIC_RECADO, test_message_recado, strlen(test_message_recado), 1, 0);
+        vTaskDelay(pdMS_TO_TICKS(1000));
+    }
+}
+
+#define TAG "RING"
+#define RING_TIMER_PERIOD_MS 8000 // 15 seconds
+
+static TimerHandle_t ring_timer;
+static bool is_timer_active = false;
+
+void timer_callback(TimerHandle_t xTimer) {
+    ESP_LOGI(TAG, "There are notes for you!");
+    is_timer_active = false; // Timer finished
+
+    xTaskCreate(api_event_5_task, "API Event 5 Task", 8192, NULL, 5, NULL);
+}
+
+void ring()
+{
+    static uint64_t last_interrupt_time = 0;
+
+    uint64_t current_time = esp_timer_get_time();
+    uint64_t time_since_last = current_time - last_interrupt_time;
+
+    if (time_since_last > RING_DEBOUNCE_TIME_MS * 1000) { // Convert milliseconds to microseconds
+        last_interrupt_time = current_time;
+        ESP_LOGI(TAG, "Intercom is ringing!");
+
+        // Send POST request
+        api_event_3();
+
+        // Start or reset the timer
+        if (is_timer_active) {
+            xTimerReset(ring_timer, 0);
+        } else {
+            xTimerStart(ring_timer, 0);
+            is_timer_active = true;
+        }
     }
 }
 
 
+void check_hook_input_task(void *pvParameters) {
+    while (true) {
+        if (is_timer_active && gpio_get_level(PIN_HOOK_INPUT) == 1) {
+            ESP_LOGI(TAG, "Answered!");
+            xTimerStop(ring_timer, 0);
+            is_timer_active = false;
+            api_event_4();
+        }
+
+        vTaskDelay(pdMS_TO_TICKS(100)); // Poll every 100 ms
+    }
+}
+
+void init_ring_system() {
+    // Create the timer
+    ring_timer = xTimerCreate("Ring Timer", pdMS_TO_TICKS(RING_TIMER_PERIOD_MS), pdFALSE, NULL, timer_callback);
+
+    // Create the task to monitor PIN_DOOR_INPUT
+    xTaskCreate(check_hook_input_task, "Check Door Input", 8096, NULL, 10, NULL);
+}
+
+volatile bool door_led_control = true;
+volatile bool hook_led_control = true;
+
 void app_main(void)
 {
     init_io();
+    init_ring_system();
     spiffs_init();
     lodrom_audio_init();
 
@@ -120,10 +207,7 @@ void app_main(void)
     if (json_string != NULL) {
         ESP_LOGI(JSON_READ_TAG, "JSON File Contents: %s", json_string);
 
-        // Parse and process the JSON contents
         parse_json(json_string);
-
-        // Free the allocated memory
         free(json_string);
     } else {
         ESP_LOGE(JSON_READ_TAG, "Failed to read JSON file");
@@ -132,7 +216,6 @@ void app_main(void)
     print_spiffs_file_size(audio_path);
 
     /*lodrom_audio_play(audio_path);*/
-
 
     wav_header_t wav_header;
     if (read_and_validate_wav_header(audio_path, &wav_header)) {
@@ -145,34 +228,35 @@ void app_main(void)
 
     /*lodrom_audio_play(audio_path);*/
 
-    while(true)
-    {
-        if (gpio_get_level(PIN_DOOR_INPUT))
-        {
-            gpio_set_level(PIN_DOOR_OUTPUT, 1);
-        }
-        else
-        {
-            gpio_set_level(PIN_DOOR_OUTPUT, 0);
+    while (true) {
+        if (door_led_control) {
+            /*gpio_set_level(PIN_DOOR_OUTPUT, gpio_get_level(PIN_DOOR_INPUT));*/
+            if (gpio_get_level(PIN_DOOR_INPUT) == 0) {
+                /*gpio_set_level(PIN_DOOR_OUTPUT, 0);*/
+                handle_door_input();
+            }
+            /*else{*/
+                /*gpio_set_level(PIN_DOOR_OUTPUT, 1);*/
+            /*}*/
         }
 
-        if (gpio_get_level(PIN_HOOK_INPUT))
-        {
-            gpio_set_level(PIN_HOOK_OUTPUT, 1);
+        if (hook_led_control) {
+            gpio_set_level(PIN_HOOK_OUTPUT, gpio_get_level(PIN_HOOK_INPUT));
         }
-        else
-        {
-            gpio_set_level(PIN_HOOK_OUTPUT, 0);
+
+        if (gpio_get_level(PIN_RING_INPUT)) {
+            ring();
+        }
+
+        if (!gpio_get_level(PIN_WIFI_RESET)) {
+            reset_wifi();
+        }
+
+        if (!gpio_get_level(PIN_DEBUG_INPUT)) {
+            /*lodrom_audio_play(audio_path);*/
             test(mqtt_client);
         }
 
-        if (!gpio_get_level(PIN_WIFI_RESET))
-        {
-            /*reset_wifi();*/
-            lodrom_audio_play(audio_path);
-        }
-
-
-        vTaskDelay(10);
+        vTaskDelay(10 / portTICK_PERIOD_MS);
     }
 }

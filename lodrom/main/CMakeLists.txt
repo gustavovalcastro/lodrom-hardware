@@ -4,5 +4,6 @@ idf_component_register(
                             "lodrom_spiffs.c"
                             "lodrom_audio.c"
                             "lodrom_mqtt.c"
+                            "lodrom_api.c"
                     INCLUDE_DIRS "."
                     )

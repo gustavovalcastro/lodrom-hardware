@@ -115,10 +115,180 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom.c.obj: /home/betelgeuse/projects/p
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/include/xtensa_config.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/include/xtensa_context.h \
   config/sdkconfig.h \
+  /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_api.h \
   /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_audio.h \
   /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.h \
+  /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_pins.h \
   /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_spiffs.h \
   /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_wifi.h
+
+esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_api.c.obj: /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_api.c \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include/limits.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include/stdarg.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include/stdbool.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include/stddef.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include/stdint.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include/syslimits.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/_newlib_version.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/alloca.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/assert.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/ctype.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/errno.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/limits.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/machine/_default_types.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/machine/_endian.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/machine/_time.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/machine/_types.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/machine/endian.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/machine/ieeefp.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/machine/stdlib.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/machine/time.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/machine/types.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/newlib.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/reent.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/signal.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/stdint.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/stdio.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/stdlib.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/string.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/strings.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/_default_fcntl.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/_intsup.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/_locale.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/_pthreadtypes.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/_sigset.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/_stdint.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/_timespec.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/_timeval.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/_types.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/cdefs.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/config.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/errno.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/fcntl.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/features.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/lock.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/reent.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/sched.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/select.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/signal.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/stat.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/stdio.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/syslimits.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/time.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/timespec.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/types.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/unistd.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/time.h \
+  /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/unistd.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_common/include/esp_assert.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_common/include/esp_attr.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_common/include/esp_bit_defs.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_common/include/esp_compiler.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_common/include/esp_err.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_common/include/esp_idf_version.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_common/include/esp_macros.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_event/include/esp_event.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_event/include/esp_event_base.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_http_client/include/esp_http_client.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_hw_support/include/esp_cpu.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_hw_support/include/esp_intr_types.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_hw_support/include/esp_random.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_hw_support/include/spinlock.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_rom/include/esp_rom_sys.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_system/include/esp_private/crosscore_int.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_system/include/esp_system.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_system/include/esp_task.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/deprecated_definitions.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/message_buffer.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/mpu_wrappers.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/projdefs.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/queue.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/stream_buffer.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portbenchmark.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/config/include/freertos/FreeRTOSConfig.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/config/xtensa/include/freertos/FreeRTOSConfig_arch.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/esp_additions/include/freertos/idf_additions.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/heap/include/esp_heap_caps.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/heap/include/multi_heap.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log_internal.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/include/lwip/sockets.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/arch.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/debug.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/def.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/err.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/errno.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/if_api.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/inet.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/ip4_addr.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/ip6_addr.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/ip6_zone.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/mem.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/memp.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/netif.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/opt.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/pbuf.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/priv/mem_priv.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/priv/memp_priv.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/priv/memp_std.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/sockets.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/stats.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/port/esp32xx/include/arch/cc.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/port/esp32xx/include/sys/socket.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/port/freertos/include/arch/sys_arch.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/port/include/lwipopts.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/port/include/sntp/sntp_get_set_time.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/port/include/sockets_ext.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/platform_include/assert.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/platform_include/errno.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/platform_include/esp_newlib.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/platform_include/net/if.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/platform_include/sys/ioctl.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/platform_include/sys/lock.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/platform_include/sys/poll.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/platform_include/sys/reent.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/platform_include/sys/select.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/platform_include/sys/time.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/platform_include/sys/unistd.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/platform_include/time.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/soc/esp32/include/soc/interrupts.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/soc/esp32/include/soc/reg_base.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/soc/esp32/include/soc/reset_reasons.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/soc/esp32/include/soc/soc.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/esp32/include/xtensa/config/core-isa.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/esp32/include/xtensa/config/extreg.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/esp32/include/xtensa/config/specreg.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/include/xt_instr_macros.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/include/xt_utils.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/include/xtensa/corebits.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/include/xtensa/hal.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/include/xtensa/xtruntime-core-state.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/include/xtensa/xtruntime.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/include/xtensa_api.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/include/xtensa_config.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/include/xtensa_context.h \
+  config/sdkconfig.h
 
 esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_audio.c.obj: /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_audio.c \
   /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include/limits.h \
@@ -283,13 +453,17 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_mqtt.c.obj: /home/betelgeuse/proje
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_common/include/esp_err.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_common/include/esp_idf_version.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_common/include/esp_macros.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_driver_gpio/include/driver/gpio.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_driver_gpio/include/driver/gpio_etm.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_event/include/esp_event.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_event/include/esp_event_base.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_hw_support/include/esp_cpu.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_hw_support/include/esp_etm.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_hw_support/include/esp_intr_types.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_hw_support/include/esp_memory_utils.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_hw_support/include/spinlock.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_rom/include/esp_rom_gpio.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_rom/include/esp_rom_sys.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_system/include/esp_private/crosscore_int.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_system/include/esp_system.h \
@@ -311,8 +485,10 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_mqtt.c.obj: /home/betelgeuse/proje
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/config/include/freertos/FreeRTOSConfig.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/config/xtensa/include/freertos/FreeRTOSConfig_arch.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/esp_additions/include/freertos/idf_additions.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/hal/include/hal/gpio_types.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/heap/include/esp_heap_caps.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/heap/include/multi_heap.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/json/cJSON/cJSON.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/log/include/esp_log_internal.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/mqtt/esp-mqtt/include/mqtt5_client.h \
@@ -321,6 +497,8 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_mqtt.c.obj: /home/betelgeuse/proje
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/platform_include/esp_newlib.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/platform_include/sys/lock.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/platform_include/sys/reent.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/soc/esp32/include/soc/gpio_num.h \
+  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/soc/esp32/include/soc/interrupts.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/soc/esp32/include/soc/reg_base.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/soc/esp32/include/soc/reset_reasons.h \
@@ -346,7 +524,8 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_mqtt.c.obj: /home/betelgeuse/proje
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/include/xtensa_config.h \
   /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/include/xtensa_context.h \
   config/sdkconfig.h \
-  /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.h
+  /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.h \
+  /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_pins.h
 
 esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_spiffs.c.obj: /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_spiffs.c \
   /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include/limits.h \
@@ -658,7 +837,29 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_wifi.c.obj: /home/betelgeuse/proje
 
 /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_wifi.c:
 
+/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/dirent.h:
+
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/json/cJSON/cJSON.h:
+
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:
+
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:
+
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/hal/include/hal/i2s_types.h:
+
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/hal/include/hal/adc_types.h:
+
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_driver_i2s/include/driver/i2s_types.h:
+
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/driver/deprecated/driver/i2s_types_legacy.h:
+
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/driver/deprecated/driver/i2s.h:
+
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/platform_include/sys/unistd.h:
+
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_common/include/esp_types.h:
+
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/platform_include/sys/ioctl.h:
 
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/platform_include/net/if.h:
 
@@ -696,8 +897,6 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_wifi.c.obj: /home/betelgeuse/proje
 
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/arch.h:
 
-/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/json/cJSON/cJSON.h:
-
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_hw_support/include/esp_random.h:
 
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_http_client/include/esp_http_client.h:
@@ -710,6 +909,10 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_wifi.c.obj: /home/betelgeuse/proje
 
 /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/types.h:
 
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_audio.c:
+
+/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/time.h:
+
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/opt.h:
 
 /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/select.h:
@@ -718,27 +921,11 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_wifi.c.obj: /home/betelgeuse/proje
 
 /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/fcntl.h:
 
-/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/dirent.h:
-
 /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/_timeval.h:
 
 /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/_pthreadtypes.h:
 
 /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/machine/types.h:
-
-/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/machine/_time.h:
-
-/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/machine/_endian.h:
-
-/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/errno.h:
-
-/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/port/freertos/include/arch/sys_arch.h:
-
-/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/ctype.h:
-
-/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:
-
-/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h:
 
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:
 
@@ -749,8 +936,6 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_wifi.c.obj: /home/betelgeuse/proje
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/netif.h:
 
 /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/_types.h:
-
-/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_rom/include/esp_rom_gpio.h:
 
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_system/include/esp_task.h:
 
@@ -794,8 +979,6 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_wifi.c.obj: /home/betelgeuse/proje
 
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_common/include/esp_bit_defs.h:
 
-/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/driver/deprecated/driver/i2s_types_legacy.h:
-
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/nvs_flash/include/nvs.h:
 
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_common/include/esp_assert.h:
@@ -803,8 +986,6 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_wifi.c.obj: /home/betelgeuse/proje
 /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/syslimits.h:
 
 /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/machine/_types.h:
-
-/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/hal/include/hal/i2s_types.h:
 
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/port/include/sntp/sntp_get_set_time.h:
 
@@ -830,6 +1011,10 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_wifi.c.obj: /home/betelgeuse/proje
 
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/include/xt_instr_macros.h:
 
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/port/freertos/include/arch/sys_arch.h:
+
+/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/ctype.h:
+
 /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/stdlib.h:
 
 /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h:
@@ -837,6 +1022,14 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_wifi.c.obj: /home/betelgeuse/proje
 /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/unistd.h:
 
 /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/features.h:
+
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/driver/deprecated/driver/adc.h:
+
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_driver_gpio/include/driver/gpio.h:
+
+/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h:
+
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:
 
 /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include/stdbool.h:
 
@@ -848,8 +1041,6 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_wifi.c.obj: /home/betelgeuse/proje
 
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/include/xt_utils.h:
 
-/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_driver_i2s/include/driver/i2s_types.h:
-
 /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/stat.h:
 
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_common/include/esp_macros.h:
@@ -860,21 +1051,7 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_wifi.c.obj: /home/betelgeuse/proje
 
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h:
 
-/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/debug.h:
-
-/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/machine/endian.h:
-
-/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/machine/_default_types.h:
-
-/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/newlib.h:
-
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/mqtt/esp-mqtt/include/mqtt5_client.h:
-
-/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/machine/time.h:
-
-/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/dirent.h:
-
-/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/platform_include/assert.h:
 
 /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/_sigset.h:
 
@@ -895,14 +1072,6 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_wifi.c.obj: /home/betelgeuse/proje
 /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/errno.h:
 
 /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/strings.h:
-
-/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_driver_gpio/include/driver/gpio.h:
-
-/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h:
-
-/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:
-
-/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/driver/deprecated/driver/adc.h:
 
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/include/lwip/sockets.h:
 
@@ -950,6 +1119,8 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_wifi.c.obj: /home/betelgeuse/proje
 
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portbenchmark.h:
 
+/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/machine/_time.h:
+
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:
 
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_netif/include/esp_netif_defaults.h:
@@ -963,6 +1134,12 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_wifi.c.obj: /home/betelgeuse/proje
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/soc/esp32/include/soc/soc.h:
 
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/esp_additions/include/freertos/idf_additions.h:
+
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_rom/include/esp_rom_gpio.h:
+
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_api.c:
+
+/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/machine/_endian.h:
 
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/esp32/include/xtensa/config/core-isa.h:
 
@@ -992,6 +1169,12 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_wifi.c.obj: /home/betelgeuse/proje
 
 config/sdkconfig.h:
 
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/driver/deprecated/driver/adc_types_legacy.h:
+
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:
+
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/platform_include/sys/reent.h:
+
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/if_api.h:
 
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/soc/esp32/include/soc/interrupts.h:
@@ -1020,8 +1203,6 @@ config/sdkconfig.h:
 
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/include/xtensa/corebits.h:
 
-/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/driver/deprecated/driver/i2s.h:
-
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_netif/include/esp_netif_ip_addr.h:
 
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/include/xtensa/hal.h:
@@ -1046,7 +1227,11 @@ config/sdkconfig.h:
 
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/include/xtensa_config.h:
 
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_api.h:
+
 /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.h:
+
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_pins.h:
 
 /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/spiffs/include/esp_spiffs.h:
 
@@ -1056,18 +1241,18 @@ config/sdkconfig.h:
 
 /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_wifi.h:
 
-/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/time.h:
+/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/errno.h:
 
-/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_audio.c:
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/lwip/lwip/src/include/lwip/debug.h:
 
-/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:
+/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/machine/_default_types.h:
 
-/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/platform_include/sys/reent.h:
+/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/newlib.h:
 
-/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/driver/deprecated/driver/adc_types_legacy.h:
+/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/machine/endian.h:
 
-/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/platform_include/sys/ioctl.h:
+/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/dirent.h:
 
-/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_common/include/esp_types.h:
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/hal/include/hal/adc_types.h:
+/home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/machine/time.h:

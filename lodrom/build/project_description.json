@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "lodrom",
-    "project_version":    "8fa4d45",
+    "project_version":    "82868db-dirty",
     "project_path":       "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom",
     "idf_path":           "/home/betelgeuse/appdata/esp/esp-adf/esp-idf",
     "build_dir":          "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build",
@@ -1570,7 +1570,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c", "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_wifi.c", "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_spiffs.c", "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_audio.c", "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c" ],
+            "sources": [ "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c", "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_wifi.c", "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_spiffs.c", "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_audio.c", "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c", "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_api.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {

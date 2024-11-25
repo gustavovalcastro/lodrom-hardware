@@ -1,0 +1,4 @@
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_api.c: In function 'send_post_request':
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_api.c:10:24: warning: unused variable 'root_cert' [-Wunused-variable]
+   10 |     static const char *root_cert =
+      |                        ^~~~~~~~~

@@ -1,0 +1,125 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081318: call_start_cpu1 at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_system/port/cpu_start.c:190
+[0m
+[0;33m--- 0x400d3258: __esp_system_init_fn_init_efuse_check at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/efuse/src/esp_efuse_startup.c:31
+[0m
+[0;33m--- 0x400d3774: __esp_system_init_fn_init_show_cpu_freq at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_system/startup_funcs.c:58
+[0m
+[0;33m--- 0x400d3198: __esp_system_init_fn_init_show_app_info at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_app_format/esp_app_desc.c:104
+[0m
+[0;33m--- 0x400d326c: __esp_system_init_fn_init_efuse_show_app_info at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/efuse/src/esp_efuse_startup.c:41
+[0m
+[0;33m--- 0x400d5074: __esp_system_init_fn_init_heap at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/heap/heap_caps_init.c:25
+[0m
+[0;33m--- 0x40080000: _WindowOverflow4 at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x40080000: _WindowOverflow4 at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x40000000: _WindowOverflow4 in ROM
+[0m
+[0;33m--- 0x400d6608: __esp_system_init_fn_esp_timer_init_nonos at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_timer/src/esp_timer_init.c:28
+[0m
+[0;33m--- 0x400d5f64: __esp_system_init_fn_init_newlib at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/newlib_init.c:162
+[0m
+[0;33m--- 0x400d37b8: __esp_system_init_fn_init_brownout at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_system/startup_funcs.c:67
+[0m
+[0;33m--- 0x400d37c4: __esp_system_init_fn_init_newlib_time at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_system/startup_funcs.c:81
+[0m
+[0;33m--- 0x400d7848: __esp_system_init_fn_init_vfs_uart at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_driver_uart/src/uart_vfs.c:1080
+[0m
+[0;33m--- 0x400d8244: __esp_system_init_fn_init_vfs_console at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_vfs_console/vfs_console.c:222
+[0m
+[0;33m--- 0x400d5fe0: __esp_system_init_fn_init_newlib_stdio at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/newlib/newlib_init.c:207
+[0m
+[0;33m--- 0x400d6424: __esp_system_init_fn_init_pthread at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/pthread/pthread.c:76
+[0m
+[0;33m--- 0x400d37d0: __esp_system_init_fn_init_flash at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_system/startup_funcs.c:88
+[0m
+[0;33m--- 0x400d32f8: __esp_system_init_fn_init_efuse at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/efuse/src/esp_efuse_startup.c:137
+[0m
+[0;33m--- 0x4016aeec: _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:162
+[0m
+[0;33m--- 0x4015c170: esp_clock_output_pin_ctrl_init at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_hw_support/esp_clock_output.c:237
+[0m
+[0;33m--- 0x4010b3ec: s_set_default_wifi_log_level at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_wifi/src/wifi_init.c:89
+[0m
+[0;33m--- 0x400f1824: check_adc_oneshot_driver_conflict at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/driver/deprecated/adc_legacy.c:920
+[0m
+[0;33m--- 0x400f1780: check_i2s_driver_conflict at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/driver/deprecated/i2s_legacy.c:1968
+[0m
+[0;33m--- 0x400896d8: enable_timer_group0_for_calibration at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_hw_support/port/esp32/rtc_time.c:197
+[0m
+[0;33m--- 0x400d4858: esp_ipc_init at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_system/esp_ipc.c:113
+[0m
+[0;33m--- 0x400d3d74: esp_reset_reason_init at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_system/port/soc/esp32/reset_reason.c:60
+[0m
+[0;33m--- 0x4015c5b4: __esp_system_init_fn_esp_timer_init_os at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_timer/src/esp_timer.c:587
+[0m
+[0;33m--- 0x400d37f4: __esp_system_init_fn_init_disable_rtc_wdt at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_system/startup_funcs.c:143
+[0m
+[0;33m--- 0x40108c5c: esp_netif_new_api at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_netif/lwip/esp_netif_lwip.c:690
+[0m
+[0;33m--- 0x40108c5c: esp_netif_new_api at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_netif/lwip/esp_netif_lwip.c:690
+[0m
+[0;33m--- 0x401091f0: esp_netif_dhcps_stop_api at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_netif/lwip/esp_netif_lwip.c:1556
+[0m
+[0;33m--- 0x401094d4: esp_netif_set_ip_info_api at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_netif/lwip/esp_netif_lwip.c:1804
+[0m
+[0;33m--- 0x40108e9c: esp_netif_dhcps_start_api at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_netif/lwip/esp_netif_lwip.c:1515
+[0m
+[0;33m--- 0x400db990: wifi_manager_event_handler at /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/components/esp32-wifi-manager/src/wifi_manager.c:552
+[0m
+[0;33m--- 0x4010b670: wifi_default_action_sta_start at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_wifi/src/wifi_default.c:72
+[0m
+[0;33m--- 0x4010862c: esp_netif_set_mac_api at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_netif/lwip/esp_netif_lwip.c:993
+[0m
+[0;33m--- 0x4010901c: esp_netif_start_api at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_netif/lwip/esp_netif_lwip.c:1068
+[0m
+[0;33m--- 0x4010999c: esp_netif_update_default_netif_lwip at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_netif/lwip/esp_netif_lwip.c:317
+[0m
+[0;33m--- 0x400db990: wifi_manager_event_handler at /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/components/esp32-wifi-manager/src/wifi_manager.c:552
+[0m
+[0;33m--- 0x400db990: wifi_manager_event_handler at /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/components/esp32-wifi-manager/src/wifi_manager.c:552
+[0m
+[0;33m--- 0x4010b6a0: wifi_default_action_sta_connected at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_wifi/src/wifi_default.c:86
+[0m
+[0;33m--- 0x40109484: esp_netif_up_api at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_netif/lwip/esp_netif_lwip.c:1647
+[0m
+[0;33m--- 0x4010999c: esp_netif_update_default_netif_lwip at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_netif/lwip/esp_netif_lwip.c:317
+[0m
+[0;33m--- 0x40109340: esp_netif_dhcpc_start_api at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_netif/lwip/esp_netif_lwip.c:1439
+[0m
+[0;33m--- 0x400db990: wifi_manager_event_handler at /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/components/esp32-wifi-manager/src/wifi_manager.c:552
+[0m
+[0;33m--- 0x4010b4c0: wifi_default_action_sta_got_ip at /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_wifi/src/wifi_default.c:128
+[0m
+[0;33m--- 0x400db990: wifi_manager_event_handler at /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/components/esp32-wifi-manager/src/wifi_manager.c:552
+[0m
+[0;33m--- 0x400da248: mqtt_event_handler_cb at /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:71
+[0m
+[0;33m--- 0x400da248: mqtt_event_handler_cb at /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:71
+[0m
+[0;33m--- 0x400da248: mqtt_event_handler_cb at /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:71
+[0m
+[0;33m--- 0x400da248: mqtt_event_handler_cb at /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:71
+[0m
+[0;33m--- 0x400da248: mqtt_event_handler_cb at /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:71
+[0m
+[0;33m--- 0x400da248: mqtt_event_handler_cb at /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:71
+[0m
+[0;33m--- 0x400da248: mqtt_event_handler_cb at /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:71
+[0m
+[0;33m--- 0x400da248: mqtt_event_handler_cb at /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:71
+[0m
+[0;33m--- 0x400da248: mqtt_event_handler_cb at /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:71
+[0m
+[0;33m--- 0x400da248: mqtt_event_handler_cb at /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:71
+[0m
+[0;33m--- 0x400da248: mqtt_event_handler_cb at /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:71
+[0m
+[1;31m--- Error: device reports readiness to read but returned no data (device disconnected or multiple access on port?)[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0m

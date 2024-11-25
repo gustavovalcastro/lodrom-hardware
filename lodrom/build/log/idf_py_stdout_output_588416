@@ -1,0 +1,143 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 24 2024 16:34:25[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot:  3 storage          Unknown data     01 82 00210000 000f0000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3bb14h (244500) map[0m
+[0;32mI (196) esp_image: segment 1: paddr=0004bb3c vaddr=3ffb0000 size=040dch ( 16604) load[0m
+[0;32mI (202) esp_image: segment 2: paddr=0004fc20 vaddr=40080000 size=003f8h (  1016) load[0m
+[0;32mI (203) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=bde78h (777848) map[0m
+[0;32mI (476) esp_image: segment 4: paddr=0010dea0 vaddr=400803f8 size=17f74h ( 98164) load[0m
+[0;32mI (527) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (527) boot: Disabling RNG early entropy source...[0m
+[0;32mI (539) cpu_start: Multicore app[0m
+D (539) cpu_start: Pro cpu up[0m
+D (539) cpu_start: Starting app cpu, entry point is 0x40081318[0m
+D (0) cpu_start: App cpu up[0m
+D (550) clk: RTC_SLOW_CLK calibration value: 3099827[0m
+D (562) cpu_start: calling init function: 0x400d3228 on core: 0[0m
+D (562) cpu_start: calling init function: 0x400d3744 on core: 0[0m
+[0;32mI (565) cpu_start: Pro cpu start user code[0m
+[0;32mI (569) cpu_start: cpu freq: 240000000 Hz[0m
+D (574) cpu_start: calling init function: 0x400d3168 on core: 0[0m
+[0;32mI (580) app_init: Application information:[0m
+[0;32mI (585) app_init: Project name:     lodrom[0m
+[0;32mI (590) app_init: App version:      82868db-dirty[0m
+[0;32mI (595) app_init: Compile time:     Nov 24 2024 17:55:05[0m
+[0;32mI (601) app_init: ELF file SHA256:  7acd73bbe...[0m
+[0;32mI (606) app_init: ESP-IDF:          v5.3.1[0m
+D (611) cpu_start: calling init function: 0x400d323c on core: 0[0m
+[0;32mI (617) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (622) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (627) efuse_init: Chip rev:         v3.1[0m
+D (632) cpu_start: calling init function: 0x400d5044 on core: 0[0m
+D (638) memory_layout: Checking 9 reserved memory ranges:[0m
+D (643) memory_layout: Reserved memory range 0x3ff82000 - 0x3ff82000[0m
+D (650) memory_layout: Reserved memory range 0x3ffae000 - 0x3ffae6e0[0m
+D (656) memory_layout: Reserved memory range 0x3ffb0000 - 0x3ffb8b78[0m
+D (662) memory_layout: Reserved memory range 0x3ffe0000 - 0x3ffe0440[0m
+D (669) memory_layout: Reserved memory range 0x3ffe3f20 - 0x3ffe4350[0m
+D (675) memory_layout: Reserved memory range 0x40070000 - 0x40078000[0m
+D (682) memory_layout: Reserved memory range 0x40078000 - 0x40080000[0m
+D (688) memory_layout: Reserved memory range 0x40080000 - 0x4009836c[0m
+D (694) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (701) memory_layout: Building list of available memory regions:[0m
+D (707) memory_layout: Available memory region 0x3ffae6e0 - 0x3ffb0000[0m
+D (714) memory_layout: Available memory region 0x3ffb8b78 - 0x3ffc0000[0m
+D (720) memory_layout: Available memory region 0x3ffc0000 - 0x3ffc2000[0m
+D (727) memory_layout: Available memory region 0x3ffc2000 - 0x3ffc4000[0m
+D (733) memory_layout: Available memory region 0x3ffc4000 - 0x3ffc6000[0m
+D (740) memory_layout: Available memory region 0x3ffc6000 - 0x3ffc8000[0m
+D (747) memory_layout: Available memory region 0x3ffc8000 - 0x3ffca000[0m
+D (753) memory_layout: Available memory region 0x3ffca000 - 0x3ffcc000[0m
+D (760) memory_layout: Available memory region 0x3ffcc000 - 0x3ffce000[0m
+D (766) memory_layout: Available memory region 0x3ffce000 - 0x3ffd0000[0m
+D (773) memory_layout: Available memory region 0x3ffd0000 - 0x3ffd2000[0m
+D (780) memory_layout: Available memory region 0x3ffd2000 - 0x3ffd4000[0m
+D (786) memory_layout: Available memory region 0x3ffd4000 - 0x3ffd6000[0m
+D (793) memory_layout: Available memory region 0x3ffd6000 - 0x3ffd8000[0m
+D (799) memory_layout: Available memory region 0x3ffd8000 - 0x3ffda000[0m
+D (806) memory_layout: Available memory region 0x3ffda000 - 0x3ffdc000[0m
+D (813) memory_layout: Available memory region 0x3ffdc000 - 0x3ffde000[0m
+D (819) memory_layout: Available memory region 0x3ffde000 - 0x3ffe0000[0m
+D (826) memory_layout: Available memory region 0x3ffe0440 - 0x3ffe3f20[0m
+D (832) memory_layout: Available memory region 0x3ffe4350 - 0x3ffe8000[0m
+D (839) memory_layout: Available memory region 0x3ffe8000 - 0x3fff0000[0m
+D (846) memory_layout: Available memory region 0x3fff0000 - 0x3fff8000[0m
+D (852) memory_layout: Available memory region 0x3fff8000 - 0x3fffc000[0m
+D (859) memory_layout: Available memory region 0x3fffc000 - 0x40000000[0m
+D (865) memory_layout: Available memory region 0x4009836c - 0x4009a000[0m
+D (872) memory_layout: Available memory region 0x4009a000 - 0x4009c000[0m
+D (879) memory_layout: Available memory region 0x4009c000 - 0x4009e000[0m
+D (885) memory_layout: Available memory region 0x4009e000 - 0x400a0000[0m
+[0;32mI (892) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (899) heap_init: New heap initialised at 0x3ffae6e0[0m
+[0;32mI (904) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+D (910) heap_init: New heap initialised at 0x3ffb8b78[0m
+[0;32mI (915) heap_init: At 3FFB8B78 len 00027488 (157 KiB): DRAM[0m
+[0;32mI (922) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (928) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+D (934) heap_init: New heap initialised at 0x4009836c[0m
+[0;32mI (939) heap_init: At 4009836C len 00007C94 (31 KiB): IRAM[0m
+D (946) cpu_start: calling init function: 0x400d65d8 on core: 0[0m
+D (952) cpu_start: calling init function: 0x400d5f34 on core: 0[0m
+D (958) cpu_start: calling init function: 0x400d3788 on core: 0[0m
+D (964) intr_alloc: Connected src 46 to int 1 (cpu 0)[0m
+D (969) cpu_start: calling init function: 0x400d3794 on core: 0[0m
+D (975) cpu_start: calling init function: 0x400d7818 on core: 0[0m
+D (981) cpu_start: calling init function: 0x400d8214 on core: 0[0m
+D (987) cpu_start: calling init function: 0x400d5fb0 on core: 0[0m
+D (993) cpu_start: calling init function: 0x400d63f4 on core: 0[0m
+D (999) cpu_start: calling init function: 0x400d37a0 on core: 0[0m
+D (1005) spi_flash: trying chip: issi[0m
+D (1008) spi_flash: trying chip: gd[0m
+D (1012) spi_flash: trying chip: mxic[0m
+D (1016) spi_flash: trying chip: winbond[0m
+D (1020) spi_flash: trying chip: generic[0m
+[0;32mI (1024) spi_flash: detected chip: generic[0m
+[0;32mI (1028) spi_flash: flash io: dio[0m
+D (1032) cpu_start: calling init function: 0x400d32c8 on core: 0[0m
+D (1039) cpu_start: calling init function: 0x401683f4[0m
+D (1044) cpu_start: calling init function: 0x4015967c[0m
+D (1049) cpu_start: calling init function: 0x4010b178[0m
+D (1054) cpu_start: calling init function: 0x400f15b0[0m
+[0;33mW (1059) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+D (1067) cpu_start: calling init function: 0x400f150c[0m
+[0;33mW (1073) i2s(legacy): legacy i2s driver is deprecated, please migrate to use driver/i2s_std.h, driver/i2s_pdm.h or driver/i2s_tdm.h[0m
+D (1085) cpu_start: calling init function: 0x400896d8[0m
+D (1090) cpu_start: calling init function: 0x400d4828[0m
+D (1095) cpu_start: calling init function: 0x400d3d44[0m
+D (1101) cpu_start: calling init function: 0x40159ac0 on core: 0[0m
+D (1107) intr_alloc: Connected src 17 to int 2 (cpu 0)[0m
+D (1112) cpu_start: calling init function: 0x400d37c4 on core: 0[0m
+D (1118) intr_alloc: Connected src 24 to int 3 (cpu 0)[0m
+D (1123) app_start: Starting scheduler on CPU0[0m
+[0;32D (1128) intr_alloc: Connected src 25 to int 1 (cpu 1)[0m
+D (1128) app_start: Starting scheduler on CPU1[0m
+mI (1128) main_task: Started on CPU0[0m
+D (1148) heap_init: New heap initialised at 0x3ffe0440[0m
+D (1148) heap_init: New heap initialised at 0x3ffe4350[0m
+D (1148) intr_alloc: Connected src 16 to int 5 (cpu 0)[0m
+[0;32mI (1148) main_task: Calling app_main()[0m

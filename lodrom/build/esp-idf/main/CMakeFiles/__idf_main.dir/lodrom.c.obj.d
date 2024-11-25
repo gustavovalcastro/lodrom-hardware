@@ -123,4 +123,6 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom.c.obj: \
  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/tcp_transport/include/esp_transport.h \
  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/mqtt/esp-mqtt/include/mqtt5_client.h \
  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/mqtt/esp-mqtt/include/mqtt_client.h \
+ /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_pins.h \
+ /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_api.h \
  /home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/esp_timer/include/esp_timer.h

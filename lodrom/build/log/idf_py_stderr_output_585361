@@ -1,0 +1,32 @@
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c:80:15: error: redefinition of 'door_led_control'
+   80 | volatile bool door_led_control = true;
+      |               ^~~~~~~~~~~~~~~~
+In file included from /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c:19:
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_pins.h:8:15: note: previous definition of 'door_led_control' with type '_Bool'
+    8 | volatile bool door_led_control = true;
+      |               ^~~~~~~~~~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c:81:15: error: redefinition of 'hook_led_control'
+   81 | volatile bool hook_led_control = true;
+      |               ^~~~~~~~~~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_pins.h:9:15: note: previous definition of 'hook_led_control' with type '_Bool'
+    9 | volatile bool hook_led_control = true;
+      |               ^~~~~~~~~~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c: In function 'app_main':
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c:90:17: warning: unused variable 'url' [-Wunused-variable]
+   90 |     const char *url = "https://lodrom-polly.s3.us-east-1.amazonaws.com/ALVORADA/recado_4c095bcb-8689-44c5-87c9-75984b839726.wav";
+      |                 ^~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c: In function 'mqtt_init':
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:222:85: warning: passing argument 3 of 'esp_mqtt_client_register_event' from incompatible pointer type [-Wincompatible-pointer-types]
+  222 |     esp_err_t reg_result = esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, mqtt_event_handler_cb, client);
+      |                                                                                     ^~~~~~~~~~~~~~~~~~~~~
+      |                                                                                     |
+      |                                                                                     void (*)(void *, const char *, int,  void *)
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/lodrom.c.obj] Error 1
+In file included from /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.h:4,
+                 from /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c:1:
+/home/betelgeuse/appdata/esp/esp-adf/esp-idf/components/mqtt/esp-mqtt/include/mqtt_client.h:629:62: note: expected 'esp_event_handler_t' {aka 'void (*)(void *, const char *, long int,  void *)'} but argument is of type 'void (*)(void *, const char *, int,  void *)'
+  629 |                                          esp_event_handler_t event_handler,
+      |                                          ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:6207: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

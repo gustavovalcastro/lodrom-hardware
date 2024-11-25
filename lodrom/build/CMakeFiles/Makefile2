@@ -3247,7 +3247,7 @@ esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/all: esp-idf/esp_driver_gpio/CMakeFil
 
 # Build rule for subdir invocation for target.
 esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 59
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 58
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/rule
@@ -3273,7 +3273,7 @@ esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/all: esp-idf/esp_pm
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 58
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 57
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/rule
@@ -3299,7 +3299,7 @@ esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/all: esp-idf/mbedtls/CMakeFiles/__idf
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 56
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/rule
@@ -3325,7 +3325,7 @@ esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/all: esp-idf/mbedtls/mbedtls/3rdpar
 
 # Build rule for subdir invocation for target.
 esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 56
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/rule
@@ -3403,7 +3403,7 @@ esp-idf/mbedtls/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/all: esp-idf/mbe
 
 # Build rule for subdir invocation for target.
 esp-idf/mbedtls/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 55
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/mbedtls/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/mbedtls/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/rule
@@ -3429,7 +3429,7 @@ esp-idf/mbedtls/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir/all: esp-idf/mbedtl
 
 # Build rule for subdir invocation for target.
 esp-idf/mbedtls/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 55
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/mbedtls/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/mbedtls/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir/rule
@@ -3455,7 +3455,7 @@ esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/all: esp-idf/mbedtls/m
 
 # Build rule for subdir invocation for target.
 esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 55
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/rule
@@ -3481,7 +3481,7 @@ esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/all: esp-idf/mbedtls/mbe
 
 # Build rule for subdir invocation for target.
 esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 48
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 47
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/rule
@@ -3507,7 +3507,7 @@ esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/all: esp-idf/esp_app_form
 
 # Build rule for subdir invocation for target.
 esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 46
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/rule
@@ -3533,7 +3533,7 @@ esp-idf/mbedtls/mbedtls/library/CMakeFiles/lib.dir/all: esp-idf/xtensa/CMakeFile
 
 # Build rule for subdir invocation for target.
 esp-idf/mbedtls/mbedtls/library/CMakeFiles/lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 59
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 58
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/mbedtls/mbedtls/library/CMakeFiles/lib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/mbedtls/mbedtls/library/CMakeFiles/lib.dir/rule
@@ -3846,7 +3846,7 @@ esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/all: esp-idf/esp_boot
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 45
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/rule
@@ -3872,7 +3872,7 @@ esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/all: es
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 45
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/rule
@@ -3898,7 +3898,7 @@ esp-idf/app_update/CMakeFiles/__idf_app_update.dir/all: esp-idf/esp_partition/CM
 
 # Build rule for subdir invocation for target.
 esp-idf/app_update/CMakeFiles/__idf_app_update.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 45
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 44
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/app_update/CMakeFiles/__idf_app_update.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/app_update/CMakeFiles/__idf_app_update.dir/rule
@@ -3924,7 +3924,7 @@ esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/all: esp-idf/efuse/CMak
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 45
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 44
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/rule
@@ -3950,7 +3950,7 @@ esp-idf/efuse/CMakeFiles/__idf_efuse.dir/all: esp-idf/bootloader_support/CMakeFi
 
 # Build rule for subdir invocation for target.
 esp-idf/efuse/CMakeFiles/__idf_efuse.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 45
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 44
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/efuse/CMakeFiles/__idf_efuse.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/efuse/CMakeFiles/__idf_efuse.dir/rule
@@ -4158,7 +4158,7 @@ esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/all: esp-idf/
 
 # Build rule for subdir invocation for target.
 esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 44
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 43
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/rule
@@ -4184,7 +4184,7 @@ esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/all: esp-idf/spi_flash/CMakeFiles/__i
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 42
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/rule
@@ -4210,7 +4210,7 @@ esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/all: esp-idf/esp_system/CMakeFi
 
 # Build rule for subdir invocation for target.
 esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 42
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/rule
@@ -4231,12 +4231,12 @@ esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/clean:
 esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/all: esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles --progress-num=37,38 "Built target __idf_esp_system"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles --progress-num=36,37,38 "Built target __idf_esp_system"
 .PHONY : esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/rule
@@ -4384,7 +4384,7 @@ esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/all: esp-idf/esp_rom/CMakeFil
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/rule
@@ -4405,12 +4405,12 @@ esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/clean:
 esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/all: esp-idf/hal/CMakeFiles/__idf_hal.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles --progress-num=36 "Built target __idf_esp_rom"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles --progress-num= "Built target __idf_esp_rom"
 .PHONY : esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/rule
@@ -4436,7 +4436,7 @@ esp-idf/hal/CMakeFiles/__idf_hal.dir/all: esp-idf/log/CMakeFiles/__idf_log.dir/a
 
 # Build rule for subdir invocation for target.
 esp-idf/hal/CMakeFiles/__idf_hal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 37
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/hal/CMakeFiles/__idf_hal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/hal/CMakeFiles/__idf_hal.dir/rule
@@ -4457,12 +4457,12 @@ esp-idf/hal/CMakeFiles/__idf_hal.dir/clean:
 esp-idf/log/CMakeFiles/__idf_log.dir/all: esp-idf/heap/CMakeFiles/__idf_heap.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles --progress-num=60 "Built target __idf_log"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles --progress-num= "Built target __idf_log"
 .PHONY : esp-idf/log/CMakeFiles/__idf_log.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/log/CMakeFiles/__idf_log.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 34
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 33
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/log/CMakeFiles/__idf_log.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/log/CMakeFiles/__idf_log.dir/rule
@@ -4613,7 +4613,7 @@ esp-idf/newlib/CMakeFiles/__idf_newlib.dir/clean:
 esp-idf/pthread/CMakeFiles/__idf_pthread.dir/all: esp-idf/cxx/CMakeFiles/__idf_cxx.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/pthread/CMakeFiles/__idf_pthread.dir/build.make esp-idf/pthread/CMakeFiles/__idf_pthread.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/pthread/CMakeFiles/__idf_pthread.dir/build.make esp-idf/pthread/CMakeFiles/__idf_pthread.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles --progress-num=73 "Built target __idf_pthread"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles --progress-num= "Built target __idf_pthread"
 .PHONY : esp-idf/pthread/CMakeFiles/__idf_pthread.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4644,7 +4644,7 @@ esp-idf/cxx/CMakeFiles/__idf_cxx.dir/all: esp-idf/esp_timer/CMakeFiles/__idf_esp
 
 # Build rule for subdir invocation for target.
 esp-idf/cxx/CMakeFiles/__idf_cxx.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 24
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 25
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/cxx/CMakeFiles/__idf_cxx.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/cxx/CMakeFiles/__idf_cxx.dir/rule
@@ -4670,7 +4670,7 @@ esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/all: esp-idf/esp_driver_gptimer
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 24
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 25
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/rule
@@ -4696,7 +4696,7 @@ esp-idf/esp_driver_gptimer/CMakeFiles/__idf_esp_driver_gptimer.dir/all: esp-idf/
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_driver_gptimer/CMakeFiles/__idf_esp_driver_gptimer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 24
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_gptimer/CMakeFiles/__idf_esp_driver_gptimer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_driver_gptimer/CMakeFiles/__idf_esp_driver_gptimer.dir/rule
@@ -4722,7 +4722,7 @@ esp-idf/esp_ringbuf/CMakeFiles/__idf_esp_ringbuf.dir/all: esp-idf/esp_driver_uar
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_ringbuf/CMakeFiles/__idf_esp_ringbuf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 24
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_ringbuf/CMakeFiles/__idf_esp_ringbuf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_ringbuf/CMakeFiles/__idf_esp_ringbuf.dir/rule
@@ -4748,7 +4748,7 @@ esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/all: esp-idf/esp_ev
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 24
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/rule
@@ -4774,7 +4774,7 @@ esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/all: esp-idf/xtensa/CMakeFiles/
 
 # Build rule for subdir invocation for target.
 esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 59
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 58
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/rule
@@ -4800,7 +4800,7 @@ esp-idf/esp_event/CMakeFiles/__idf_esp_event.dir/all: esp-idf/nvs_flash/CMakeFil
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_event/CMakeFiles/__idf_esp_event.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 24
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_event/CMakeFiles/__idf_esp_event.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_event/CMakeFiles/__idf_esp_event.dir/rule
@@ -4826,7 +4826,7 @@ esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/all: esp-idf/esp_driver_pcnt/CM
 
 # Build rule for subdir invocation for target.
 esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 24
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/rule
@@ -4852,7 +4852,7 @@ esp-idf/esp_driver_pcnt/CMakeFiles/__idf_esp_driver_pcnt.dir/all: esp-idf/esp_dr
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_driver_pcnt/CMakeFiles/__idf_esp_driver_pcnt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 23
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_pcnt/CMakeFiles/__idf_esp_driver_pcnt.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_driver_pcnt/CMakeFiles/__idf_esp_driver_pcnt.dir/rule
@@ -4878,7 +4878,7 @@ esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/all: esp-idf/esp_driv
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 23
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/rule
@@ -4904,7 +4904,7 @@ esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/all: esp-idf/esp_
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 23
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/rule
@@ -4930,7 +4930,7 @@ esp-idf/esp_driver_i2s/CMakeFiles/__idf_esp_driver_i2s.dir/all: esp-idf/sdmmc/CM
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_driver_i2s/CMakeFiles/__idf_esp_driver_i2s.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 23
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_i2s/CMakeFiles/__idf_esp_driver_i2s.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_driver_i2s/CMakeFiles/__idf_esp_driver_i2s.dir/rule
@@ -4956,7 +4956,7 @@ esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/all: esp-idf/esp_driver_sdmmc/CMakeFile
 
 # Build rule for subdir invocation for target.
 esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 23
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/rule
@@ -4982,7 +4982,7 @@ esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/all: esp-idf/esp_
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/rule
@@ -5008,7 +5008,7 @@ esp-idf/esp_driver_sdspi/CMakeFiles/__idf_esp_driver_sdspi.dir/all: esp-idf/esp_
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_driver_sdspi/CMakeFiles/__idf_esp_driver_sdspi.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_sdspi/CMakeFiles/__idf_esp_driver_sdspi.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_driver_sdspi/CMakeFiles/__idf_esp_driver_sdspi.dir/rule
@@ -5034,7 +5034,7 @@ esp-idf/esp_driver_sdio/CMakeFiles/__idf_esp_driver_sdio.dir/all: esp-idf/esp_dr
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_driver_sdio/CMakeFiles/__idf_esp_driver_sdio.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 21
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_sdio/CMakeFiles/__idf_esp_driver_sdio.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_driver_sdio/CMakeFiles/__idf_esp_driver_sdio.dir/rule
@@ -5060,7 +5060,7 @@ esp-idf/esp_driver_dac/CMakeFiles/__idf_esp_driver_dac.dir/all: esp-idf/esp_driv
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_driver_dac/CMakeFiles/__idf_esp_driver_dac.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 21
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_dac/CMakeFiles/__idf_esp_driver_dac.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_driver_dac/CMakeFiles/__idf_esp_driver_dac.dir/rule
@@ -5086,7 +5086,7 @@ esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/all: esp-idf/esp_driv
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 21
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/rule
@@ -5112,7 +5112,7 @@ esp-idf/esp_driver_sdm/CMakeFiles/__idf_esp_driver_sdm.dir/all: esp-idf/esp_driv
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_driver_sdm/CMakeFiles/__idf_esp_driver_sdm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 20
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_sdm/CMakeFiles/__idf_esp_driver_sdm.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_driver_sdm/CMakeFiles/__idf_esp_driver_sdm.dir/rule
@@ -5138,7 +5138,7 @@ esp-idf/esp_driver_i2c/CMakeFiles/__idf_esp_driver_i2c.dir/all: esp-idf/esp_driv
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_driver_i2c/CMakeFiles/__idf_esp_driver_i2c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 20
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_i2c/CMakeFiles/__idf_esp_driver_i2c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_driver_i2c/CMakeFiles/__idf_esp_driver_i2c.dir/rule
@@ -5164,7 +5164,7 @@ esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/all: esp-idf/driver
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 20
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/rule
@@ -5190,7 +5190,7 @@ esp-idf/driver/CMakeFiles/__idf_driver.dir/all: esp-idf/esp_phy/CMakeFiles/__idf
 
 # Build rule for subdir invocation for target.
 esp-idf/driver/CMakeFiles/__idf_driver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 19
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/driver/CMakeFiles/__idf_driver.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/driver/CMakeFiles/__idf_driver.dir/rule
@@ -5216,7 +5216,7 @@ esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/all: esp-idf/esp_vfs_console/CMakeF
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/rule
@@ -5242,7 +5242,7 @@ esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/all: esp-idf/vfs/CM
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir/rule
@@ -5268,7 +5268,7 @@ esp-idf/vfs/CMakeFiles/__idf_vfs.dir/all: esp-idf/lwip/CMakeFiles/__idf_lwip.dir
 
 # Build rule for subdir invocation for target.
 esp-idf/vfs/CMakeFiles/__idf_vfs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/vfs/CMakeFiles/__idf_vfs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/vfs/CMakeFiles/__idf_vfs.dir/rule
@@ -5289,12 +5289,12 @@ esp-idf/vfs/CMakeFiles/__idf_vfs.dir/clean:
 esp-idf/lwip/CMakeFiles/__idf_lwip.dir/all: esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/lwip/CMakeFiles/__idf_lwip.dir/build.make esp-idf/lwip/CMakeFiles/__idf_lwip.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/lwip/CMakeFiles/__idf_lwip.dir/build.make esp-idf/lwip/CMakeFiles/__idf_lwip.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles --progress-num=61,62,63,64,65,66 "Built target __idf_lwip"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles --progress-num=60,61,62,63,64,65,66 "Built target __idf_lwip"
 .PHONY : esp-idf/lwip/CMakeFiles/__idf_lwip.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/lwip/CMakeFiles/__idf_lwip.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/lwip/CMakeFiles/__idf_lwip.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/lwip/CMakeFiles/__idf_lwip.dir/rule
@@ -5424,7 +5424,7 @@ esp-idf/unity/CMakeFiles/__idf_unity.dir/all: esp-idf/xtensa/CMakeFiles/__idf_xt
 
 # Build rule for subdir invocation for target.
 esp-idf/unity/CMakeFiles/__idf_unity.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 60
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 59
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/unity/CMakeFiles/__idf_unity.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/unity/CMakeFiles/__idf_unity.dir/rule
@@ -5451,7 +5451,7 @@ esp-idf/cmock/CMakeFiles/__idf_cmock.dir/all: esp-idf/unity/CMakeFiles/__idf_uni
 
 # Build rule for subdir invocation for target.
 esp-idf/cmock/CMakeFiles/__idf_cmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 60
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 59
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/cmock/CMakeFiles/__idf_cmock.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/cmock/CMakeFiles/__idf_cmock.dir/rule
@@ -5477,7 +5477,7 @@ esp-idf/console/CMakeFiles/__idf_console.dir/all: esp-idf/xtensa/CMakeFiles/__id
 
 # Build rule for subdir invocation for target.
 esp-idf/console/CMakeFiles/__idf_console.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 60
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 59
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/console/CMakeFiles/__idf_console.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/console/CMakeFiles/__idf_console.dir/rule
@@ -5581,7 +5581,7 @@ esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/all: esp-idf/xtensa/C
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 59
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 58
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/rule
@@ -5659,7 +5659,7 @@ esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/all: esp-idf/xtensa/CMakeFiles/__id
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 59
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 58
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/rule
@@ -5791,7 +5791,7 @@ esp-idf/esp_https_server/CMakeFiles/__idf_esp_https_server.dir/all: esp-idf/xten
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_https_server/CMakeFiles/__idf_esp_https_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 60
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 59
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_https_server/CMakeFiles/__idf_esp_https_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_https_server/CMakeFiles/__idf_esp_https_server.dir/rule
@@ -5817,7 +5817,7 @@ esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/all: esp-idf/xtensa/CMakeFiles/__id
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 59
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 58
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/rule
@@ -5843,7 +5843,7 @@ esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/all: esp-idf/xtensa/CMakeFile
 
 # Build rule for subdir invocation for target.
 esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 59
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 58
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/rule
@@ -5866,7 +5866,7 @@ esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/all: esp-idf/console/CMakeFiles
 esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/all: esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/build.make esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/build.make esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles --progress-num=72 "Built target __idf_protocomm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles --progress-num=72,73 "Built target __idf_protocomm"
 .PHONY : esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5928,7 +5928,7 @@ esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/all: esp-idf/xtensa/CMakeFi
 
 # Build rule for subdir invocation for target.
 esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 59
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 58
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/rule
@@ -5954,7 +5954,7 @@ esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/all: esp-idf/xtensa/C
 
 # Build rule for subdir invocation for target.
 esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 60
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 59
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/rule
@@ -5981,7 +5981,7 @@ esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/all: esp-idf/wear_levelling/CMakeFiles/
 
 # Build rule for subdir invocation for target.
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 60
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 59
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/rule
@@ -6007,7 +6007,7 @@ esp-idf/json/CMakeFiles/__idf_json.dir/all: esp-idf/xtensa/CMakeFiles/__idf_xten
 
 # Build rule for subdir invocation for target.
 esp-idf/json/CMakeFiles/__idf_json.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 59
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 58
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/json/CMakeFiles/__idf_json.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/json/CMakeFiles/__idf_json.dir/rule
@@ -6033,7 +6033,7 @@ esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/all: esp-idf/xtensa/CMakeFiles/__idf_xten
 
 # Build rule for subdir invocation for target.
 esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 60
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 59
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/rule
@@ -6059,7 +6059,7 @@ esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/all: esp-idf/xten
 
 # Build rule for subdir invocation for target.
 esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 59
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 58
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/rule
@@ -6080,12 +6080,12 @@ esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/clean:
 esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/all: esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/build.make esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/build.make esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles --progress-num=71 "Built target __idf_perfmon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles --progress-num= "Built target __idf_perfmon"
 .PHONY : esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 60
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 58
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/rule
@@ -6111,7 +6111,7 @@ esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/all: esp-idf/xtensa/CMakeFiles/__idf_
 
 # Build rule for subdir invocation for target.
 esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 60
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 59
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/rule
@@ -6236,7 +6236,7 @@ esp-idf/audio_sal/CMakeFiles/__idf_audio_sal.dir/all: esp-idf/xtensa/CMakeFiles/
 
 # Build rule for subdir invocation for target.
 esp-idf/audio_sal/CMakeFiles/__idf_audio_sal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 60
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 59
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/audio_sal/CMakeFiles/__idf_audio_sal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/audio_sal/CMakeFiles/__idf_audio_sal.dir/rule
@@ -6263,7 +6263,7 @@ esp-idf/adf_utils/CMakeFiles/__idf_adf_utils.dir/all: esp-idf/audio_sal/CMakeFil
 
 # Build rule for subdir invocation for target.
 esp-idf/adf_utils/CMakeFiles/__idf_adf_utils.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 60
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 59
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/adf_utils/CMakeFiles/__idf_adf_utils.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/adf_utils/CMakeFiles/__idf_adf_utils.dir/rule
@@ -6289,7 +6289,7 @@ esp-idf/display_service/CMakeFiles/__idf_display_service.dir/all: esp-idf/audio_
 
 # Build rule for subdir invocation for target.
 esp-idf/display_service/CMakeFiles/__idf_display_service.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 71
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/display_service/CMakeFiles/__idf_display_service.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/display_service/CMakeFiles/__idf_display_service.dir/rule
@@ -6316,7 +6316,7 @@ esp-idf/esp_dispatcher/CMakeFiles/__idf_esp_dispatcher.dir/all: esp-idf/audio_sa
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_dispatcher/CMakeFiles/__idf_esp_dispatcher.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 60
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_dispatcher/CMakeFiles/__idf_esp_dispatcher.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_dispatcher/CMakeFiles/__idf_esp_dispatcher.dir/rule
@@ -6342,7 +6342,7 @@ esp-idf/audio_hal/CMakeFiles/__idf_audio_hal.dir/all: esp-idf/esp_peripherals/CM
 
 # Build rule for subdir invocation for target.
 esp-idf/audio_hal/CMakeFiles/__idf_audio_hal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 71
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/audio_hal/CMakeFiles/__idf_audio_hal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/audio_hal/CMakeFiles/__idf_audio_hal.dir/rule
@@ -6368,7 +6368,7 @@ esp-idf/espressif__nghttp/CMakeFiles/__idf_espressif__nghttp.dir/all: esp-idf/xt
 
 # Build rule for subdir invocation for target.
 esp-idf/espressif__nghttp/CMakeFiles/__idf_espressif__nghttp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 60
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/espressif__nghttp/CMakeFiles/__idf_espressif__nghttp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/espressif__nghttp/CMakeFiles/__idf_espressif__nghttp.dir/rule
@@ -6394,7 +6394,7 @@ esp-idf/esp-adf-libs/CMakeFiles/__idf_esp-adf-libs.dir/all: esp-idf/audio_pipeli
 
 # Build rule for subdir invocation for target.
 esp-idf/esp-adf-libs/CMakeFiles/__idf_esp-adf-libs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 64
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 63
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp-adf-libs/CMakeFiles/__idf_esp-adf-libs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp-adf-libs/CMakeFiles/__idf_esp-adf-libs.dir/rule
@@ -6422,7 +6422,7 @@ esp-idf/audio_pipeline/CMakeFiles/__idf_audio_pipeline.dir/all: esp-idf/espressi
 
 # Build rule for subdir invocation for target.
 esp-idf/audio_pipeline/CMakeFiles/__idf_audio_pipeline.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 63
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 62
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/audio_pipeline/CMakeFiles/__idf_audio_pipeline.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/audio_pipeline/CMakeFiles/__idf_audio_pipeline.dir/rule
@@ -6448,7 +6448,7 @@ esp-idf/esp_peripherals/CMakeFiles/__idf_esp_peripherals.dir/all: esp-idf/audio_
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_peripherals/CMakeFiles/__idf_esp_peripherals.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 71
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 70
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_peripherals/CMakeFiles/__idf_esp_peripherals.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_peripherals/CMakeFiles/__idf_esp_peripherals.dir/rule
@@ -6483,7 +6483,7 @@ esp-idf/audio_board/CMakeFiles/__idf_audio_board.dir/all: esp-idf/esp-adf-libs/C
 
 # Build rule for subdir invocation for target.
 esp-idf/audio_board/CMakeFiles/__idf_audio_board.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 69
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/audio_board/CMakeFiles/__idf_audio_board.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/audio_board/CMakeFiles/__idf_audio_board.dir/rule
@@ -6512,7 +6512,7 @@ esp-idf/audio_mixer/CMakeFiles/__idf_audio_mixer.dir/all: esp-idf/esp-adf-libs/C
 
 # Build rule for subdir invocation for target.
 esp-idf/audio_mixer/CMakeFiles/__idf_audio_mixer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 64
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 63
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/audio_mixer/CMakeFiles/__idf_audio_mixer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/audio_mixer/CMakeFiles/__idf_audio_mixer.dir/rule
@@ -6538,7 +6538,7 @@ esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/all: esp-idf/
 
 # Build rule for subdir invocation for target.
 esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 70
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 69
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/rule
@@ -6567,7 +6567,7 @@ esp-idf/esp-sr/CMakeFiles/__idf_esp-sr.dir/all: esp-idf/espressif__esp-dsp/CMake
 
 # Build rule for subdir invocation for target.
 esp-idf/esp-sr/CMakeFiles/__idf_esp-sr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 71
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp-sr/CMakeFiles/__idf_esp-sr.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp-sr/CMakeFiles/__idf_esp-sr.dir/rule
@@ -6600,7 +6600,7 @@ esp-idf/audio_recorder/CMakeFiles/__idf_audio_recorder.dir/all: esp-idf/esp-sr/C
 
 # Build rule for subdir invocation for target.
 esp-idf/audio_recorder/CMakeFiles/__idf_audio_recorder.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 77
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 76
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/audio_recorder/CMakeFiles/__idf_audio_recorder.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/audio_recorder/CMakeFiles/__idf_audio_recorder.dir/rule
@@ -6626,7 +6626,7 @@ esp-idf/wifi_service/CMakeFiles/__idf_wifi_service.dir/all: esp-idf/dueros_servi
 
 # Build rule for subdir invocation for target.
 esp-idf/wifi_service/CMakeFiles/__idf_wifi_service.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 86
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 85
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/wifi_service/CMakeFiles/__idf_wifi_service.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/wifi_service/CMakeFiles/__idf_wifi_service.dir/rule
@@ -6652,7 +6652,7 @@ esp-idf/dueros_service/CMakeFiles/__idf_dueros_service.dir/all: esp-idf/esp_acti
 
 # Build rule for subdir invocation for target.
 esp-idf/dueros_service/CMakeFiles/__idf_dueros_service.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 86
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 85
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/dueros_service/CMakeFiles/__idf_dueros_service.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/dueros_service/CMakeFiles/__idf_dueros_service.dir/rule
@@ -6692,7 +6692,7 @@ esp-idf/esp_actions/CMakeFiles/__idf_esp_actions.dir/all: esp-idf/audio_recorder
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_actions/CMakeFiles/__idf_esp_actions.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 85
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 84
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_actions/CMakeFiles/__idf_esp_actions.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_actions/CMakeFiles/__idf_esp_actions.dir/rule
@@ -6733,7 +6733,7 @@ esp-idf/tone_partition/CMakeFiles/__idf_tone_partition.dir/all: esp-idf/wifi_ser
 
 # Build rule for subdir invocation for target.
 esp-idf/tone_partition/CMakeFiles/__idf_tone_partition.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 86
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 85
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/tone_partition/CMakeFiles/__idf_tone_partition.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/tone_partition/CMakeFiles/__idf_tone_partition.dir/rule
@@ -6775,7 +6775,7 @@ esp-idf/audio_stream/CMakeFiles/__idf_audio_stream.dir/all: esp-idf/tone_partiti
 
 # Build rule for subdir invocation for target.
 esp-idf/audio_stream/CMakeFiles/__idf_audio_stream.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 87
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 86
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/audio_stream/CMakeFiles/__idf_audio_stream.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/audio_stream/CMakeFiles/__idf_audio_stream.dir/rule
@@ -6811,7 +6811,7 @@ esp-idf/battery_service/CMakeFiles/__idf_battery_service.dir/all: esp-idf/esp-ad
 
 # Build rule for subdir invocation for target.
 esp-idf/battery_service/CMakeFiles/__idf_battery_service.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 71
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/battery_service/CMakeFiles/__idf_battery_service.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/battery_service/CMakeFiles/__idf_battery_service.dir/rule
@@ -6854,7 +6854,7 @@ esp-idf/bluetooth_service/CMakeFiles/__idf_bluetooth_service.dir/all: esp-idf/au
 
 # Build rule for subdir invocation for target.
 esp-idf/bluetooth_service/CMakeFiles/__idf_bluetooth_service.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 87
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 86
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/bluetooth_service/CMakeFiles/__idf_bluetooth_service.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/bluetooth_service/CMakeFiles/__idf_bluetooth_service.dir/rule
@@ -6883,7 +6883,7 @@ esp-idf/coredump_upload_service/CMakeFiles/__idf_coredump_upload_service.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/coredump_upload_service/CMakeFiles/__idf_coredump_upload_service.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 62
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 61
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/coredump_upload_service/CMakeFiles/__idf_coredump_upload_service.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/coredump_upload_service/CMakeFiles/__idf_coredump_upload_service.dir/rule
@@ -6909,7 +6909,7 @@ esp-idf/esp_codec_dev/CMakeFiles/__idf_esp_codec_dev.dir/all: esp-idf/xtensa/CMa
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_codec_dev/CMakeFiles/__idf_esp_codec_dev.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 60
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 59
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_codec_dev/CMakeFiles/__idf_esp_codec_dev.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_codec_dev/CMakeFiles/__idf_esp_codec_dev.dir/rule
@@ -6936,7 +6936,7 @@ esp-idf/esp_event_cast/CMakeFiles/__idf_esp_event_cast.dir/all: esp-idf/audio_sa
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_event_cast/CMakeFiles/__idf_esp_event_cast.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 60
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_event_cast/CMakeFiles/__idf_esp_event_cast.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp_event_cast/CMakeFiles/__idf_esp_event_cast.dir/rule
@@ -6972,7 +6972,7 @@ esp-idf/input_key_service/CMakeFiles/__idf_input_key_service.dir/all: esp-idf/es
 
 # Build rule for subdir invocation for target.
 esp-idf/input_key_service/CMakeFiles/__idf_input_key_service.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 71
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/input_key_service/CMakeFiles/__idf_input_key_service.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/input_key_service/CMakeFiles/__idf_input_key_service.dir/rule
@@ -7010,7 +7010,7 @@ esp-idf/ota_service/CMakeFiles/__idf_ota_service.dir/all: esp-idf/tone_partition
 esp-idf/ota_service/CMakeFiles/__idf_ota_service.dir/all: esp-idf/audio_stream/CMakeFiles/__idf_audio_stream.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/ota_service/CMakeFiles/__idf_ota_service.dir/build.make esp-idf/ota_service/CMakeFiles/__idf_ota_service.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/ota_service/CMakeFiles/__idf_ota_service.dir/build.make esp-idf/ota_service/CMakeFiles/__idf_ota_service.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles --progress-num= "Built target __idf_ota_service"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles --progress-num=71 "Built target __idf_ota_service"
 .PHONY : esp-idf/ota_service/CMakeFiles/__idf_ota_service.dir/all
 
 # Build rule for subdir invocation for target.
@@ -7042,7 +7042,7 @@ esp-idf/playlist/CMakeFiles/__idf_playlist.dir/all: esp-idf/audio_sal/CMakeFiles
 
 # Build rule for subdir invocation for target.
 esp-idf/playlist/CMakeFiles/__idf_playlist.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 60
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 59
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/playlist/CMakeFiles/__idf_playlist.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/playlist/CMakeFiles/__idf_playlist.dir/rule
@@ -7069,7 +7069,7 @@ esp-idf/mdns/CMakeFiles/__idf_mdns.dir/all: esp-idf/console/CMakeFiles/__idf_con
 
 # Build rule for subdir invocation for target.
 esp-idf/mdns/CMakeFiles/__idf_mdns.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 60
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 59
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/mdns/CMakeFiles/__idf_mdns.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/mdns/CMakeFiles/__idf_mdns.dir/rule
@@ -7097,7 +7097,7 @@ esp-idf/esp32-wifi-manager/CMakeFiles/__idf_esp32-wifi-manager.dir/all: esp-idf/
 
 # Build rule for subdir invocation for target.
 esp-idf/esp32-wifi-manager/CMakeFiles/__idf_esp32-wifi-manager.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 60
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp32-wifi-manager/CMakeFiles/__idf_esp32-wifi-manager.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles 0
 .PHONY : esp-idf/esp32-wifi-manager/CMakeFiles/__idf_esp32-wifi-manager.dir/rule

@@ -6,7 +6,8 @@
 // MQTT Configuration
 #define BROKER "mqtts://7c1135d9a0c74d6da4c07a96475b8a31.s1.eu.hivemq.cloud"
 #define PORT 8883
-#define TOPIC "ALVORADA/controle_portao"
+#define TOPIC_PORTAO "ALVORADA/controle_portao"
+#define TOPIC_RECADO "ALVORADA/recados"
 #define USERNAME "lodrom"
 #define PASSWORD "Lodrom123"
 #define MQTT_QOS 1

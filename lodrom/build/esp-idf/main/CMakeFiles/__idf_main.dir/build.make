@@ -139,13 +139,28 @@ esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_mqtt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_main.dir/lodrom_mqtt.c.s"
 	cd /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/esp-idf/main && /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c -o CMakeFiles/__idf_main.dir/lodrom_mqtt.c.s
 
+esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_api.c.obj: esp-idf/main/CMakeFiles/__idf_main.dir/flags.make
+esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_api.c.obj: /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_api.c
+esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_api.c.obj: esp-idf/main/CMakeFiles/__idf_main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_api.c.obj"
+	cd /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/esp-idf/main && /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_api.c.obj -MF CMakeFiles/__idf_main.dir/lodrom_api.c.obj.d -o CMakeFiles/__idf_main.dir/lodrom_api.c.obj -c /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_api.c
+
+esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_api.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_main.dir/lodrom_api.c.i"
+	cd /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/esp-idf/main && /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_api.c > CMakeFiles/__idf_main.dir/lodrom_api.c.i
+
+esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_api.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_main.dir/lodrom_api.c.s"
+	cd /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/esp-idf/main && /home/betelgeuse/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_api.c -o CMakeFiles/__idf_main.dir/lodrom_api.c.s
+
 # Object files for target __idf_main
 __idf_main_OBJECTS = \
 "CMakeFiles/__idf_main.dir/lodrom.c.obj" \
 "CMakeFiles/__idf_main.dir/lodrom_wifi.c.obj" \
 "CMakeFiles/__idf_main.dir/lodrom_spiffs.c.obj" \
 "CMakeFiles/__idf_main.dir/lodrom_audio.c.obj" \
-"CMakeFiles/__idf_main.dir/lodrom_mqtt.c.obj"
+"CMakeFiles/__idf_main.dir/lodrom_mqtt.c.obj" \
+"CMakeFiles/__idf_main.dir/lodrom_api.c.obj"
 
 # External object files for target __idf_main
 __idf_main_EXTERNAL_OBJECTS =
@@ -155,9 +170,10 @@ esp-idf/main/libmain.a: esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_wifi.c.obj
 esp-idf/main/libmain.a: esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_spiffs.c.obj
 esp-idf/main/libmain.a: esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_audio.c.obj
 esp-idf/main/libmain.a: esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_mqtt.c.obj
+esp-idf/main/libmain.a: esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_api.c.obj
 esp-idf/main/libmain.a: esp-idf/main/CMakeFiles/__idf_main.dir/build.make
 esp-idf/main/libmain.a: esp-idf/main/CMakeFiles/__idf_main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library libmain.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C static library libmain.a"
 	cd /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/esp-idf/main && $(CMAKE_COMMAND) -P CMakeFiles/__idf_main.dir/cmake_clean_target.cmake
 	cd /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build/esp-idf/main && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_main.dir/link.txt --verbose=$(VERBOSE)
 

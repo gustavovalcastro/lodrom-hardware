@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom.c" "esp-idf/main/CMakeFiles/__idf_main.dir/lodrom.c.obj" "gcc" "esp-idf/main/CMakeFiles/__idf_main.dir/lodrom.c.obj.d"
+  "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_api.c" "esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_api.c.obj" "gcc" "esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_api.c.obj.d"
   "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_audio.c" "esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_audio.c.obj" "gcc" "esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_audio.c.obj.d"
   "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_mqtt.c" "esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_mqtt.c.obj" "gcc" "esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_mqtt.c.obj.d"
   "/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_spiffs.c" "esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_spiffs.c.obj" "gcc" "esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_spiffs.c.obj.d"

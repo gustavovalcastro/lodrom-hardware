@@ -199,6 +199,30 @@ lodrom.c.s:
 	cd /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/lodrom.c.s
 .PHONY : lodrom.c.s
 
+lodrom_api.obj: lodrom_api.c.obj
+.PHONY : lodrom_api.obj
+
+# target to build an object file
+lodrom_api.c.obj:
+	cd /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_api.c.obj
+.PHONY : lodrom_api.c.obj
+
+lodrom_api.i: lodrom_api.c.i
+.PHONY : lodrom_api.i
+
+# target to preprocess a source file
+lodrom_api.c.i:
+	cd /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_api.c.i
+.PHONY : lodrom_api.c.i
+
+lodrom_api.s: lodrom_api.c.s
+.PHONY : lodrom_api.s
+
+# target to generate assembly for a file
+lodrom_api.c.s:
+	cd /home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/build && $(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_api.c.s
+.PHONY : lodrom_api.c.s
+
 lodrom_audio.obj: lodrom_audio.c.obj
 .PHONY : lodrom_audio.obj
 
@@ -311,6 +335,9 @@ help:
 	@echo "... lodrom.obj"
 	@echo "... lodrom.i"
 	@echo "... lodrom.s"
+	@echo "... lodrom_api.obj"
+	@echo "... lodrom_api.i"
+	@echo "... lodrom_api.s"
 	@echo "... lodrom_audio.obj"
 	@echo "... lodrom_audio.i"
 	@echo "... lodrom_audio.s"

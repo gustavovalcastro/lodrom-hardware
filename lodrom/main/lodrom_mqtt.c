@@ -1,8 +1,72 @@
 #include "lodrom_mqtt.h"
+#include "lodrom_pins.h"
 
 #include "mqtt_client.h"
 #include "esp_err.h"
 #include "esp_log.h"
+#include "cJSON.h"
+
+
+void blink_led(gpio_num_t gpio_num) {
+    if (gpio_num == PIN_DOOR_OUTPUT) {
+        door_led_control = false;
+    } else if (gpio_num == PIN_HOOK_OUTPUT) {
+        hook_led_control = false;
+    }
+
+    for (int i = 0; i < 3; i++) { // Blink 3 times
+        gpio_set_level(gpio_num, 0); // LED ON
+        vTaskDelay(pdMS_TO_TICKS(500));
+        gpio_set_level(gpio_num, 1); // LED OFF
+        vTaskDelay(pdMS_TO_TICKS(500));
+    }
+
+    if (gpio_num == PIN_DOOR_OUTPUT) {
+        door_led_control = true;
+    } else if (gpio_num == PIN_HOOK_OUTPUT) {
+        hook_led_control = true;
+    }
+}
+
+void handle_mqtt_message(const char *topic, const char *data) {
+    if (strcmp(topic, "ALVORADA/controle_portao") == 0) {
+        ESP_LOGI("MQTT", "Blinking LED on PIN_DOOR_OUTPUT");
+        blink_led(PIN_DOOR_OUTPUT);
+    } else if (strcmp(topic, "ALVORADA/recados") == 0) {
+        ESP_LOGI("MQTT", "Blinking LED on PIN_HOOK_OUTPUT");
+        blink_led(PIN_HOOK_OUTPUT);
+    } else {
+        ESP_LOGW("MQTT", "Unknown topic received: %s", topic);
+    }
+}
+
+static void parse_and_log_json(const char *data) {
+    // Parse the JSON data
+    cJSON *json = cJSON_Parse(data);
+    if (json == NULL) {
+        ESP_LOGE(MQTT_TAG, "Error parsing JSON data: %s", cJSON_GetErrorPtr());
+        return;
+    }
+
+    cJSON *portao_open = cJSON_GetObjectItem(json, "open");
+    cJSON *device_code = cJSON_GetObjectItem(json, "device_code");
+
+    // Open
+    if (cJSON_IsString(portao_open) && (portao_open->valuestring != NULL)) {
+        ESP_LOGI(MQTT_TAG, "Open: %s", portao_open->valuestring);
+    } else {
+        ESP_LOGE(MQTT_TAG, "Open not found or invalid");
+    }
+
+    // Device Code
+    if (cJSON_IsString(device_code) && (device_code->valuestring != NULL)) {
+        ESP_LOGI(MQTT_TAG, ": %s", device_code->valuestring);
+    } else {
+        ESP_LOGE(MQTT_TAG, "Device Code not found or invalid");
+    }
+
+    cJSON_Delete(json);
+}
 
 static void mqtt_event_handler_cb(void *ctx, const char *event_base, int event_id, void *event_data) {
     esp_mqtt_event_handle_t event = (esp_mqtt_event_handle_t)event_data;
@@ -15,12 +79,20 @@ static void mqtt_event_handler_cb(void *ctx, const char *event_base, int event_i
     switch (event->event_id) {
         case MQTT_EVENT_CONNECTED:
             ESP_LOGI(MQTT_TAG, "Connected to MQTT broker, attempting to subscribe...");
-            esp_err_t subscribe_result = esp_mqtt_client_subscribe(client, TOPIC, MQTT_QOS);
-            ESP_LOGI(MQTT_TAG, "MQTT Connected successfully");
+            // Topic: "ALVORADA/controle_portao"
+            esp_err_t subscribe_result = esp_mqtt_client_subscribe(client, TOPIC_PORTAO, MQTT_QOS);
             if (subscribe_result != ESP_OK) {
-                ESP_LOGE(MQTT_TAG, "Failed to subscribe to topic %s: %d", TOPIC, subscribe_result);
+                ESP_LOGE(MQTT_TAG, "Failed to subscribe to topic %s: %d", TOPIC_PORTAO, subscribe_result);
             } else {
-                ESP_LOGI(MQTT_TAG, "Successfully subscribed to topic: %s", TOPIC);
+                ESP_LOGI(MQTT_TAG, "Successfully subscribed to topic: %s", TOPIC_PORTAO);
+            }
+
+            // Topic: "ALVORADA/recados"
+            subscribe_result = esp_mqtt_client_subscribe(client, TOPIC_RECADO, MQTT_QOS);
+            if (subscribe_result != ESP_OK) {
+                ESP_LOGE(MQTT_TAG, "Failed to subscribe to topic %s: %d", TOPIC_RECADO, subscribe_result);
+            } else {
+                ESP_LOGI(MQTT_TAG, "Successfully subscribed to topic: %s", TOPIC_RECADO);
             }
             break;
 
@@ -30,8 +102,8 @@ static void mqtt_event_handler_cb(void *ctx, const char *event_base, int event_i
 
         case MQTT_EVENT_SUBSCRIBED:
             ESP_LOGI(MQTT_TAG, "Successfully subscribed to topic with msg_id=%d", event->msg_id);
-            char test_message[] = "Device successfully subscribed!";
-            esp_mqtt_client_publish(client, TOPIC, test_message, strlen(test_message), 1, 0);
+            /*char test_message[] = "Device successfully subscribed!";*/
+            /*esp_mqtt_client_publish(client, TOPIC, test_message, strlen(test_message), 1, 0);*/
             break;
 
         case MQTT_EVENT_DATA:
@@ -41,7 +113,12 @@ static void mqtt_event_handler_cb(void *ctx, const char *event_base, int event_i
             ESP_LOGI(MQTT_TAG, "========= MQTT Message Received =========");
             ESP_LOGI(MQTT_TAG, "Topic: %s", topic);
             ESP_LOGI(MQTT_TAG, "Data: %s", data);
+            ESP_LOGI(MQTT_TAG, "========= JSON Validation =========");
+            parse_and_log_json(data);
             ESP_LOGI(MQTT_TAG, "=======================================");
+
+            handle_mqtt_message(topic, data);
+
             break;
 
         case MQTT_EVENT_ERROR:

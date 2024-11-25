@@ -1,0 +1,399 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x1f (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 24 2024 16:34:25[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot:  3 storage          Unknown data     01 82 00210000 000f0000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3bb14h (244500) map[0m
+[0;32mI (196) esp_image: segment 1: paddr=0004bb3c vaddr=3ffb0000 size=040dch ( 16604) load[0m
+[0;32mI (202) esp_image: segment 2: paddr=0004fc20 vaddr=40080000 size=003f8h (  1016) load[0m
+[0;32mI (203) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=bde78h (777848) map[0m
+[0;32mI (476) esp_image: segment 4: paddr=0010dea0 vaddr=400803f8 size=17f74h ( 98164) load[0m
+[0;32mI (527) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (527) boot: Disabling RNG early entropy source...[0m
+[0;32mI (539) cpu_start: Multicore app[0m
+D (539) cpu_start: Pro cpu up[0m
+D (539) cpu_start: Starting app cpu, entry point is 0x40081318[0m
+D (0) cpu_start: App cpu up[0m
+D (550) clk: RTC_SLOW_CLK calibration value: 3094579[0m
+D (562) cpu_start: calling init function: 0x400d3228 on core: 0[0m
+D (562) cpu_start: calling init function: 0x400d3744 on core: 0[0m
+[0;32mI (565) cpu_start: Pro cpu start user code[0m
+[0;32mI (569) cpu_start: cpu freq: 240000000 Hz[0m
+D (574) cpu_start: calling init function: 0x400d3168 on core: 0[0m
+[0;32mI (580) app_init: Application information:[0m
+[0;32mI (585) app_init: Project name:     lodrom[0m
+[0;32mI (590) app_init: App version:      82868db-dirty[0m
+[0;32mI (595) app_init: Compile time:     Nov 24 2024 17:55:05[0m
+[0;32mI (601) app_init: ELF file SHA256:  7acd73bbe...[0m
+[0;32mI (606) app_init: ESP-IDF:          v5.3.1[0m
+D (611) cpu_start: calling init function: 0x400d323c on core: 0[0m
+[0;32mI (617) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (622) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (627) efuse_init: Chip rev:         v3.1[0m
+D (632) cpu_start: calling init function: 0x400d5044 on core: 0[0m
+D (638) memory_layout: Checking 9 reserved memory ranges:[0m
+D (643) memory_layout: Reserved memory range 0x3ff82000 - 0x3ff82000[0m
+D (650) memory_layout: Reserved memory range 0x3ffae000 - 0x3ffae6e0[0m
+D (656) memory_layout: Reserved memory range 0x3ffb0000 - 0x3ffb8b78[0m
+D (662) memory_layout: Reserved memory range 0x3ffe0000 - 0x3ffe0440[0m
+D (669) memory_layout: Reserved memory range 0x3ffe3f20 - 0x3ffe4350[0m
+D (675) memory_layout: Reserved memory range 0x40070000 - 0x40078000[0m
+D (682) memory_layout: Reserved memory range 0x40078000 - 0x40080000[0m
+D (688) memory_layout: Reserved memory range 0x40080000 - 0x4009836c[0m
+D (694) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (701) memory_layout: Building list of available memory regions:[0m
+D (707) memory_layout: Available memory region 0x3ffae6e0 - 0x3ffb0000[0m
+D (714) memory_layout: Available memory region 0x3ffb8b78 - 0x3ffc0000[0m
+D (720) memory_layout: Available memory region 0x3ffc0000 - 0x3ffc2000[0m
+D (727) memory_layout: Available memory region 0x3ffc2000 - 0x3ffc4000[0m
+D (733) memory_layout: Available memory region 0x3ffc4000 - 0x3ffc6000[0m
+D (740) memory_layout: Available memory region 0x3ffc6000 - 0x3ffc8000[0m
+D (747) memory_layout: Available memory region 0x3ffc8000 - 0x3ffca000[0m
+D (753) memory_layout: Available memory region 0x3ffca000 - 0x3ffcc000[0m
+D (760) memory_layout: Available memory region 0x3ffcc000 - 0x3ffce000[0m
+D (766) memory_layout: Available memory region 0x3ffce000 - 0x3ffd0000[0m
+D (773) memory_layout: Available memory region 0x3ffd0000 - 0x3ffd2000[0m
+D (780) memory_layout: Available memory region 0x3ffd2000 - 0x3ffd4000[0m
+D (786) memory_layout: Available memory region 0x3ffd4000 - 0x3ffd6000[0m
+D (793) memory_layout: Available memory region 0x3ffd6000 - 0x3ffd8000[0m
+D (799) memory_layout: Available memory region 0x3ffd8000 - 0x3ffda000[0m
+D (806) memory_layout: Available memory region 0x3ffda000 - 0x3ffdc000[0m
+D (813) memory_layout: Available memory region 0x3ffdc000 - 0x3ffde000[0m
+D (819) memory_layout: Available memory region 0x3ffde000 - 0x3ffe0000[0m
+D (826) memory_layout: Available memory region 0x3ffe0440 - 0x3ffe3f20[0m
+D (832) memory_layout: Available memory region 0x3ffe4350 - 0x3ffe8000[0m
+D (839) memory_layout: Available memory region 0x3ffe8000 - 0x3fff0000[0m
+D (846) memory_layout: Available memory region 0x3fff0000 - 0x3fff8000[0m
+D (852) memory_layout: Available memory region 0x3fff8000 - 0x3fffc000[0m
+D (859) memory_layout: Available memory region 0x3fffc000 - 0x40000000[0m
+D (865) memory_layout: Available memory region 0x4009836c - 0x4009a000[0m
+D (872) memory_layout: Available memory region 0x4009a000 - 0x4009c000[0m
+D (879) memory_layout: Available memory region 0x4009c000 - 0x4009e000[0m
+D (885) memory_layout: Available memory region 0x4009e000 - 0x400a0000[0m
+[0;32mI (892) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (899) heap_init: New heap initialised at 0x3ffae6e0[0m
+[0;32mI (904) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+D (910) heap_init: New heap initialised at 0x3ffb8b78[0m
+[0;32mI (915) heap_init: At 3FFB8B78 len 00027488 (157 KiB): DRAM[0m
+[0;32mI (922) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (928) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+D (934) heap_init: New heap initialised at 0x4009836c[0m
+[0;32mI (939) heap_init: At 4009836C len 00007C94 (31 KiB): IRAM[0m
+D (946) cpu_start: calling init function: 0x400d65d8 on core: 0[0m
+D (952) cpu_start: calling init function: 0x400d5f34 on core: 0[0m
+D (958) cpu_start: calling init function: 0x400d3788 on core: 0[0m
+D (964) intr_alloc: Connected src 46 to int 1 (cpu 0)[0m
+D (969) cpu_start: calling init function: 0x400d3794 on core: 0[0m
+D (975) cpu_start: calling init function: 0x400d7818 on core: 0[0m
+D (981) cpu_start: calling init function: 0x400d8214 on core: 0[0m
+D (987) cpu_start: calling init function: 0x400d5fb0 on core: 0[0m
+D (993) cpu_start: calling init function: 0x400d63f4 on core: 0[0m
+D (999) cpu_start: calling init function: 0x400d37a0 on core: 0[0m
+D (1005) spi_flash: trying chip: issi[0m
+D (1008) spi_flash: trying chip: gd[0m
+D (1012) spi_flash: trying chip: mxic[0m
+D (1016) spi_flash: trying chip: winbond[0m
+D (1020) spi_flash: trying chip: generic[0m
+[0;32mI (1024) spi_flash: detected chip: generic[0m
+[0;32mI (1028) spi_flash: flash io: dio[0m
+D (1032) cpu_start: calling init function: 0x400d32c8 on core: 0[0m
+D (1039) cpu_start: calling init function: 0x401683f4[0m
+D (1044) cpu_start: calling init function: 0x4015967c[0m
+D (1049) cpu_start: calling init function: 0x4010b178[0m
+D (1054) cpu_start: calling init function: 0x400f15b0[0m
+[0;33mW (1059) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+D (1067) cpu_start: calling init function: 0x400f150c[0m
+[0;33mW (1073) i2s(legacy): legacy i2s driver is deprecated, please migrate to use driver/i2s_std.h, driver/i2s_pdm.h or driver/i2s_tdm.h[0m
+D (1085) cpu_start: calling init function: 0x400896d8[0m
+D (1090) cpu_start: calling init function: 0x400d4828[0m
+D (1095) cpu_start: calling init function: 0x400d3d44[0m
+D (1101) cpu_start: calling init function: 0x40159ac0 on core: 0[0m
+D (1107) intr_alloc: Connected src 17 to int 2 (cpu 0)[0m
+D (1112) cpu_start: calling init function: 0x400d37c4 on core: 0[0m
+D (1118) intr_alloc: Connected src 24 to int 3 (cpu 0)[0m
+D (1123) app_start: Starting scheduler on CPU0[0m
+[0;32D (1128) intr_alloc: Connected src 25 to int 1 (cpu 1)[0m
+D (1128) app_start: Starting scheduler on CPU1[0m
+mI (1128) main_task: Started on CPU0[0m
+D (1148) heap_init: New heap initialised at 0x3ffe0440[0m
+D (1148) heap_init: New heap initialised at 0x3ffe4350[0m
+D (1148) intr_alloc: Connected src 16 to int 5 (cpu 0)[0m
+[0;32mI (1148) main_task: Calling app_main()[0m
+[0;32mI (1208) lodrom_spiffs: Partition size: total: 896321, used: 156875[0m
+[0;32mI (1208) LODROM_AUDIO: Initializing I2S...[0m
+D (1208) i2s(legacy): [sclk] 160000000 [mclk] 2048000 [mclk_div] 78 [bclk] 256000 [bclk_div] 8[0m
+D (1218) intr_alloc: Connected src 32 to int 8 (cpu 0)[0m
+D (1218) i2s(legacy): DMA Malloc info, datalen=blocksize=4092, dma_desc_num=4[0m
+D (1228) i2s(legacy): I2S0, MCLK output by GPIO0[0m
+[0;32mI (1238) LODROM_AUDIO: I2S initialized[0m
+[0;32mI (1248) Main: Credentials file exists[0m
+[0;32mI (1248) lodrom_spiffs: Listing files in /spiffs:[0m
+[0;32mI (1248) lodrom_spiffs: Found file: sample_audio.wav[0m
+[0;32mI (1258) lodrom_spiffs: Found file: credentials.json[0m
+[0;32mI (1288) wifi_manager: Set STA IP String to: 0.0.0.0[0m
+D (1288) esp_netif_lwip: LwIP stack has been initialized[0m
+D (1288) esp_netif_lwip: esp-netif has been successfully initialized[0m
+D (1298) event: running task for loop 0x3ffc4b20[0m
+D (1298) event: created task for loop 0x3ffc4b20[0m
+D (1308) event: created event loop 0x3ffc4b20[0m
+D (1308) esp_netif_lwip: check: remote, if=0x3ffc3480 fn=0x401089e8[0m
+D (1318) esp_netif_objects: esp_netif_add_to_list_unsafe netif added successfully (total netifs: 1)[0m
+D (1328) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+[0;32mI (1328) lodrom_wifi_start: Waiting for Wi-Fi connection...[0m
+D (1328) esp_netif_lwip: check: remote, if=0x3ffc3480 fn=0x401089e8[0m
+D (1348) esp_netif_objects: esp_netif_add_to_list_unsafe netif added successfully (total netifs: 2)[0m
+D (1348) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (1358) nvs: nvs_open_from_partition misc 1[0m
+D (1378) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 8 bit[0m
+D (1378) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 0 bit[0m
+D (1378) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 24 bit[0m
+D (1388) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 16 bit[0m
+D (1388) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (1398) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (1408) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 16 bit[0m
+D (1408) nvs: nvs_open_from_partition nvs.net80211 1[0m
+D (1418) nvs: nvs_get opmode 1[0m
+D (1418) nvs: nvs_get_str_or_blob sta.ssid[0m
+D (1428) nvs: nvs_get sta.authmode 1[0m
+D (1428) nvs: nvs_get_str_or_blob sta.pswd[0m
+D (1428) nvs: nvs_get_str_or_blob sta.pmk[0m
+D (1438) nvs: nvs_get sta.chan 1[0m
+D (1438) nvs: nvs_get auto.conn 1[0m
+D (1448) nvs: nvs_get bssid.set 1[0m
+D (1448) nvs: nvs_get_str_or_blob sta.bssid[0m
+D (1448) nvs: nvs_get sta.lis_intval 2[0m
+D (1458) nvs: nvs_get sta.phym 1[0m
+D (1458) nvs: nvs_get sta.phybw 1[0m
+D (1458) nvs: nvs_get_str_or_blob sta.apsw[0m
+D (1468) nvs: nvs_get_str_or_blob sta.apinfo[0m
+D (1468) nvs: nvs_get sta.scan_method 1[0m
+D (1478) nvs: nvs_get sta.sort_method 1[0m
+D (1478) nvs: nvs_get sta.minrssi 1[0m
+D (1478) nvs: nvs_get sta.minauth 1[0m
+D (1488) nvs: nvs_get sta.pmf_e 1[0m
+D (1488) nvs: nvs_get sta.pmf_r 1[0m
+D (1488) nvs: nvs_get sta.btm_e 1[0m
+D (1498) nvs: nvs_get sta.rrm_e 1[0m
+D (1498) nvs: nvs_get sta.mbo_e 1[0m
+D (1498) nvs: nvs_get_str_or_blob ap.ssid[0m
+D (1508) nvs: nvs_get_str_or_blob ap.passwd[0m
+D (1508) nvs: nvs_get_str_or_blob ap.pmk[0m
+D (1518) nvs: nvs_get ap.chan 1[0m
+D (1518) nvs: nvs_get ap.authmode 1[0m
+D (1518) nvs: nvs_get ap.hidden 1[0m
+D (1528) nvs: nvs_get ap.max.conn 1[0m
+D (1528) nvs: nvs_get bcn.interval 2[0m
+D (1528) nvs: nvs_get ap.phym 1[0m
+D (1538) nvs: nvs_get ap.phybw 1[0m
+D (1538) nvs: nvs_get ap.sndchan 1[0m
+D (1538) nvs: nvs_get ap.pmf_e 1[0m
+D (1548) nvs: nvs_get ap.pmf_r 1[0m
+D (1548) nvs: nvs_get ap.p_cipher 1[0m
+D (1548) nvs: nvs_get lorate 1[0m
+D (1558) nvs: nvs_get_str_or_blob country[0m
+D (1558) nvs: nvs_get ap.ftm_r 1[0m
+D (1558) nvs: nvs_get sta.ft 1[0m
+D (1568) nvs: nvs_get sta.owe 1[0m
+D (1568) nvs: nvs_get sta.trans_d 1[0m
+D (1568) nvs: nvs_get sta.sae_h2e 1[0m
+D (1578) nvs: nvs_get sta.sae_pk_mode 1[0m
+D (1578) nvs: nvs_get sta.bss_retry 1[0m
+D (1588) nvs: nvs_get_str_or_blob sta.owe_data[0m
+D (1588) nvs: nvs_get sta.he_dcm 1[0m
+D (1588) nvs: nvs_get sta.he_dcm_c_tx 1[0m
+D (1598) nvs: nvs_get sta.he_dcm_c_rx 1[0m
+D (1598) nvs: nvs_get sta.he_mcs9_d 1[0m
+D (1598) nvs: nvs_get sta.he_su_b_d 1[0m
+D (1608) nvs: nvs_get sta.he_su_b_f_d 1[0m
+D (1608) nvs: nvs_get sta.he_mu_b_f_d 1[0m
+D (1618) nvs: nvs_get sta.he_cqi_f_d 1[0m
+D (1618) nvs: nvs_get_str_or_blob sta.sae_h2e_id[0m
+D (1618) nvs: nvs_get ap.sae_h2e 1[0m
+D (1628) nvs: nvs_get_str_or_blob ap.pmk_info[0m
+D (1628) nvs: nvs_get nan.phym 1[0m
+D (1638) nvs: nvs_get sta.pwr_reset 1[0m
+D (1638) nvs: nvs_get band 1[0m
+D (1638) nvs: nvs_set ap.sndchan 1 1[0m
+[0;32mI (1648) wifi_init: rx ba win: 6[0m
+[0;32mI (1648) wifi_init: accept mbox: 6[0m
+[0;32mI (1648) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1658) wifi_init: udp mbox: 6[0m
+[0;32mI (1658) wifi_init: tcp mbox: 6[0m
+[0;32mI (1668) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1668) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1668) wifi_init: tcp mss: 1440[0m
+[0;32mI (1678) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1678) wifi_init: WiFi RX IRAM OP enabled[0m
+D (1688) esp_netif_lwip: check: remote, if=0x3ffc5d9c fn=0x40108f7c[0m
+D (1688) esp_netif_lwip: esp_netif_dhcps_stop_api esp_netif:0x3ffc5d9c[0m
+D (1698) esp_netif_lwip: dhcp server stop successfully[0m
+D (1708) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (1708) esp_netif_lwip: check: remote, if=0x3ffc5d9c fn=0x40109260[0m
+D (1718) esp_netif_lwip: esp_netif_set_ip_info_api esp_netif:0x3ffc5d9c[0m
+D (1718) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (1728) esp_netif_lwip: check: remote, if=0x3ffc5d9c fn=0x40108c28[0m
+D (1738) esp_netif_lwip: esp_netif_dhcps_start_api esp_netif:0x3ffc5d9c[0m
+D (1738) esp_netif_lwip: dhcp server re init[0m
+D (1748) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (1918) adc_share_hw_ctrl: Wi-Fi takes adc2 lock.[0m
+[0;32mI (1918) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+D (1918) phy_init: loading PHY init data from application binary[0m
+D (1928) nvs: nvs_open_from_partition phy 0[0m
+D (1928) nvs: nvs_get cal_version 4[0m
+D (1938) nvs: nvs_get_str_or_blob cal_mac[0m
+D (1938) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 8 bit[0m
+D (1948) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 0 bit[0m
+D (1958) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 24 bit[0m
+D (1958) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 16 bit[0m
+D (1968) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (1978) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (1978) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 16 bit[0m
+D (1988) nvs: nvs_get_str_or_blob cal_data[0m
+D (1998) nvs: nvs_close 3[0m
+D (1998) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 8 bit[0m
+D (1998) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 0 bit[0m
+D (2008) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 24 bit[0m
+D (2018) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 16 bit[0m
+D (2028) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 8 bit[0m
+D (2028) efuse: In EFUSE_BLK0__DATA1_REG is used 8 bits starting with 0 bit[0m
+D (2038) efuse: In EFUSE_BLK0__DATA2_REG is used 8 bits starting with 16 bit[0m
+D (2118) event: running post WIFI_EVENT:43 with handler 0x400db72c and context 0x3ffd4a00 on loop 0x3ffc4b20[0m
+D (2118) event: running post WIFI_EVENT:2 with handler 0x4010b3fc and context 0x3ffc5c48 on loop 0x3ffc4b20[0m
+[0;32mI (2118) http_server: Registering URI handlers[0m
+D (2128) wifi_init_default: wifi_start esp-netif:0x3ffc5a48 event-id2[0m
+D (2118) httpd: httpd_thread: web server started[0m
+D (2138) wifi_init_default: WIFI mac address: 8c 4f 0 f 6b 5c[0m
+D (2128) httpd_uri: httpd_register_uri_handler: [0] installed *[0m
+D (2148) esp_netif_lwip: check: remote, if=0x3ffc5a48 fn=0x401083b8[0m
+D (2138) httpd: httpd_server: doing select maxfd+1 = 56[0m
+D (2158) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (2168) esp_netif_handlers: esp_netif action has started with netif0x3ffc5a48 from event_id=2[0m
+D (2158) httpd_uri: httpd_find_uri_handler: [0] = *[0m
+D (2178) esp_netif_lwip: check: remote, if=0x3ffc5a48 fn=0x40108da8[0m
+D (2188) httpd_uri: httpd_register_uri_handler: [0] exists *[0m
+D (2188) esp_netif_lwip: esp_netif_start_api 0x3ffc5a48[0m
+D (2198) esp_netif_lwip: esp_netif_get_hostname esp_netif:0x3ffc5a48[0m
+D (2208) httpd_uri: httpd_register_uri_handler: [1] installed *[0m
+D (2208) esp_netif_lwip: check: local, if=0x3ffc5a48 fn=0x40109728[0m
+D (2218) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3ffc5a48[0m
+D (2228) httpd_uri: httpd_find_uri_handler: [0] = *[0m
+D (2228) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (2238) httpd_uri: httpd_find_uri_handler: [1] = *[0m
+D (2238) event: running post WIFI_EVENT:2 with handler 0x400db72c and context 0x3ffd4a00 on loop 0x3ffc4b20[0m
+D (2238) httpd_uri: httpd_register_uri_handler: [0] exists *[0m
+[0;32mI (2248) wifi_manager: [0m
+D (2258) httpd_uri: httpd_register_uri_handler: [1] exists *[0m
+D (2258) event: no handlers have been registered for event ESP_HTTP_SERVER_EVENT:1 posted to loop 0x3ffc4b20[0m
+D (2268) httpd_uri: httpd_register_uri_handler: [2] installed *[0m
+[0;32mI (2288) wifi_manager: MESSAGE: ORDER_LOAD_AND_RESTORE_STA[0m
+D (2288) nvs: nvs_open_from_partition espwifimgr 0[0m
+D (2298) nvs: nvs_get_str_or_blob ssid[0m
+D (2298) nvs: nvs_get_str_or_blob password[0m
+D (2298) nvs: nvs_get_str_or_blob settings[0m
+D (2308) nvs: nvs_close 4[0m
+[0;32mI (2308) wifi_manager: wifi_manager_fetch_wifi_sta_config: ssid:ApG2.4#1 password:le091064*[0m
+D (2318) wifi_manager: wifi_manager_fetch_wifi_settings: SoftAP_ssid:lodrom[0m
+D (2328) wifi_manager: wifi_manager_fetch_wifi_settings: SoftAP_pwd:lodrom123[0m
+D (2328) wifi_manager: wifi_manager_fetch_wifi_settings: SoftAP_channel:1[0m
+D (2338) wifi_manager: wifi_manager_fetch_wifi_settings: SoftAP_hidden (1 = yes):0[0m
+D (2348) wifi_manager: wifi_manager_fetch_wifi_settings: SoftAP_bandwidth (1 = 20MHz, 2 = 40MHz)1[0m
+D (2358) wifi_manager: wifi_manager_fetch_wifi_settings: sta_only (0 = APSTA, 1 = STA when connected):1[0m
+D (2368) wifi_manager: wifi_manager_fetch_wifi_settings: sta_power_save (1 = yes):0[0m
+D (2368) wifi_manager: wifi_manager_fetch_wifi_settings: sta_static_ip (0 = dhcp client, 1 = static ip):0[0m
+[0;32mI (2378) wifi_manager: Saved wifi found on startup. Will attempt to connect.[0m
+[0;32mI (2388) wifi_manager: MESSAGE: ORDER_CONNECT_STA[0m
+D (3548) event: running post WIFI_EVENT:43 with handler 0x400db72c and context 0x3ffd4a00 on loop 0x3ffc4b20[0m
+D (3628) event: running post WIFI_EVENT:4 with handler 0x4010b42c and context 0x3ffc5ca8 on loop 0x3ffc4b20[0m
+D (3628) esp_netif_handlers: esp_netif action connected with netif0x3ffc5a48 from event_id=4[0m
+D (3638) esp_netif_lwip: check: remote, if=0x3ffc5a48 fn=0x40109210[0m
+D (3638) esp_netif_lwip: esp_netif_up_api esp_netif:0x3ffc5a48[0m
+D (3648) esp_netif_lwip: check: local, if=0x3ffc5a48 fn=0x40109728[0m
+D (3648) esp_netif_lwip: esp_netif_update_default_netif_lwip 0x3ffc5a48[0m
+D (3658) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (3668) esp_netif_lwip: check: remote, if=0x3ffc5a48 fn=0x401090cc[0m
+D (3668) esp_netif_lwip: esp_netif_dhcpc_start_api esp_netif:0x3ffc5a48[0m
+D (3678) esp_netif_lwip: esp_netif_start_ip_lost_timer esp_netif:0x3ffc5a48[0m
+D (3688) esp_netif_lwip: if0x3ffc5a48 start ip lost tmr: interval=120[0m
+D (3688) esp_netif_lwip: starting dhcp client[0m
+D (3698) esp_netif_lwip: call api in lwip: ret=0x0, give sem[0m
+D (3708) event: running post WIFI_EVENT:4 with handler 0x400db72c and context 0x3ffd4a00 on loop 0x3ffc4b20[0m
+[0;32mI (3708) wifi_manager: WIFI_EVENT_STA_CONNECTED[0m
+D (4698) esp_netif_lwip: esp_netif_internal_dhcpc_cb lwip-netif:0x3ffc5ad0[0m
+D (4698) esp_netif_lwip: if0x3ffc5a48 ip changed=1[0m
+D (4698) event: running post IP_EVENT:0 with handler 0x4010b24c and context 0x3ffc5d7c on loop 0x3ffc4b20[0m
+D (4708) wifi_init_default: Got IP wifi default handler entered[0m
+D (4708) esp_netif_handlers: esp_netif action got_ip with netif0x3ffc5a48 from event_id=0[0m
+[0;32mI (4718) esp_netif_handlers: sta ip: 192.168.70.22, mask: 255.255.255.0, gw: 192.168.70.1[0m
+D (4728) event: running post IP_EVENT:0 with handler 0x400db72c and context 0x3ffd4a34 on loop 0x3ffc4b20[0m
+[0;32mI (4738) wifi_manager: IP_EVENT_STA_GOT_IP[0m
+[0;32mI (4738) wifi_manager: WM_EVENT_STA_GOT_IP[0m
+[0;32mI (4748) wifi_manager: Set STA IP String to: 192.168.70.22[0m
+D (4758) esp_netif_lwip: esp_netif_get_ip_info esp_netif:0x3ffc5a48[0m
+[0;32mI (4758) lodrom_wifi_start: Connected to WiFi. Got IP: 192.168.70.22[0m
+[0;32mI (4768) lodrom_wifi_start: Wi-Fi connected and IP address obtained.[0m
+[0;32mI (4778) lodrom_mqtt: ==== MQTT Configuration ====[0m
+[0;32mI (4778) lodrom_mqtt: Broker URI: mqtts://7c1135d9a0c74d6da4c07a96475b8a31.s1.eu.hivemq.cloud[0m
+[0;32mI (4788) lodrom_mqtt: Port: 8883[0m
+[0;32mI (4788) lodrom_mqtt: Username length: 6[0m
+[0;32mI (4798) lodrom_mqtt: Password length: 9[0m
+[0;32mI (4798) lodrom_mqtt: Certificate length: 1938[0m
+[0;32mI (4808) lodrom_mqtt: Initializing MQTT client...[0m
+D (4808) mqtt_client: MQTT client_id=ESP32_0f6B5C[0m
+D (4818) event: created event loop 0x3ffd7ab8[0m
+[0;32mI (4818) lodrom_mqtt: Client initialization successful[0m
+[0;32mI (4828) lodrom_mqtt: Event handler registered successfully[0m
+[0;32mI (4838) lodrom_mqtt: Starting MQTT client...[0m
+D (4838) mqtt_client: Core selection disabled[0m
+D (4838) event: running post MQTT_EVENTS:7 with handler 0x400da0dc and context 0x3ffd7bb8 on loop 0x3ffd7ab8[0m
+[0;32mI (4848) lodrom_mqtt: Event ID: 7[0m
+D (4858) lodrom_mqtt: Other event id: 7[0m
+D (4858) esp-tls: host:7c1135d9a0c74d6da4c07a96475b8a31.s1.eu.hivemq.cloud: strlen 51[0m
+[0;32mI (4868) lodrom_mqtt: MQTT client started successfully[0m
+D (4878) esp-tls: [sock=57] Resolved IPv4 address: 52.31.149.80[0m
+D (4888) esp-tls: [sock=57] Connecting to server. HOST: 7c1135d9a0c74d6da4c07a96475b8a31.s1.eu.hivemq.cloud, Port: 8883[0m
+[0;31mE (4898) lodrom_json_read: Failed to open file: /spiffs/audio_files.json[0m
+[0;31mE (4898) lodrom_json_read: Failed to read JSON file[0m
+[0;32mI (4928) SPIFFS: File size of /spiffs/sample_audio.wav: 154668 bytes[0m
+[0;32mI (4928) AUDIO: WAV File Details:[0m
+[0;32mI (4928) AUDIO: Sample Rate: 16000 Hz[0m
+[0;32mI (4938) AUDIO: Channels: 1[0m
+[0;32mI (4938) AUDIO: Bit Depth: 16[0m
+[0;32mI (4938) AUDIO: Data Bytes: 154624[0m
+[0;32mI (4948) AUDIO: WAV file is valid. Ready to play![0m
+D (5128) esp-tls: handshake in progress...[0m
+[0;33mW (15968) esp-tls: Failed to open new connection in specified timeout[0m
+[0;31mE (15968) transport_base: Failed to open a new connection[0m
+[0;31mE (15968) mqtt_client: Error transport connect[0m
+D (15968) event: running post MQTT_EVENTS:0 with handler 0x400da0dc and context 0x3ffd7bb8 on loop 0x3ffd7ab8[0m
+[0;32mI (15978) lodrom_mqtt: Event ID: 0[0m
+[0;31mE (15988) lodrom_mqtt: MQTT_EVENT_ERROR: 1[0m
+[0;31mE (15988) lodrom_mqtt: Last error code reported from esp-tls: 0x8006[0m
+[0;31mE (15998) lodrom_mqtt: Last tls stack error number: 0x0[0m
+[0;31mE (15998) lodrom_mqtt: Last captured errno : 0 (Success)[0m
+D (16008) mqtt_client: Reconnect after 10000 ms[0m
+D (16018) event: running post MQTT_EVENTS:2 with handler 0x400da0dc and context 0x3ffd7bb8 on loop 0x3ffd7ab8[0m
+[0;32mI (16028) lodrom_mqtt: Event ID: 2[0m
+[0;32mI (16028) lodrom_mqtt: MQTT Disconnected. Will automatically try to reconnect...[0m
+6�6�D7�ŝ�M��g,�d9��g~���nR�Ǒ�^��b0!JFRŘV����|�6���(|1������$'� #��$#$ܜ�Ǔ��''��#�'����c��<$��o�$o$#��$c����<�#�#��''�<�$n'�����|;�'g' ��;����'g��'<#�'�$'$#��$#$n�;�'<��'���'��#�n�;'�|�$��r�c���$'�;�'<���'���c��'�$n$#��c$o�;�'<��'���'��#���<#���$'�;�o<���'�� ;����l#;�ܜ���o�$o$#�s�$b$g�;�'<��o���'��#�ۜ<c��$'�;�'<���'�� ;�ܜ�$c;�����$���'�$'$c�;�$#$'�;�g<��'���'��#�ۜ<c��$'�;�n<���'�� s���8�$#;���8�����g�$g$b��#$'�;�o<��'���'��#���|#�ۂd'�{�'|���'�� ;�ܜ��l#;�ܜ������o�$o$#ǎ<#$g�;�'<��n���'��#�ۜ<#��$'�;�o<���'�� s�������d#;������$���'�$'$bǏ;#$'�;�'<��o���'��#���<#���$'�;�n<���'�� ���l#�����o�$o$#��$c$'�;�'<��g���'��#�ۜ<c��$'�;�'<���'�� ���l#��'�d'd#�d#$'�;�'<��'���'��#ě�<#���$g�;�'<���g�� �$#�$���8��l'l#�<�l#d'�{�'|��'���'��#ě�<#���$g�;�'<���o�� �$Ĝ��$#����'�$'$#�$$#$'�;�'<��'���g��c��o'��<�n����'�$�''��o� l'�r�'<����o'g<���'�$'$c���$ $'�;�n<��'���'��#d�'n��'� $'�;�n<�ē�''o;�����l�$#s���8���'�$'$#�p�$#$o�;�'<��'���'��#$�''��o� l'�s�'|����''';Ĝ�8���$#{�ܜ8���o�$g$#��$#$'�;�o<��'���'��#d�'n��'� $'�;�o<�ē�''';���8�$c;Ĝ�8���'�$'$#��$#$'�;�'<��'���n��bd�''��'� $g�;�'<����'g';�ܜ8�$c;���x���'�l'l#��d#$'�;�'<��'���'��#$�o'��'� $o�;�'<����''';���p�$#;Ĝ�8���'�l'l#��l#$'�;�'|��'���'��#$�''��o� d'�s�'|����'''{�ܜ8�$#;���8���'�$'$#���$ l'�r�'<��'���'��#$�''��o� d'�{�'|����'n'{�ܜ8�$#;���8��'�$'$c�;�$#$'�;�g<��'���o��cd�'g��'� $'�;�g<����n'g;Ĝ�8$#s���8��n�$o$#Ǐ$c$'�;�n<��g���'��#$�''��'� $g�;�'<����''';���8$#;Ĝ�8�'�d'd#���d $g�;�'<��o���'��#$�g'��'� $o�;�'<����'g';�ܜ8$#;������'�$'$c��#$'�;�g<��'���n��c$�'g��'� $'�;�g<����o'g;Ĝܜ$#r������'�l'l#�l#d'�{�'|��'���g��cd�'n��'� $'�;�'<����'n'r�����l#;�ܜ����o�$o$#���d $g�;�'<��g���'��#l�''��'� $'�;�n<�Ē�''';�����$c;�������g�$g$#�|�$c$'�;�'<��o���'��#$�g'��'� $o�;�'<����''';�����$c;Ĝܜ��'�l'l#�<�l#d'�{�'|��'���'��#$�''��'� $'�;�g<����o'g;��ܜ$#;Ĝ������'�$'$#��$ $'�;�o<��'���'��#l�''��'� $'�;�'<����''';������$c;Ĝܜ8���'�$'$#$�$#$'�;�'<��'���g��c$�'o��'� $'�;�n<�ē�''';����8�$c;Ĝܜ����'�$'$#$$l#l'�s�'|��'���g��c$�'g��'� $'�;�g<����g'';Ĝܜ��$#s�����'�d'd#���l $'�;�'<��'���'��#$�n'��'� $'�{�'|����'''s�ܜ����$#;����������'�$'$c�$#$'�;�g<��'���o��c$�''��o� d'�{�'|����'''s������$�$#;�������'�$'$#�$$#l'�s�'|��'���'��#$�''��n� l'�s�'|����'''s�����d#;������g�$g$#��$ $'�;�'<��g���'��#$�''��'� $o�;�'<����''';����$#;Ĝ����'�l'l#l�c$'�;�'<��'���'��#$�''��g� d'�{�'|����'o'{�ܜ�$#;����8���g�$g$#$�<#$o�;�'<��'���'��#$�o'��'� $'�;�'<����'n's����8�l#���'�$'$#��;c$o�;�'<��n���'��#$�''��'� $'�;�'<�Ē�''n�$��8 $#�$d��'�l'l#��#d'�{�'|��'���'��#$�''��o� l'�s�'|����'''�$$l#�l���o�$o$#��<c$n�;�'<��'���'��#$�''��g� d'�s�'|����g''�$�$#�$$��'�l'l#$�$ l'�r�'<��'���g��c$�'o��'� $'�;�n<�ē�''n�$$�$#�$�'�l'l�����l'� #$�$#'���''��#l$'��'�8'?#�'�#���$l�''��'� Ĝ'| ��<�'�$�n'o8�'''��$o$#l$d#'���'o��b�$�'�$'n��'�8g<�$�;�����d���'�$'$�����$'� #<��$ '���''�#$���؀�$�g�<$$�#��d�# �l�l�$'$c<�$#'���''�#�$�'�l''��'�8'<�$�;���p�����'�$'$�����$'� #<�$�$ '���o'��#$����� ���g�<����#8����$�# �$�$�d'd�����d'� #|��l#'���'g��c$�����À��'�<�$�#8��$�# �#���$�$o$�����$o� #<�$#o���''��#$��������$�'�|l�{#c8�l�$�# �#���$�$'d#<��$ '���''��#�l��g�$''��g�8'<�$��d���p��$'$�����$g� #<�$$bg���''��#$��$���  '�<�� ��#��l�# $$l�l�$'$c<،�$ ����<�#�#��g'�|�$'o�����<;�o'g ���;�''��o<c��o�$n$#<��$#����|�b�c��''�<�$g'�����|;�'o' ��;s��'o��'<#�'�l'l#|�l#����|�#�c��n'�<�$''��Ĝ�<{�''o ����''��'<#��'�$'$b<��$ $''�|��'g'8���'''�����c;Ǐ�'l''�$c8��$#�$'$#|�$$#����<�#�#��''�<�$n'�����|;�'n' ���$��g'��'|#��'�$'$c<�$�$ ����<�#�#��''�<�$''��Ĝ�<s�''' ���$�''��o<c��o�$g$#<�l$#����<�#�#��''�<�$n'�����<;�''' ���$��''��'<#��'�$'$#<���l ����<�c�#��''�|�$'n�����<{�n'g ��;#�''��g<c��o�$o$#<��$#����<�#�#��''�|�$'g�����<;�g'' �����''��g<c��'�$'$#<�$$c����<�#�#��'o�<�d''�����<;�''' ���$�o'��'<#��g�$g$#8�$�$ �'�'��o �<�''��n��#l'<�'�$'$#8�$#�o�'��' �<�'o��'��c����l'$#p�$�$b�g�'��' �<�'g��'��#$og8��$'d#8�$��$ �'�g��' �|�n'��'��#���<#�'o��d'd#x��$#�'�n��' �<�''��'��#��<�#'8��$'$�����$'� #8���$ �'�'��' ����sÛ��n��b���|�#'x��$g$�����$g� #8��$#�'�g��' ��'��'$'g ��;�'�$'$#8���$#����<�#�#��'n�<�l''�����<;�g'' �����''��'<#�'�d'd#8��d$#����<�#�#��'g�<�d''�����<;�''' �$����܏�$'$c8���$ ����|�c�c��''�<�$''�Ĝ�<;�'g' �l$�<���8��l'l#x��<#����<�#�#��''�|�$'n�����<{�n'o �$���'�$'d#8�$��$ ����<�#�#��'g�<�$''�����<;�''' ���8����n�$n$�����$'�#x�$�<#$�;#o�;�<c��#l'< ���c�;����#�'�;�$'�#Û�'�s�ۃ;�b�;��''��''�#g;�'�$'d#8����$ ����<�#�#��'o�<�$''�����<;�''' ���8��;�'�$'$�����$'�c8���c$'�#g�;# g�;$o��<#��#$o< ��#�;�ۃ�#�'�;�$g�c���o$�<�<#��#�#�����<���#'#�<c��#�c������'#n�o< �<#�#�#���ߜ�<'�d'l#p�$�d ����<�c�#��g'�|�$''��Ĝ�<s�''' �d�����'�$'$c8�ld#����|�#�#��''�<�$''�����<;�''' ������n�$'$#8�$$�$ ����<�#�#��'o�<�l''�����<;�g'' �����$'$#8�$$#����<�#�#��'g�<�$''�����|;�'o' �$$�<;�o'��'<#��'�$'$b8���$ $''�<��g''8���o'g�����#;$���'l'g߄#8��$c�$'$c8�l�l#����|�#�#��''�<�$''�����<;�''' �����''��'<#�'�l'l#p�$$c$g'�<��'n'x���'''�����c;���'l''��b8��$#�$'$c8Ä�$#$��<�c�#�����''��;g���'���''�����g�$g$������#8��$#$o'�<��'''p���g''�����b;�$��'$'g�d#8��$$c�$'$c8Ìd#$��|�#�c�����'n��;'�ۃ'��''���8��$'$;$#8��$#$'�#�o���s' ��������''�����'�$'$b8��l#'���''��#�$�'�$'o��'�p'|�$�{�ܜ��Ǉ�'�$'d#8��$#'���''��#�$�'�$'o��'�p'|�$�s�����$��'�l'l#p��$c$''�<��'o'8���'''�Ò��#;$���'$o'�$�#p��d#�$o$�����$g� #8��$#l'�c�'���;o ��''�<�$��'�#�'#d��$'$�����$'� b8�l#''�<�'�<�'��|��c�'��?�o�'?#�'��8#l���d#$�|�#$$����;��$'$�����$'� c8�l#$$�$�$��؄?#$d'�'�8'?#�'�$d��###�$o$#8�$#$'�c'�{# ��|�o;�$����'88;'� ���'88;'������8�'s��$���p�o;��'�� ��'�l'l#x�$$#$''�|��'g'8���'g'�����#;���'$'g�b8��$#�l'$#p�$$#$'�c'�;c ��$$�8�''x $''�n#����o�<���o'8';'?��$�#������r�'�;���$'$#x��$#$'�#'�;# $l�#$$`8;l�'�������d$��'�$'$�����l'� #x��$#$d�$�$����?#d$�$g'�'�8g?�;�o�$g$�����$'� c8��$#$l�#�' �#�Ó�'���'< ���8�$�'<�;;�'�$'$�����$'� #8��$#''�<?�'�<�'��<�l�ǃ''܌��p�;$''�#<�'��<���g�$g$�����$'� c8��$#o'�<?�'�|�'��<���g�<�Ĝ�8�#��'�'����g'#���;�'�$'$�����$g� #8�$�$#''�<�'�<�'��<���'�|����p�#�#ۃ��'���'<<�'<?�'�$'$�����$'� #8�$#���'�'�|��##������� $$��<b�'��' �#�c�#��g�$'$#8�$c$�<��'�'�'��#$ߌ���;;ng������g$''��'�p'�s�'�$'$#p�$#$�<��'��'�'���c$�<��#'��'�'��ě��n��;s�{;���o'� $''��'�p'�s�'�$'$#x�$$#$���<�#���n'�|����;'��n< '''{�ܜ8��#��o�$g$#8�ld#$���<�c�#�������;g��'< 'g';Ĝ�8��c�'�l'l#8�$#$ܟ�<�#�#��ۃ$���<�'o';Ĝ�8��c��'�l'd#8�$#l�<��n��'�'���c�'�;' ���g'��8$'�?�;���p����n?��$$$���g�$'$#8�$l#$�<��g��'��'x$�s�{#$�<��'�'�ۃ���ng�ǃ���'|���'��'�$�Û���s;�;;�ۃ''� b�g��8�'�'�<�$d#�$g$#8ǌd#$�<��g��'�'���c��g'$o$g''���#����#��������'�d'd�����$'� #8��$#'g�<�'���'�<�#�#���#�''�Ĝ'| ���;��� ��o''��'o'c##�l'l#8��$#$�<��'��'�'���#�'�;n �ۛ''��8$'�?�;���8����'?��$$$���'�$'$c8��$#$�<��'��o��'8d�;�;c$�<��'��o������''������'<���'��'�$�Û���s;�;;�ۃ''� c�'��p�o��'�|��$c�$'$#8��$c$�<��'��'�'���#��''$'$''o���#����#�������'�$'$#p�$�$#�'�<��'�<��'��'�|?�o#�'��?�'$'��r$��g�$g$c8Ǆ�$#$�����c$$'l������ p;$�����#�$�$'| $�<��'�| �#�o'�����o�'��l'd#8���$#l�����#d$'$ؘ�Ǜ�`8;d��؀�#�$�$'< $�<��g�< ��#�''����'�'��$g$#8���d#$�����c$$'l������`8;$������l�$'< $�<��'�< ��#�'g�����'���o��$'$#8�d#$�����c$l'd�ؓ��� p;$��؀��l�$g< d�<��'�< ��#�''����'$�ǌ'��$g$b8�$#$�����#$d'$�؛��� x;$������$�l'< $�|��'�< ��#�'n����'�'��$'$c8�$$c$�����#$$'$��ۏ�� 8r$������$�d'< $�<��'�< ��#�''����'�'��$'$b8�$#$�����c$l'l�ؒ��� 8;$�����c�l�$'| $�<��'�< ��#�''����'$���g��$o$#8�d#�'�|��'�|��g��'�<?�'#�g���'�'�<<�o���$$$��'�$'$#x�$$#�'�<��'�<�����g�''�� $��'�$'l#8�$$#�'�<��'�<������<�#��'|�#�''p ��#<�'��$'$#8��$#�'�<��'�<�������b�ۂ'�?��d��o�$g$c8؄$#�g�<��o�<������<�#��g<�c�'o8 ���#r��;�o�$g$b8،d#�'�|��'�<������<�#��'|�#�''p ��#�n;��d'l#8��$#�'�<��'�<��ۃ���#8`�o$��'�$'$#x��$#�'�<��'�<��ۂd���'c8?�''$��'�l'l#x��$#�'�<��g�<�����;;'�#<�$�'�l'd#8��$#�'�|��'�|������<�#��'<�#�g'8 ���#8�;'��$'$#8��$#�'�<��'�<�������b'���''���x���'�$'$#p�$�$#�'�<��'�<�������#o�;$��'�l'd#8�$�$#�'�|��'�<�������#g��$��'�$'$c8�d�$#�o�<��n�<������<�c��o<�c�''8 ���#��;�;�o�$g$c8؄�$#�g�<��g�<������<�#��g<�c�'o8 ���#��''�'�$'$c8؄�$#�o�<��n�<�������#<�'�'��''�$�'�l'l#8���$#�'�<��'�<��ۃ���#<~#���o��''�$��'�$'$c8���$b�g�<��'�|�������c�#�'<�;'$��'�$'$c8���$b�g�<��n�<�������#�#�n�ۃ'$��'�l'l#8�$#�'�<��'�<�������#�'���$��'�l'l#8�$#�'�<��'�<��ۃ���#�'�< l��'�$'$#8�$#�'�<��'�<�������#8��'��$��g�$'$c8�$$c�'�<��'�<�������#<��'��$�'�$'$#8�$l#�'�|��'�|�������c��'��$��'�$'$#8�$$c�'�<��'�<��ۂ��<�#��'<�#�'g8 $�c<�'��$'$#8�l#�'�<��'�|������<�c��'<�#�''8 $�#;;��s�'�$'$#x�$#�'�<��'�<������<�#��'<�#�''x $�#�';��$'$#8�$$#�'�<��'�<����$�#x �'$��'�$'$c8�d$b�'�<��o�<����l�#�ۂ'�?��$��g�$'$#8�$$c�'�<��o�<����l�#'�Û�'$�'�$'$#8��l#�'�|��'�<����$�#��#8?�'g$��'�$'$#x��$#�'�<��'�<��ۃ�;�o#�|��#��'���'�l'l#8��$#�'�<��'�<����$�#'�;l��'�$'$#8��$#�'�|��'�<����$�#'��$�'�$'$#8��l#�'�|��'�<����$�#|<�r'�<$��'�$'d#8��$#�'�|��'�<����$�#�'�ۜ$��'�$'$#x��$#�'�<��g�<����l�#�'�< l��'�$'$#8��d#�'�<��'�|����$�#��8#'��l��n�$g$c8��$c�'�<��'�<����''|Ó$��g�$'$c8�$�$c�'�<��'�<��ۃ��|�#��'|�#�''p ��'�|�#;�'�$o$#8�l�d#�n�<��'�|����$�#����#l��n�$o$#8�l�$#�o�<��'�<�������#��l��'�$o$#8ی�d#�'�<��'�|�������c'�� $��'�$'$#p�ď$#�'�<��g�<�������#�<�'<��l�'�$'$#8���l#�'�|��'�<�������#<��'$��'�$'$#p��$c�'�<��'�<��ۂ���#<��;n�g'�� $��g�$'$c8���$b�g�<��'�<�������#8�;�|�c$�'�l'l#8���$#�'�<��'�<������<�#��'|�#�''8 ���#g�����r�'�$'$c8�$#�o�<��'�|�������#'���r�'$��'�l'l#8�$#�'�<��'�<��ۃ���#'���;�'�8��$��'�$'$#x�$$#�'�<��'�<��ۃ���#'���;�g�8�#$��'�$'$#8�$$c�'�<��o�<�������#o���'8���$��o�$g$#8�ld#�'�|��'�|�������c'��;��8��$��'�l'l#x�$#�'�<��'�<��ۃ���#o��s��8����$��'�$'$#8�$c�'�<��o�<�������#o���'��#���$��'�$'$#8�$$c�'�<��'�<��ۂ���#'��;o��$��'�$'$#8�$l#�'�|��'�|������<�#��'<�#�o'8 ��c<��'��'��$'$#8�$$#�'�<��'�<����$�#<��'$�'�$'$#8��d#�'�<��'�|������<�b��'<�#�g'8 $�#�';�''�'�l'l#8��$#�'�|��'�|�����'�<�#'�;$��'�$'$#8��$c�'�<��'�<��ۃ���#�#�<;��$��'�l'l#8��l#�'�|��'�|������'�$��'�l'l#8��$#�'�<��'�<�{��$�#|<�;g�<$l�'�$'$�����$g� #8��d#��'�''��#�����|#���d'd�����$'� #8��$#���g�''��#l;{��l'8#ć�$'$�����$'� #p��$#���o�''�#�8�'$o8?#����g�$'$�����$'� #8�$�$c���n�g'�#l��$n8?#���d'd�����$n� #8�$�l#���'�''��#�8�$'p?#���$g$�����$'� c8܌�$#��'�''��c�8����<c$�Ǐ�'�$'$�����$o� #8���l#���'�''��#�8����<c$�Ǉ��'�$o$�����$'� #8܌�$#��'�''��#�8�$'<�#$����'�$'$�����l'� #p��$#���'�''��b���'l$$�$�$$�'��'�;�'�d'd�����d'� #x���$#���g�''�#���g�$l$�$�$$�g��'�;�g�$'$c8�$#$�<��'��'�'���#�'�;' ě�'n��8$'�?�{�ܜ8��<��'?��$�܇8��d'd#8�$#$�|��'�'�'��#$�<��'��'��o8�s��|��o��'$�<��'��o��;���8��<;�g�$'$c8�d$#$�<��'��g�'���#�'8��#��#��'�;{�;;��''���l'l#8�$#$�<��'��'�'���#��''$'$'''���#��Ób���ܛ���g�$'$#p�$#$�|��'�'�o��#�o�s' ���''��x$o�?�{�ܜ8��<��'~��ld�Ď�'�d'l#8�$$#$�|��'��'�'���#$�<��'��g��<���g��''�'�'$�<��g��'��r���8��|;�'�l'l#p�$$c$�<��'��'�o���#��'o$'$'no���#����#�������'�$'$#p��$c$�<��'��'�g��#�'�;' �ۓ''��x$g�?�;�ܜ8��<��'?��$�#��g�$g$c8��$#$�<��'��o�'���#$�<��'��'��'8�;��<�#���g$�<��'��g��;���8��<;�'�$'$#8��$c$�<��'��'�'���#�o8���#��#��$g'�;�o�$g$c8��$#$�<��'��g�'���#��''$'$'''���b����#��ܛ��'�$'lc8�$$c$�;��< #��g��8�#�' ���;��� ��g�;$�;#''8g�#�$'$�����$g� #8�$l#'��g'�#'����#r'''��#;�$�;��܏##��'����#8�������'�l'l#8�$$#'��o'�#''�''�$� l''�������|?�'$�g��o''�n'��;�'�l'l#8��$#�'�<��'�<��'��'�<�'c�n��?�'o� ��o�$g$c8��$c�g�<��g�<������'���{'''��$'$#8��$#�'�<��'�<������|�#��'<�#�'g8 ��n�'�{�'�$'l#x��$#$ܜ�Ǜ#l$'$ؐ�ǒ� 8;$����#�$�$'< $�<��g�< ��#�''�����g�g��$o$#8��l#d�����#d$'$ؘ�Ǔ� 8;l�؀�#�$�$g< d�<��'�< ��#�''����'�'��$'$#p�$�$c$�����#$$'$��ۏ�� 8;$������$�$'| $�<��'�| ��c�''�����o���'��$'$#8�$�$c$�����#$$'$��ێ�� 8r$������$�d'< $�|��o�< �#�g'�����g$���'��$'$#8�Ď$c$�����#$$'$������ 8;$������$�l'< $�|��'�< �#�o'�����o�'��l'l#8���$#l�����#l$'$������ 8s$������$�$'< $�<��'�< ��#�''����'�'��$'$#p��$#$ܜ�ǒ#$$o$��ۏ�� 8r$�����#�$�d'< $�|��o�< ��#�''�����g$���'��$'$#p�$#�'�<��'�<��ۃ��|�#��'<�#�'g8 ��n���;�o�$g$c8�$$c�g�<��n�<�;�''|���o�$o$#8�l$#$�����#$d'$������ 8;$�����#�$�d'< $�<��'�< ��#�''����'�'��l'l#8�$$#l�����#d$'$ؘ����`8;$�����#�$�$'| $�<��'�< ��c�''�����o�'��l'l#�$#d�����c$l'd�؛��� p;$������$�$'| $�<��'�| �#�g'�����'���'��l'l#�$$#l�����#l$'$ؘ�Ǜ�`8;$������d�$'| $�<��'�| �#�g'�����g$���'��$'$#��$#$ܜ�Ǔ#$$o$��ۇ�� 8{$������$�d'< $�|��n�< �#�g'�����'�g��$o$b��$#$�����#$$'$������ 8;$������$�l'< $�|��n�< �#�o'�����o�'��$'$#��l#$�����c$$'l������ 8;$�����c�l�$'< $�<��'�< ��#�''����'d���o��$'$�����l'�#�$#o��''��#��o'��'����n�c�'o'�����;�;��'��'�;'|��g���#�n�Ē�#$''�� d#�$o$#�d#�'�|��'�|��o��'�<�'c�'��?�''� l�'�$'$#�$#�'�|��'�<�;���8x�'x ��'���$$��$'$#��$#$ܜ�Ǜ#$$g$������ 8;$�؀�#�$�$g< $�<��'�< ��c�''�����n�'��d'$#��$#d�����b$$'l������ 8;$�����#�d�$'| $�<��'�| �#�g'�����'�g��$o$#��$#$�����#$l'$������ 8;$������$�d'< $�<��'�< ��#�''����'���g��$'$#��d#$�����#$l'd�؛��� x;$������$�$'| $�<��'�| ��c�''�����'$�Ǆ'��$'$c��$b$�����#$$'$�؛��� p;$������$�$'| $�<��'�| �#�''�����'�g��$o$#�$�l#$�����c$$'$������`8;$������d�$'| $�<��'�| �#�o'�����g�o��$'$#���d#$�����#$$'$������ 8;$�����#�$�$g< $�<��'�| �#�g'�����'$���n��$'$#Ì�$#�o�<��o�<�;���88�'8 ��'�g����d'd#���l#�'�<��'�|�;����'���s'n'�����'�$o$b���$#�o�<��n�<�;�''<��$'$#�$#$ܟ�<�#���''�<��'<����l����<������''�<��'����p���$�'���''����;��������''o'';���p��#��'�$'$�����d'� #�$#'����<c��##������Û#o'�$�l#'�|��o��s;�o�$g$c�$b$���|�#ē�''�<��'|����$����<������'n�<��'���$�;��8 $�'���''����;���p���'o''';���x��c��'�l'l#�$#'���#'ߞ���'<�#����#�#��#���;�'�$'$c�$c���'�g'������n� ���'�<�#�$�<��c'��'��;Ĝ�8�$�d���<��#�#�'�$'$#�$d#'������<##'�߃�|�'<��#���<#�'�|��n��b�$$''<��g'��c�$'$#�$$#���'�'o�������'� ���$$'�$��c�;;#�������8 $�8��$'$#�$c'���#'�߂��<#��c#�g�<����'��$g����;b8 d$���d'd#��l#$�<��'��o�'���#�'�;' ���'g��x$g�?�;���8�$���'?��$��'�d'd#�$$#'������<##g������<����<#�'�<Ã'��#�$$�c�$'$#��$#$�|��'�'�g��#��''$'l'''���#�ۃ�#�������'�$'$#��$#l�<��'��'�'�<Ã'�;#$�<��'��'�$;�'''n����#�ۃ����'�'��'�;���8�$���<?�'$���|���'�?���'�$'$c�l�d#'ߟ����<##'����<�'<��#���<c�o�<��'��#�$$�'<�;�#�$'$#�$�$#d�<��n��'�'���b�'�;g ���''��8$'�?�;���p�$���o?��$�����'�l'l#���$#'�߃���<#c'ߟ��<�o<��#���|#�'�|��o��c��$$g'<��o'��#�$g$cĄ�$#$�<��'��o�'���#$�<��'�'��<�#���';���p�$���'�l'l#���$#$�<��'��'�'���#d�<��'��n������''<��'�s�l�<��o��'��{���8�d���'�$'$#�$#'������<##'������|����<#�'�<��'��#�$$�#�$o$#�$#$�<��'��g�'���#�o�s' 'g8�'#l'�~�;���8�$���'��$$�����o�$g$c�d$b$�<��'��n�'���#$�<��'��'�۞��������g�'��'�'���;Ĝ�8�$��'�$'$#�l#'ߟ����|##'������<����<c�o�<��'��#��$l�#�$g$c�$#$�<��'��n�'���#��'n$'$'ng��#�ۃ�#�����ۛ'�$'$c�d$#g������<##'�߃�|�'<��#�۟<#�'�<��'�#�$l�'<�;�#�$n$#�l$#$���|�#ē�''�<��'|����$�؛�<�����''�<��g����8���d�'���''����;�ܜ�����o'''n{�ܜ8��#��o�$g$cǄ$b'������<c#'����<�'<��#���|#�'�|��n��c��$$�'<�;�#�$'$�����$'� c��$b���'�o�<��##��o�$g$c��$c'������<##'����<�o<��#���<c�o�<��'��#��$''<��'o��#�$'l#��$#$ܟ�<�#�'''�<��'��;'�������'���'<��#����'< $���<�$�$��$�ے�$#��������<���'<�ۃ�''''{�ܜ8��#��'�$'$�����$'� #��$#���'�'�<��##d$Ç;���c�$$�#�$l����$�$;�d$��$�;�'�$n$#ǌ�d#�'�<��'�|��g��'�<?�'#�'��?�'$�<��'��{�#��'�l'l#���$#�'�<��'�<������<�#��'<�#�''8 �;'��$'$#���$#�'�<��'�<������<�#��'|�#�''p ;{��o<s�'�$'$#��$#�'�<��'�<��ۃ��|�#��'<�#�'o8 ����o'�<��$'$c���$c�'�<��'�<�;�g'<$��$'$�����$'� #�$#���g�'�<��c#���'�'�<��#����;'���'�<���p?�o��#�;'��#�#��{;��'<#'��$$�����d'd#�l#���'�'�|��#c��'�o�<��#���;n۟�'�|��''�|���'������|�g�x�'�<?�'�$'$#�$$#���g�'�<��c#���'�'�|��#����;'۞�'�<��''�|���'�߀����#g'�|?�o8����o�$g$c�$c���n�'�<��b#���'�'�<��#����{'���'�<��''�<���'ܟ����8`�g'�p#$��'�$'$#�$$c���'�g�<��##���o�'�<��#���;o���'�<Ã'o�<���'�����o����nc8 $$�;#���'�$'$c�l$#��'�'�|��##���'�'�<��#����{'���'�<��''�<���'ܟ���8�'����'c8 d�$d$?p�$�$$l?#l��'�$'$#��l#���'�'�|��#c���'�'�|��#����;'���'�<��o'�<�����'''� #$$�$��#l$��� ��'�<��''o��ۃ#��'�$'$#��$#���'�'�<��c#���'�'�<��c����;g���n�<��'o�<�����'�����<��#8 $$�;c���'�$'$#��$b��'�'�<��#c���'�'�|��#����;'���'�<��o'�<�����<��'8�'#$�'8���'��g�#$$���n8 l'#���'�$'$�����$'� #�$�$c���o�g�<��##���ۂ���'��'�<��g'��#���#���8�'$����'��g��''o���#�l'd�����$o� #���l#���'�'�<��#c$l��s���#�$$�#ے ?�$$�Ó�$�;�'�l'l

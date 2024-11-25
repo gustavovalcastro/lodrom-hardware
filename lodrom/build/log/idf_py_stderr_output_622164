@@ -1,0 +1,21 @@
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_api.c: In function 'send_post_request':
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_api.c:61:2: error: unterminated argument list invoking macro "ESP_LOGI"
+   61 | }
+      |  ^
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_api.c:52:9: error: 'ESP_LOGI' undeclared (first use in this function); did you mean 'ESP_LOG_INFO'?
+   52 |         ESP_LOGI(TAG, "HTTPS POST Status = %d, Response = %s",
+      |         ^~~~~~~~
+      |         ESP_LOG_INFO
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_api.c:52:9: note: each undeclared identifier is reported only once for each function it appears in
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_api.c:52:17: error: expected ';' at end of input
+   52 |         ESP_LOGI(TAG, "HTTPS POST Status = %d, Response = %s",
+      |                 ^
+      |                 ;
+......
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_api.c:52:9: error: expected declaration or statement at end of input
+   52 |         ESP_LOGI(TAG, "HTTPS POST Status = %d, Response = %s",
+      |         ^~~~~~~~
+/home/betelgeuse/projects/puc/lodrom/lodrom-hardware/lodrom/main/lodrom_api.c:52:9: error: expected declaration or statement at end of input
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:146: esp-idf/main/CMakeFiles/__idf_main.dir/lodrom_api.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:6207: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

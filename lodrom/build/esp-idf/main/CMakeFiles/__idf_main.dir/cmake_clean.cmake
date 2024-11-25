@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/__idf_main.dir/lodrom.c.obj"
   "CMakeFiles/__idf_main.dir/lodrom.c.obj.d"
+  "CMakeFiles/__idf_main.dir/lodrom_api.c.obj"
+  "CMakeFiles/__idf_main.dir/lodrom_api.c.obj.d"
   "CMakeFiles/__idf_main.dir/lodrom_audio.c.obj"
   "CMakeFiles/__idf_main.dir/lodrom_audio.c.obj.d"
   "CMakeFiles/__idf_main.dir/lodrom_mqtt.c.obj"
